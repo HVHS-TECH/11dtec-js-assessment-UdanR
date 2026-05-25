@@ -20,6 +20,13 @@ header{
     filter: invert();
 }
 
+.search-icon:hover,
+.shopping-cart-icon:hover{
+    filter: invert(72%) sepia(59%) saturate(836%) hue-rotate(358deg) brightness(102%) contrast(97%);
+    transition: all ease 0.5s;
+}
+
+
 /* Making the Logo(the text) white*/
 .Logo{
     color: white;
