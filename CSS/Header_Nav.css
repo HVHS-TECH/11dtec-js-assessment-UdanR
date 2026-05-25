@@ -15,8 +15,9 @@ header{
 }
 
 .search-icon{
-    height: 50px;
+    height: 35px;
     width: auto;
+    background-color: aliceblue;
 }
 
 .shopping-cart-icon{
