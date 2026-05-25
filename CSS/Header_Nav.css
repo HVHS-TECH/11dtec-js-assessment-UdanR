@@ -11,6 +11,11 @@ header{
 
 }
 
+header > img{
+    filter: ;
+}
+
 .Logo{
     color: white;
 }
+
