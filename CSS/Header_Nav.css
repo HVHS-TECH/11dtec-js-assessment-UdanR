@@ -47,5 +47,7 @@ header{
     font-family: 'Courier New', Courier, monospace;
 }
 
-
+.banner-img{
+    width: fit-content;
+}
 
