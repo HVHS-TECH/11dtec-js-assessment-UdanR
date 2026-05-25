@@ -11,8 +11,10 @@ header{
 
 }
 
-header > img{
-    filter: invert(color);
+
+.search-icon,
+.shopping-cart-icon{
+    filter: invert();
 }
 
 .Logo{
