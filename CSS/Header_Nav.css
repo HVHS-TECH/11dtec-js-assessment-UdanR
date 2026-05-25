@@ -43,5 +43,6 @@ header{
 /* Making the Logo(the text) white*/
 .Logo{
     color: white;
+    padding-left: 15px;
 }
 
