@@ -20,6 +20,7 @@ header{
     filter: invert();
 }
 
+/*Making the search icon and the shopping cart icon turn the color wanted*/
 .search-icon:hover,
 .shopping-cart-icon:hover{
     filter: invert(72%) sepia(59%) saturate(836%) hue-rotate(358deg) brightness(102%) contrast(97%);
