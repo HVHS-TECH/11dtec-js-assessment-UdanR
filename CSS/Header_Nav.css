@@ -14,6 +14,17 @@ header{
 
 }
 
+.search-icon{
+    height: 50px;
+    width: auto;
+}
+
+.shopping-cart-icon{
+    height: 50px;
+    width: auto;
+    padding-right: 20px;
+}
+
 /* Making the search icon and the shopping cart icon white */
 .search-icon,
 .shopping-cart-icon{
