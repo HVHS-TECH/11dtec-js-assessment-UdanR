@@ -11,12 +11,13 @@ header{
 
 }
 
-
+/* Making the search icon and the shopping cart icon white */
 .search-icon,
 .shopping-cart-icon{
     filter: invert();
 }
 
+/* Making the Logo(the text) white*/
 .Logo{
     color: white;
 }
