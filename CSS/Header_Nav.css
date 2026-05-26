@@ -8,6 +8,7 @@ header{
     padding: 0px 0px;
     margin: 0px;
     outline: 1px solid white;
+    outline
     background-clip: padding-box;
     justify-content: space-between;
     align-items: center;
@@ -51,7 +52,10 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    
+    background-color: #1D1D1D;
+    border: 1px solid white;
+    border-radius: 5px;
+
 }
 
 nav > a {
