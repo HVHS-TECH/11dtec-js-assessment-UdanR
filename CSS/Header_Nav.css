@@ -47,7 +47,8 @@ header{
     font-family: 'Courier New', Courier, monospace;
 }
 
-.banner-img > img{
+/* Making the big banner*/
+.banner-img-containor > img{
     max-width: 100%;
     height: auto;
 }
