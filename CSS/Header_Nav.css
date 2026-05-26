@@ -61,6 +61,14 @@ nav > a {
     padding-bottom: 10px;
     padding-top: 10px;
     text-decoration: none;
+    color: white;
+}
+
+nav > a {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-decoration: none;
+    color: white;
 }
 
 /* Slideshow container */
