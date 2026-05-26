@@ -47,7 +47,12 @@ header{
     font-family: 'Courier New', Courier, monospace;
 }
 
-
+/* Slideshow container */
+.banner-img-containor {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 /* Making the big banner*/
 .banner-img-containor > img{
     max-width: 100%;
