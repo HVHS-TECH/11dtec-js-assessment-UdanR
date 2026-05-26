@@ -47,6 +47,10 @@ header{
     font-family: 'Courier New', Courier, monospace;
 }
 
+nav{
+    display: flex;
+}
+
 /* Slideshow container */
 .banner-img-containor {
   position: relative;
