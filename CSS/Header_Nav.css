@@ -49,12 +49,11 @@ header{
 
 /* Slideshow container */
 .banner-img-containor {
-  max-width: 1000px;
   position: relative;
   margin: auto;
 }
 /* Making the big banner*/
-.banner-img-containor > img{
+.banner-img-containor > .banner-img > img{
     max-width: 100%;
     height: auto;
 }
