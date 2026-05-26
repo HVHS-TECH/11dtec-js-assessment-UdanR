@@ -49,6 +49,11 @@ header{
 
 nav{
     display: flex;
+    align-items: center;
+}
+
+nav > a {
+    margin-left: 30px;
 }
 
 /* Slideshow container */
