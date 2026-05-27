@@ -75,3 +75,16 @@ display: grid;
   margin-top: 0px;
 
 }
+
+.item_Name{
+  color: #FFFFFF;
+  align-self: ;
+}
+
+.item_Price{
+  color: #FCBF49;
+}
+
+.Add_To_Cart_Button{
+  background-color: #D62828;
+}
