@@ -56,7 +56,7 @@ function Recommended_print(){
 var Shopping_Bag = [];
 function Add_To_Cart_Function () {
     const Button_Add = document.getElementsByClassName ("Add_To_Cart_Button");
-    const id = 
+    const id = this.dataset.id;
 }
 var adding_Item = {id: adding_Item_ID, price: adding_Item_Price}
 Shopping_Bag.push
