@@ -23,7 +23,6 @@ header{
 .Search-Bar{
     border: 0px transparent;
     background-color: #FFF8F0;
-    padding-left: 100px;
 }
 
 .shopping-cart-icon{
@@ -37,6 +36,8 @@ header{
     display: flex;
     background-color: red;
     border-radius: 22px;
+    padding: 5px;
+    padding-left:
 }
 
 /* Making the search icon and the shopping cart icon white */
