@@ -57,6 +57,8 @@ var Shopping_Bag = [];
 
 function Add_To_Cart_Function (Button_ID) {
     console.log(Button_ID);
+    var adding_Item = {id: Button_ID}
+
+
 }
-var adding_Item = {id: adding_Item_ID, price: adding_Item_Price}
 Shopping_Bag.push
