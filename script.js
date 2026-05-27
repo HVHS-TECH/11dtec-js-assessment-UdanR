@@ -32,3 +32,9 @@ console.log(Desserts);
 
 var Recommend = foodItems.filter(product => product.recommend === true);
 console.log(Recommend);
+
+Recommend.forEach(Recommended_print);
+
+function Recommended_print(){
+    
+}
