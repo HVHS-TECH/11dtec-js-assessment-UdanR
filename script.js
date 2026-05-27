@@ -30,6 +30,6 @@ var Desserts = foodItems.filter(product => product.category === 'Desserts');
 
 console.log(Desserts);
 
-var Recommend = foodItems.filter(product => product.category === 'recommend');
+var Recommend = foodItems.filter(product => product.category === 'true');
 
 console.log(Recommend);
