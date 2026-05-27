@@ -45,7 +45,7 @@ function Recommended_print(){
                     <h2 class="item_Name">${product.item}</h2>
                     <h2 class="item_Price">${product.price}</h2>
                 </div>
-                <button value=${product.price} onclick="" class=" Add_To_Cart_Button">Add To Cart</button>
+                <button value=${product.price} onclick="Adding price to kart" class=" Add_To_Cart_Button">Add To Cart</button>
             </div>`
             reco_Item_Num = reco_Item_Num + 1;
 }
