@@ -37,13 +37,15 @@ console.log(Recommend);
 
 Recommend.forEach(Recommended_print);
 
+var reco_Item_Num = 1;
 function Recommended_print(){
-    RECOMMNEDED_ITEMS_OUTPUT.innerHTML += `<div class="itme-1">
-                <img src="Banner Img/Classic Burger.jpeg" alt="Classic Burger">
+    RECOMMNEDED_ITEMS_OUTPUT.innerHTML += `<div class="${reco_Item_Num}">
+                <img src="Images/${product.img}" alt="${product.img}">
                 <div class="item_info">
-                    <h2 class="item_Name">Classic Burger</h2>
-                    <h2 class="item_Price">$5</h2>
+                    <h2 class="item_Name">${product.item}</h2>
+                    <h2 class="item_Price">${product.price}</h2>
                 </div>
                 <button class=" Add_To_Cart_Button">Add To Cart</button>
             </div>`
+            reco_Item_Num = reco_Item_Num + 1;
 }
