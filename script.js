@@ -1,4 +1,5 @@
 console.log("Hello world!")
+// The Inventory
 var foodItems = [
   { id: 101, category: 'main-dish', recommend: false ,item: 'Classic Burger', price: 12, img: 'Classic_Burger.png'},
   { id: 102, category: 'main-dish', recommend: true ,item: 'BBQ Bacon Burger',  price: 15, img: 'BBQ_Bacon_Burger.png'},
@@ -30,11 +31,11 @@ var Desserts = foodItems.filter(product => product.category === 'Desserts');
 
 console.log(Desserts);
 
+const Recommended_list = document.getElementById("Recommended_items");
 var Recommend = foodItems.filter(product => product.recommend === true);
 console.log(Recommend);
 
 Recommend.forEach(Recommended_print);
 
 function Recommended_print(){
-    
 }
