@@ -20,5 +20,8 @@ var foodItems = [
   { id: 118, category: 'Desserts' ,item: 'Donut', price: '$4', img: 'Donut.png'},
   { id: 119, category: 'Desserts' ,item: 'Churros', price: '$6', img: 'Churros.png'},
   { id: 120, category: 'Desserts' ,item: 'Ice Cream Cup', price: '$5', img: 'Ice_Cream_Cup.png'},
-  { id: 121, category: 'Desserts' ,item: 'Cookie', price: '$3', img: 'Cookie.png'},
+  { id: 121, category: 'Desserts' ,item: 'Cookie', price: '$3', img: 'Cookie.png'}
 ];
+
+let choice = items.find(product => product.id === 101);
+console.log(choice);
