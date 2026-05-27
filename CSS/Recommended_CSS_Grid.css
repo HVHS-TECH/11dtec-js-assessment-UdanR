@@ -10,7 +10,7 @@ display: grid;
 }
 
 .container > div {
-  background-color: white;
+  background-color: #1D1D1D;
   padding: 10px;
   border-radius: 7px;
   margin-left: 15px;
