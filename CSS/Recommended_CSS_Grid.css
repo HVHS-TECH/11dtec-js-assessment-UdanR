@@ -9,7 +9,7 @@ display: grid;
   padding: 5px;
 }
 
-.container div {
+.Recommended_items_containor div {
   background-color: #1D1D1D;
   padding: 10px;
   border-radius: 7px;
@@ -17,4 +17,22 @@ display: grid;
   margin-right: 15px;
 }
 
-.container div.i
+.Recommended_items_containor div.itme-1 {
+
+}
+
+.Recommended_items_containor img{
+  height:300px;
+  width: 250px;
+  border-radius: 5px;
+  margin-top: 5px;
+
+}
+
+.container img{
+  max-height:300px;
+  max-width: 250px;
+  border-radius: 5px;
+  object-fit: cover;
+
+}
