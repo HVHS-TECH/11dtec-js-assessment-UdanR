@@ -1,0 +1,12 @@
+.Recommended_items_containor{
+display: grid;
+  grid-template-areas:
+    "itme-1 itme-2 itme-3"
+    "itme-4 itme-5 itme-6";
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3px;
+  background-color: dodgerblue;
+  padding: 5px;
+}
+
+
