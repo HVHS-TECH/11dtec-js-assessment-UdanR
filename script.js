@@ -1,5 +1,5 @@
 console.log("Hello world!")
 var foodItems = [
-  { id: 101, category: 'main-dish' ,item: 'orange', price: '$6', img: 'orange.png' },
-  { id: 102, category: 'main-dish' ,item: 'apple',  price: '$5', img: 'apple.png' }
+  { id: 101, category: 'main-dish' ,item: 'Classic Burger', price: '$12', img: 'Classic Burger.png' },
+  { id: 102, category: 'main-dish' ,item: 'BBQ Bacon Burger',  price: '$15', img: 'BBQ Bacon Burger.png' }
 ];
