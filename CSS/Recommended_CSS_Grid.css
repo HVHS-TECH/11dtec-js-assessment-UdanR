@@ -15,8 +15,4 @@ display: grid;
   border-radius: 7px;
   margin-left: 15px;
   margin-right: 15px;
-  opacity: 0;
-  transform: translateY(100px); /* start below */
-  transition:  11s ease;
-  display: block;
 }
