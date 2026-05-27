@@ -53,6 +53,6 @@ function Recommended_print(){
 
 
 // Cart Array
-var Shopping_Bag = [{}];
-
+var Shopping_Bag = [];
+var adding_Item = {id:S{adding}}
 Shopping_Bag.push
