@@ -88,5 +88,6 @@ display: grid;
   background-color: #D62828;
   border: 0px;
   padding: 5px;
-  bor
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
