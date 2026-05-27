@@ -38,5 +38,12 @@ console.log(Recommend);
 Recommend.forEach(Recommended_print);
 
 function Recommended_print(){
-    RECOMMNEDED_ITEMS_OUTPUT.innerHTML += ""
+    RECOMMNEDED_ITEMS_OUTPUT.innerHTML += `<div class="itme-1">
+                <img src="Banner Img/Classic Burger.jpeg" alt="Classic Burger">
+                <div class="item_info">
+                    <h2 class="item_Name">Classic Burger</h2>
+                    <h2 class="item_Price">$5</h2>
+                </div>
+                <button class=" Add_To_Cart_Button">Add To Cart</button>
+            </div>`
 }
