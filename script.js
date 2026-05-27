@@ -53,7 +53,7 @@ function Recommended_print(){
 
 
 // Cart Array
-var Shopping_Bag = {};
+var Shopping_Bag = [];
 
 function Add_To_Cart_Function (Button_ID) {
     console.log(Button_ID);
