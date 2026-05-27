@@ -48,6 +48,14 @@ display: grid;
   text-align: center;
 }
 
+.Recommended_items_containor img{
+  height:300px;
+  width: 250px;
+  border-radius: 5px;
+  margin-top: 5px;
+
+}
+
 .container img{
   max-height:300px;
   max-width: 250px;
