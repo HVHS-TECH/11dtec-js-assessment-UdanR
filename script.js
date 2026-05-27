@@ -38,5 +38,5 @@ console.log(Recommend);
 Recommend.forEach(Recommended_print);
 
 function Recommended_print(){
-    RECOMMNEDED_ITEMS_OUTPUT.innerHTML =
+    RECOMMNEDED_ITEMS_OUTPUT.innerHTML = <div></div>
 }
