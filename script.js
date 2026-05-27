@@ -31,11 +31,12 @@ var Desserts = foodItems.filter(product => product.category === 'Desserts');
 
 console.log(Desserts);
 
-const Recommended_list = document.getElementById("Recommended_items");
+const RECOMMNEDED_ITEMS_OUTPUT = document.getElementById("Recommended_items");
 var Recommend = foodItems.filter(product => product.recommend === true);
 console.log(Recommend);
 
 Recommend.forEach(Recommended_print);
 
 function Recommended_print(){
+    RECOMMNEDED_ITEMS_OUTPUT.innerHTML =
 }
