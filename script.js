@@ -31,5 +31,4 @@ var Desserts = foodItems.filter(product => product.category === 'Desserts');
 console.log(Desserts);
 
 var Recommend = foodItems.filter(product => product.recommend === true);
-
 console.log(Recommend);
