@@ -4,6 +4,7 @@ display: grid;
     "itme-1 itme-2 itme-3"
     "itme-4 itme-5 itme-6";
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   gap: 3px;
   background-color: transparent;
   padding: 5px;
@@ -18,7 +19,33 @@ display: grid;
 }
 
 .Recommended_items_containor div.itme-1 {
+  grid-area: itme-1;
+  text-align: center;
+}
 
+.Recommended_items_containor div.itme-2 {
+  grid-area: itme-2;
+  text-align: center;
+}
+
+.Recommended_items_containor div.itme-3 {
+  grid-area: itme-3;
+  text-align: center;
+}
+
+.Recommended_items_containor div.itme-4 {
+  grid-area: itme-4;
+  text-align: center;
+}
+
+.Recommended_items_containor div.itme-5 {
+  grid-area: itme-5;
+  text-align: center;
+}
+
+.Recommended_items_containor div.itme-6 {
+  grid-area: itme-6;
+  text-align: center;
 }
 
 .Recommended_items_containor img{
