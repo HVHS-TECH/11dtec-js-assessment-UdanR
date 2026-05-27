@@ -23,5 +23,9 @@ var foodItems = [
   { id: 121, category: 'Desserts' ,item: 'Cookie', price: '$3', img: 'Cookie.png'}
 ];
 
-let choice = foodItems.find(product => product.id === 101);
+var choice = foodItems.find(product => product.id === 101);
 console.log(choice);
+
+var Desserts = foodItems.filter(product => product.category === 'Desserts');
+
+console.log(Desserts);
