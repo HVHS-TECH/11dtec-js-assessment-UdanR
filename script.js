@@ -50,6 +50,9 @@ function Recommended_print(){
             reco_Item_Num = reco_Item_Num + 1;
 }
 
-function Add_To_Cart_Button(){
-    
-}
+
+
+// Cart Array
+var Shopping_Bag = [{}];
+
+Shopping_Bag.push
