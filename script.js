@@ -58,6 +58,4 @@ var Shopping_Bag = [];
 function Add_To_Cart_Function (Button_ID) {
     console.log(Button_ID);
     Shopping_Bag.push (Button_ID)
-
-
 }
