@@ -54,5 +54,5 @@ function Recommended_print(){
 
 // Cart Array
 var Shopping_Bag = [];
-var adding_Item = {id:S{adding}}
+var adding_Item = {id:${adding_Item_ID}, price:}
 Shopping_Bag.push
