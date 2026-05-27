@@ -1,9 +1,9 @@
 .Recommended_items_containor{
 display: grid;
   grid-template-areas:
-    "itme-1 itme-2 itme-3"
-    "itme-4 itme-5 itme-6";
-  grid-template-columns: 1fr 1fr 1fr;
+    "itme-1 itme-2 itme-3 item-7"
+    "itme-4 itme-5 itme-6 item-8";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 3px;
   background-color: transparent;
@@ -45,6 +45,16 @@ display: grid;
 
 .Recommended_items_containor div.itme-6 {
   grid-area: itme-6;
+  text-align: center;
+}
+
+.Recommended_items_containor div.itme-7 {
+  grid-area: itme-7;
+  text-align: center;
+}
+
+.Recommended_items_containor div.itme-8 {
+  grid-area: itme-8;
   text-align: center;
 }
 
