@@ -34,11 +34,12 @@ header{
 
 .search-container{
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     background-color: #FFF8F0;
     border-radius: 22px;
     padding: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 20%;
 }
 
 /* Making the search icon and the shopping cart icon white */
