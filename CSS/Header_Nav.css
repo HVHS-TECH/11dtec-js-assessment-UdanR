@@ -18,11 +18,16 @@ header{
     height: 35px;
     width: auto;
     padding-left: 3px;
+    background-color: #1D1D1D;
 }
 
 .Search-Bar{
     border: 0px transparent;
     background-color: #FFF8F0;
+    border: none;
+    outline: none;
+    font-size: medium;
+    padding-left: 10px;
 }
 
 .shopping-cart-icon{
