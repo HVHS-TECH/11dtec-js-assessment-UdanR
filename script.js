@@ -54,8 +54,10 @@ function Recommended_print(){
 
 // Cart Array
 var Shopping_Bag = [];
+
 // Adding items to carts
 function Add_To_Cart_Function (Button_ID) {
     console.log(Button_ID);
-    Shopping_Bag.push (Button_ID)
+    Shopping_Bag.push (Button_ID);
 }
+
