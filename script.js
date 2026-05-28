@@ -63,14 +63,17 @@ function Recommended_print(item, reco_Item_Num){
 
 // Cart Arrays
 var Shopping_Bag = [];
-var cart_Items = {};
+
 
 // Adding items to carts
-function Add_To_Cart_Function (Button_ID, cart_Items) {
+function Add_To_Cart_Function (Button_ID, Shopping_Bag) {
+    var cart_Items = {};
     const ITEM_QUANTITY = document.getElementsByClassName("item_quantity");
     console.log(ITEM_QUANTITY);
     console.log(Button_ID);
-    cart_Items.newItem = "Button_ID";
+    cart_Items.id = Button_ID;
+    cart_Items.quantity = ITEM_QUANTITY;
+    console.log(cart_Items);
 }
 
 // Adding the total number next to the Shopping cart icon
