@@ -68,6 +68,7 @@ var cart_Items = {};
 // Adding items to carts
 function Add_To_Cart_Function (Button_ID) {
     const ITEM_QUANTITY = document.getElementsByClassName("item_quantity");
+    console.log(ITEM_QUANTITY);
     console.log(Button_ID);
     cart_Items.push (Button_ID);
 }
