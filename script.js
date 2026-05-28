@@ -61,3 +61,4 @@ function Add_To_Cart_Function (Button_ID) {
     Shopping_Bag.push (Button_ID);
 }
 
+const CART_TOTAL_PRICE = document.getElementById("Shopping-cart-price");
