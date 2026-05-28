@@ -70,7 +70,7 @@ function Add_To_Cart_Function (Button_ID, cart_Items) {
     const ITEM_QUANTITY = document.getElementsByClassName("item_quantity");
     console.log(ITEM_QUANTITY);
     console.log(Button_ID);
-    cart_Items.new.item = (Button_ID);
+    cart_Items.newItem = "Button_ID";
 }
 
 // Adding the total number next to the Shopping cart icon
