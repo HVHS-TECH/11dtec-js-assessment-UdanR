@@ -41,18 +41,18 @@ Recommend.forEach(Recommended_print);
 var reco_Item_Num = 1;
 function Recommended_print(item, reco_Item_Num){
         console.log (`<div class="_${reco_Item_Num}">
-                <img src="Images/${item.img}" alt="${item.img}">
+                <img src="Items_IMG/${item.img}" alt="${item.img}">
                 <div class="item_info">
                     <h2 class="item_Name">${item.item}</h2>
-                    <h2 class="item_Price">${item.price}</h2>
+                    <h2 class="item_Price">$ ${item.price}</h2>
                 </div>
                 <button value=${item.id} onclick="Adding price to kart" class=" Add_To_Cart_Button">Add To Cart</button>
             </div>`);
     RECOMMNEDED_ITEMS_OUTPUT.innerHTML += `<div class="_${reco_Item_Num}">
-                <img src="Images/${item.img}" alt="${item.img}">
+                <img src="Items_IMG/${item.img}" alt="${item.img}">
                 <div class="item_info">
                     <h2 class="item_Name">${item.item}</h2>
-                    <h2 class="item_Price">${item.price}</h2>
+                    <h2 class="item_Price">$ ${item.price}</h2>
                 </div>
                 <button value=${item.id} onclick="Adding price to kart" class=" Add_To_Cart_Button">Add To Cart</button>
             </div>`
