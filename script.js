@@ -63,7 +63,7 @@ function Recommended_print(item, reco_Item_Num){
 
 // Cart Arrays
 var Shopping_Bag = [];
-var cart_Items = {};
+var cart_Items = {Id};
 
 // Adding items to carts
 function Add_To_Cart_Function (Button_ID, cart_Items) {
