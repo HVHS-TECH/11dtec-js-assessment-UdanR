@@ -31,6 +31,7 @@ var Desserts = foodItems.filter(product => product.category === 'Desserts');
 
 console.log(Desserts);
 
+// Recommended Food area
 const RECOMMNEDED_ITEMS_OUTPUT = document.getElementById("Recommended_items_containor");
 var Recommend = foodItems.filter(product => product.recommend === true);
 console.log(Recommend);
