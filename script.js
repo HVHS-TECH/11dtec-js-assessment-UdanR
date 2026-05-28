@@ -38,9 +38,8 @@ console.log(Recommend);
 
 Recommend.forEach(Recommended_print);
 
-
-function Recommended_print(item){
-    var reco_Item_Num = 1;
+var reco_Item_Num = 1;
+function Recommended_print(item, reco_Item_Num){
         console.log (`<div class="_${reco_Item_Num}">
                 <img src="Images/${item.img}" alt="${item.img}">
                 <div class="item_info">
