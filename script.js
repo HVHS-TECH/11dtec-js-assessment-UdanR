@@ -106,10 +106,34 @@ function Menu_Item_Selecting_Main_Dished (){
         </div>`
         Item_Class_NUM = Item_Class_NUM + 1;
     }
-
-            
 }
 
+function Menu_Item_Selecting_Sides (){
+    CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML = "";
+
+    var MainDish = foodItems.filter(product => product.category === 'Sides');
+    MainDish.forEach(MainDish_Print);
+    var Item_Class_NUM = 0;
+    function MainDish_Print(item, Item_Class_NUM){
+        console.log (`<div class="itme-${Item_Class_NUM}">
+        <img src="Items_IMG/${item.img}" alt="${item.img}">
+        <div class="item_info">
+            <h2 class="item_Name">${item.item}</h2>
+            <h2 class="item_Price">$ ${item.price}</h2>
+        </div>
+        <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button">Add To Cart</button>
+        </div>`);
+        CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${Item_Class_NUM}">
+        <img src="Items_IMG/${item.img}" alt="${item.img}">
+        <div class="item_info">
+            <h2 class="item_Name">${item.item}</h2>
+            <h2 class="item_Price">$ ${item.price}</h2>
+        </div>
+        <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button">Add To Cart</button>
+        </div>`
+        Item_Class_NUM = Item_Class_NUM + 1;
+    }
+}
 
 
 // Cart Arrays
