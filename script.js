@@ -262,6 +262,8 @@ function Add_To_Cart_Function (Button_ID) {
 var Total_Price = 0
 for (let i = 0; i < Shopping_Bag.length; i++){
     let price_adding = Shopping_Bag[i];
+    
+    Total_Price = Total_Price + thisitem.price
     CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
 }
 const CART_TOTAL_PRICE = document.getElementById("Shopping-cart-price");
