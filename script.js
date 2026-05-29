@@ -250,16 +250,13 @@ var Shopping_Bag = [];
 function Add_To_Cart_Function (Button_ID) {
     
     const ITEM_QUANTITY = document.getElementById("item_quantity_"+Button_ID);
-    const ITEM_Price = document.getElementById("item_Price_"+Button_ID);
-    ITEM_Price.replace("$", "");
     var Quantity = Number(ITEM_QUANTITY.value);
-    console.log(ITEM_Price);
-    var Price = Number(ITEM_Price.value);
+    var choice = foodItems.find(product => product.id === Button_ID);
+    console.log(choice);
+
     console.log(ITEM_QUANTITY);
-    console.log(Button_ID);
-    console.log(Price);
-    
-    Shopping_Bag.push({id: Button_ID, quantity: Quantity, item_price: Price});
+    console.log(Button_ID);    
+    Shopping_Bag.push({id: Button_ID, quantity: Quantity});
     console.log(Shopping_Bag);
 }
 
