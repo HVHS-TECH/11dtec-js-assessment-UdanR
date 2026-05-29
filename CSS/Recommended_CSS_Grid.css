@@ -1,8 +1,8 @@
 .Recommended_items_containor{
 display: grid;
   grid-template-areas:
-    "itme-1 itme-2 itme-3 itme-7 itme-9"
-    "itme-4 itme-5 itme-6 itme-8 itme-10";
+    "itme-1 itme-2 itme-3 itme-4 itme-5"
+    "itme-6 itme-7 itme-8 itme-9 itme-10";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 3px;
@@ -18,57 +18,57 @@ display: grid;
   margin-right: 15px;
 }
 
-.Recommended_items_containor div.itme-1 {
+.Items_containor div.itme-1 {
   grid-area: itme-1;
   text-align: center;
 }
 
-.Recommended_items_containor div.itme-2 {
+.Items_containor div.itme-2 {
   grid-area: itme-2;
   text-align: center;
 }
 
-.Recommended_items_containor div.itme-3 {
+.Items_containor div.itme-3 {
   grid-area: itme-3;
   text-align: center;
 }
 
-.Recommended_items_containor div.itme-4 {
+.Items_containor div.itme-4 {
   grid-area: itme-4;
   text-align: center;
 }
 
-.Recommended_items_containor div.itme-5 {
+.Items_containor div.itme-5 {
   grid-area: itme-5;
   text-align: center;
 }
 
-.Recommended_items_containor div.itme-6 {
+.Items_containor div.itme-6 {
   grid-area: itme-6;
   text-align: center;
 }
 
-.Recommended_items_containor div.itme-7 {
+.Items_containor div.itme-7 {
   grid-area: itme-7;
   text-align: center;
 }
 
-.Recommended_items_containor div.itme-8 {
+.Items_containor div.itme-8 {
   grid-area: itme-8;
   text-align: center;
 }
 
-.Recommended_items_containor div.itme-9 {
+.Items_containor div.itme-9 {
   grid-area: itme-9;
   text-align: center;
 }
 
-.Recommended_items_containor div.itme-10 {
+.Items_containor div.itme-10 {
   grid-area: itme-10;
   text-align: center;
 }
 
-.Recommended_items_containor img{
+.Items_containor img{
   height: auto;
   width: 100%;
   border-radius: 5px;
