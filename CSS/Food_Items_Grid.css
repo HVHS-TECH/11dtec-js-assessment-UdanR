@@ -1,11 +1,11 @@
 .Items_containor{
 display: grid;
   grid-template-areas:
-    "itme-1 itme-2 itme-3 itme-7 itme-9"
-    "itme-4 itme-5 itme-6 itme-8 itme-10"
-    "itme-11 itme-12 itme-13 itme-14 itme-15"
-    "itme-16 itme-17 itme-18 itme-19 itme-20"
-    "itme-21 itme-22 itme-23 itme-24 itme-25";
+    "itme-0 itme-1 itme-2 itme-3 itme-4"
+    "itme-5 itme-6 itme-7 itme-8 itme-9"
+    "itme-10 itme-11 itme-12 itme-13 itme-14"
+    "itme-15 itme-16 itme-17 itme-18 itme-19"
+    "itme-20 itme-21 itme-22 itme-23 itme-24";
 
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -142,7 +142,7 @@ display: grid;
   text-align: center;
 }
 
-.Items_containor div.itme-25 {
+.Items_containor div.itme-0 {
   grid-area: itme-25;
   text-align: center;
 }
