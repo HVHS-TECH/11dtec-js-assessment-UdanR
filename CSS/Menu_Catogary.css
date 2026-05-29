@@ -1,6 +1,15 @@
 .Menu_Item_Catagory{
+    display: flex;
+}
+
+.Menu_Item_Catagory > div{
     display: grid;
-    grid-template-areas: ;
+    grid-template-areas: 
+    "Menu_Item_Catagory_IMG"
+    "Menu_Item_Catagory_Text";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
 }
 
 .Menu_Item_Catagory > div > img {
