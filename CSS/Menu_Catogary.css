@@ -21,7 +21,7 @@
     object-fit: cover;
 }
 
-.Menu_Item_Catagory > div:hover {
+.Menu_Item_Catagory > div:hover + .Menu_Item_Catagory > div > img {
     transform: translateY(-10px);
     transform: scale(1.1);
     transition: all ease 0.5s;
