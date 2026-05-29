@@ -54,6 +54,7 @@ function Recommended_print(item, reco_Item_Num){
                     <h2 class="item_Name">${item.item}</h2>
                     <h2 class="item_Price">$ ${item.price}</h2>
                 </div>
+                <input type="number" class="item_quantity_choosing" id="item_quantity_${item.id}">
                 <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button">Add To Cart</button>
             </div>`
             reco_Item_Num = reco_Item_Num +1;
