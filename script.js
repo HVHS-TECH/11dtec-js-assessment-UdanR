@@ -59,10 +59,10 @@ function Recommended_print(item, reco_Item_Num){
             reco_Item_Num = reco_Item_Num + 1;
 }
 
-
+var Normal_Item_Num = 1;
 for (let i = 0; i < foodItems.length; 1++){
     var thisitem = foodItems[i];
-        RECOMMNEDED_ITEMS_OUTPUT.innerHTML += `<div class="_${reco_Item_Num}">
+        RECOMMNEDED_ITEMS_OUTPUT.innerHTML += `<div class="_${Normal_Item_Num}">
         <img src="Items_IMG/${item.img}" alt="${item.img}">
         <div class="item_info">
             <h2 class="item_Name">${item.item}</h2>
@@ -70,7 +70,7 @@ for (let i = 0; i < foodItems.length; 1++){
         </div>
         <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button">Add To Cart</button>
         </div>`
-            reco_Item_Num = reco_Item_Num + 1;
+            Normal_Item_Num = Normal_Item_Num + 1;
 
 }
 
