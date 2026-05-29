@@ -1,5 +1,7 @@
 .Menu_Item_Catagory{
     display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
 }
 
 .Menu_Item_Catagory > div{
@@ -17,4 +19,5 @@
     width: auto;
     border-radius: 50%;
     object-fit: cover;
+    margin
 }
