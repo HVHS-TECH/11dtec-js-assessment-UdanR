@@ -15,15 +15,18 @@
 }
 
 .Menu_Item_Catagory > div > img {
-    height: 50px;
+    height: 100px;
     width: auto;
     border-radius: 50%;
     object-fit: cover;
 }
 
+.Menu_Item_Catagory > div:hover {
+    transform: translateY(-10px);
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+
 .Menu_Item_Catagory > div > a {
-    height: 50px;
-    width: auto;
-    border-radius: 50%;
-    object-fit: cover;
+    padding-top: 10px;
 }
