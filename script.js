@@ -258,16 +258,19 @@ function Add_To_Cart_Function (Button_ID) {
     console.log(Button_ID);    
     Shopping_Bag.push({id: Button_ID, quantity: Quantity});
     console.log(Shopping_Bag);
-}
+
 
 // Adding the total number next to the Shopping cart icon
 var Total_Price = 0;
 for (let i = 0; i < Shopping_Bag.length; i++){
-    let price_adding = Shopping_Bag[i];
+    let price_adding_item = Shopping_Bag[i];
+    var choice = foodItems.find(product => product.id === price_adding_item.id);
+    console.log(choice);
 
     Total_Price = Total_Price + (thisitem.price*thisitem.quantity)
     CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
     console.log("Total_Price = $" + Total_Price);
+}
 }
 const CART_TOTAL_PRICE = document.getElementById("Shopping-cart-price");
 CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
