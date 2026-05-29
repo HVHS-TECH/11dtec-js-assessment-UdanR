@@ -87,22 +87,22 @@ function Menu_Item_Selecting_Main_Dished (){
     var MainDish = foodItems.filter(product => product.category === 'main-dish');
     MainDish.forEach(MainDish_Print);
     var Item_Class_NUM = 0;
-    function MainDish_Print(){
+    function MainDish_Print(item){
         console.log (`<div class="itme-${Item_Class_NUM}">
-        <img src="Items_IMG/${thisitem.img}" alt="${thisitem.img}">
+        <img src="Items_IMG/${item.img}" alt="${item.img}">
         <div class="item_info">
-            <h2 class="item_Name">${thisitem.item}</h2>
-            <h2 class="item_Price">$ ${thisitem.price}</h2>
+            <h2 class="item_Name">${item.item}</h2>
+            <h2 class="item_Price">$ ${item.price}</h2>
         </div>
-        <button value=${thisitem.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button">Add To Cart</button>
+        <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button">Add To Cart</button>
         </div>`);
         CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${Normal_Item_Num}">
-        <img src="Items_IMG/${thisitem.img}" alt="${thisitem.img}">
+        <img src="Items_IMG/${item.img}" alt="${item.img}">
         <div class="item_info">
-            <h2 class="item_Name">${thisitem.item}</h2>
-            <h2 class="item_Price">$ ${thisitem.price}</h2>
+            <h2 class="item_Name">${item.item}</h2>
+            <h2 class="item_Price">$ ${item.price}</h2>
         </div>
-        <button value=${thisitem.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button">Add To Cart</button>
+        <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button">Add To Cart</button>
         </div>`
         Item_Class_NUM = Item_Class_NUM + 1;
     }
@@ -110,8 +110,6 @@ function Menu_Item_Selecting_Main_Dished (){
             
 }
 
-
-}
 
 
 // Cart Arrays
