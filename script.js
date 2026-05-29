@@ -81,6 +81,7 @@ for (let i = 0; i < foodItems.length; i++ ){
             
 }
 
+// When All is pressed
 function Menu_Item_Selecting_All (){
     CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML = "";
 
@@ -107,7 +108,8 @@ function Menu_Item_Selecting_All (){
 }
 }
 
-function Menu_Item_Selecting_Main_Dished (){
+// When Main Dishes is pressed
+function Menu_Item_Selecting_Main_Dishes (){
     CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML = "";
 
     var MainDish = foodItems.filter(product => product.category === 'main-dish');
@@ -134,6 +136,7 @@ function Menu_Item_Selecting_Main_Dished (){
     }
 }
 
+// When Sides is pressed
 function Menu_Item_Selecting_Sides (){
     CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML = "";
 
@@ -161,6 +164,7 @@ function Menu_Item_Selecting_Sides (){
     }
 }
 
+// When Drinks is pressed
 function Menu_Item_Selecting_Drinks (){
     CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML = "";
 
@@ -188,6 +192,7 @@ function Menu_Item_Selecting_Drinks (){
     }
 }
 
+// When Desserts is pressed
 function Menu_Item_Selecting_Desserts (){
     CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML = "";
 
