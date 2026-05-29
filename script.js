@@ -265,6 +265,7 @@ for (let i = 0; i < Shopping_Bag.length; i++){
 
     Total_Price = Total_Price + (thisitem.price*thisitem.quantity)
     CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
+    console.log("Total_Price = $" + Total_Price);
 }
 const CART_TOTAL_PRICE = document.getElementById("Shopping-cart-price");
 CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
