@@ -19,5 +19,11 @@
     width: auto;
     border-radius: 50%;
     object-fit: cover;
-    margin
+}
+
+.Menu_Item_Catagory > div > a {
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+    object-fit: cover;
 }
