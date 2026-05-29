@@ -1,8 +1,8 @@
 .Recommended_items_containor{
 display: grid;
   grid-template-areas:
-    "itme-1 itme-2 itme-3 itme-4 itme-5"
-    "itme-6 itme-7 itme-8 itme-9 itme-10";
+    "itme-1 itme-2 itme-3 itme-7 itme-9"
+    "itme-4 itme-5 itme-6 itme-8 itme-10";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 3px;
