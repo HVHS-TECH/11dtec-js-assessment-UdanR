@@ -63,7 +63,7 @@ const CHOSEN_FOOD_ITEM_OUTPUT_AREA = document.getElementById("Chosen_Food_Item_A
 var Normal_Item_Num = 1;
 for (let i = 0; i < foodItems.length; i++ ){
     var thisitem = foodItems[i];
-        console.log (`<div class="_${Normal_Item_Num}">
+        console.log (`<div class="itme-${i}">
         <img src="Items_IMG/${thisitem.img}" alt="${thisitem.img}">
         <div class="item_info">
             <h2 class="item_Name">${thisitem.item}</h2>
