@@ -97,5 +97,9 @@ display: grid;
 }
 
 .item_quantity_choosing{
-  
+  background-color: #4f4f4f;
+  border: 0px;
+  width: 10%;
+  color: #FCBF49;
+  font-size: 13px;
 }
