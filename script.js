@@ -227,13 +227,12 @@ var Shopping_Bag = [];
 
 // Adding items to carts
 function Add_To_Cart_Function (Button_ID, Shopping_Bag) {
-    var cart_Items = {};
+    
     const ITEM_QUANTITY = document.getElementById("item_quantity_"+Button_ID.value);
     console.log(ITEM_QUANTITY);
     console.log(Button_ID);
-    cart_Items.id = Button_ID;
-    cart_Items.quantity = ITEM_QUANTITY;
-    console.log(cart_Items);
+    Shopping_Bag.push({id: Button_ID, Quantity: ITEM_QUANTITY});
+    console.log(Shopping_Bag);
 }
 
 // Adding the total number next to the Shopping cart icon
