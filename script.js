@@ -232,7 +232,7 @@ function Add_To_Cart_Function (Button_ID, Shopping_Bag) {
     var Quantity = Number(ITEM_QUANTITY.value)
     console.log(ITEM_QUANTITY);
     console.log(Button_ID);
-    Shopping_Bag.push({id: Button_ID, quantity: ITEM_QUANTITY});
+    Shopping_Bag.push({id: Button_ID, quantity: Quantity});
     console.log(Shopping_Bag);
 }
 
