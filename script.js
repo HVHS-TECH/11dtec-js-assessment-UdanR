@@ -54,8 +54,10 @@ function Recommended_print(item, reco_Item_Num){
                     <h2 class="item_Name">${item.item}</h2>
                     <h2 class="item_Price">$ ${item.price}</h2>
                 </div>
+                <div class="Submit_Info">
                 <input type="number" value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
                 <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button">Add To Cart</button>
+                </div>
             </div>`
             reco_Item_Num = reco_Item_Num +1;
 }
@@ -77,8 +79,10 @@ for (let i = 0; i < foodItems.length; i++ ){
             <h2 class="item_Name">${thisitem.item}</h2>
             <h2 class="item_Price">$ ${thisitem.price}</h2>
         </div>
+        <div class="Submit_Info">
         <input type="number" value=1 class="item_quantity_choosing" id="item_quantity_${thisitem.id}">
         <button value=${thisitem.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button">Add To Cart</button>
+        </div>
         </div>`
             
 }
@@ -104,8 +108,10 @@ function Menu_Item_Selecting_All (){
             <h2 class="item_Name">${thisitem.item}</h2>
             <h2 class="item_Price">$ ${thisitem.price}</h2>
         </div>
+        <div class="Submit_Info">
         <input type="number" value=1 class="item_quantity_choosing" id="item_quantity_${thisitem.id}">
         <button value=${thisitem.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button">Add To Cart</button>
+        </div>
         </div>`
             
 }
@@ -133,8 +139,10 @@ function Menu_Item_Selecting_Main_Dishes (){
             <h2 class="item_Name">${item.item}</h2>
             <h2 class="item_Price">$ ${item.price}</h2>
         </div>
+        <div class="Submit_Info">
         <input type="number" value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
         <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button">Add To Cart</button>
+        </div>
         </div>`
         Item_Class_NUM = Item_Class_NUM + 1;
     }
@@ -162,8 +170,10 @@ function Menu_Item_Selecting_Sides (){
             <h2 class="item_Name">${item.item}</h2>
             <h2 class="item_Price">$ ${item.price}</h2>
         </div>
+        <div class="Submit_Info">
         <input type="number" value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
         <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button">Add To Cart</button>
+        </div>
         </div>`
         Item_Class_NUM = Item_Class_NUM + 1;
     }
@@ -191,8 +201,10 @@ function Menu_Item_Selecting_Drinks (){
             <h2 class="item_Name">${item.item}</h2>
             <h2 class="item_Price">$ ${item.price}</h2>
         </div>
+        <div class="Submit_Info">
         <input type="number" value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
         <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button">Add To Cart</button>
+        </div>
         </div>`
         Item_Class_NUM = Item_Class_NUM + 1;
     }
@@ -220,8 +232,10 @@ function Menu_Item_Selecting_Desserts (){
             <h2 class="item_Name">${item.item}</h2>
             <h2 class="item_Price">$ ${item.price}</h2>
         </div>
+        <div class="Submit_Info">
         <input type="number" value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
         <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button">Add To Cart</button>
+        </div>
         </div>`
         Item_Class_NUM = Item_Class_NUM + 1;
     }
