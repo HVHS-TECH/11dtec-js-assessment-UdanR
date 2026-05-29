@@ -60,10 +60,10 @@ function Recommended_print(item, reco_Item_Num){
 }
 
 
-var All_Food_Catagory = foodItems.filter(product => product.recommend === true);
-console.log(Recommend);
-
-Recommend.forEach(Recommended_print);
+for (let i = 0; i < foodItems.length; 1++){
+    var thisitem = foodItems[i];
+    
+}
 
 
 
