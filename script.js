@@ -228,7 +228,7 @@ var Shopping_Bag = [];
 // Adding items to carts
 function Add_To_Cart_Function (Button_ID, Shopping_Bag) {
     var cart_Items = {};
-    const ITEM_QUANTITY = document.getElementById("item_quantitya_"+Button_ID.value);
+    const ITEM_QUANTITY = document.getElementById("item_quantity_"+Button_ID.value);
     console.log(ITEM_QUANTITY);
     console.log(Button_ID);
     cart_Items.id = Button_ID;
