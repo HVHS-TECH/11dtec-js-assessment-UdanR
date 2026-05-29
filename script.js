@@ -88,7 +88,7 @@ function Menu_Item_Selecting_Main_Dished (){
     MainDish.forEach(MainDish_Print);
     var Item_Class_NUM = 0;
     function MainDish_Print(){
-        console.log (`<div class="itme-${i}">
+        console.log (`<div class="itme-${Item_Class_NUM}">
         <img src="Items_IMG/${thisitem.img}" alt="${thisitem.img}">
         <div class="item_info">
             <h2 class="item_Name">${thisitem.item}</h2>
@@ -104,11 +104,7 @@ function Menu_Item_Selecting_Main_Dished (){
         </div>
         <button value=${thisitem.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button">Add To Cart</button>
         </div>`
-        if (Item_Class_NUM > 1) { 
-            Item_Class_NUM = Item_Class_NUM + 1
-        } else {
-                
-            }
+        Item_Class_NUM = Item_Class_NUM + 1;
     }
 
             
