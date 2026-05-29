@@ -56,12 +56,12 @@ function Recommended_print(item, reco_Item_Num){
                 </div>
                 <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button">Add To Cart</button>
             </div>`
-            reco_Item_Num = reco_Item_Num + 1;
+            reco_Item_Num = reco_Item_Num +1;
 }
 
 const CHOSEN_FOOD_ITEM_OUTPUT_AREA = document.getElementById("Chosen_Food_Item_Area");
 var Normal_Item_Num = 1;
-for (let i = 0; i < foodItems.length; 1++){
+for (let i = 0; i < foodItems.length; i++){
     var thisitem = foodItems[i];
         CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${Normal_Item_Num}">
         <img src="Items_IMG/${item.img}" alt="${item.img}">
