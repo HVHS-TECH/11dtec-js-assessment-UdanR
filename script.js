@@ -59,10 +59,11 @@ function Recommended_print(item, reco_Item_Num){
             reco_Item_Num = reco_Item_Num + 1;
 }
 
+const CHOSEN_FOOD_ITEM_OUTPUT_AREA = document.getElementById("Chosen_Food_Item_Area");
 var Normal_Item_Num = 1;
 for (let i = 0; i < foodItems.length; 1++){
     var thisitem = foodItems[i];
-        RECOMMNEDED_ITEMS_OUTPUT.innerHTML += `<div class="_${Normal_Item_Num}">
+        CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${Normal_Item_Num}">
         <img src="Items_IMG/${item.img}" alt="${item.img}">
         <div class="item_info">
             <h2 class="item_Name">${item.item}</h2>
