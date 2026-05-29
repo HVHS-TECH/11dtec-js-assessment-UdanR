@@ -81,7 +81,37 @@ for (let i = 0; i < foodItems.length; i++ ){
             
 }
 
-function 
+function Menu_Item_Selecting_Main_Dished (){
+    CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML = "";
+
+    var MainDish = foodItems.filter(product => product.category === 'main-dish');
+    MainDish.forEach(MainDish_Print);
+    var Item_Class_NUM = 0;
+    function MainDish_Print(){
+        console.log (`<div class="itme-${i}">
+        <img src="Items_IMG/${thisitem.img}" alt="${thisitem.img}">
+        <div class="item_info">
+            <h2 class="item_Name">${thisitem.item}</h2>
+            <h2 class="item_Price">$ ${thisitem.price}</h2>
+        </div>
+        <button value=${thisitem.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button">Add To Cart</button>
+        </div>`);
+        CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${Normal_Item_Num}">
+        <img src="Items_IMG/${thisitem.img}" alt="${thisitem.img}">
+        <div class="item_info">
+            <h2 class="item_Name">${thisitem.item}</h2>
+            <h2 class="item_Price">$ ${thisitem.price}</h2>
+        </div>
+        <button value=${thisitem.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button">Add To Cart</button>
+        </div>`
+        if Item_Class_NUM > 1{ Item_Class_NUM =}
+    }
+
+            
+}
+
+
+}
 
 
 // Cart Arrays
