@@ -52,7 +52,7 @@ function Recommended_print(item, reco_Item_Num){
                 <img src="Items_IMG/${item.img}" alt="${item.img}">
                 <div class="item_info">
                     <h2 class="item_Name">${item.item}</h2>
-                    <h2 class="item_Price">$ ${item.price}</h2>
+                    <h2 class="item_Price_${item.id}">$ ${item.price}</h2>
                 </div>
                 <div class="Submit_Info">
                 <input type="number" value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
@@ -77,7 +77,7 @@ for (let i = 0; i < foodItems.length; i++ ){
         <img src="Items_IMG/${thisitem.img}" alt="${thisitem.img}">
         <div class="item_info">
             <h2 class="item_Name">${thisitem.item}</h2>
-            <h2 class="item_Price">$ ${thisitem.price}</h2>
+            <h2 class="item_Price_${thisitem.id}">$ ${thisitem.price}</h2>
         </div>
         <div class="Submit_Info">
         <input type="number" value=1 class="item_quantity_choosing" id="item_quantity_${thisitem.id}">
@@ -106,7 +106,7 @@ function Menu_Item_Selecting_All (){
         <img src="Items_IMG/${thisitem.img}" alt="${thisitem.img}">
         <div class="item_info">
             <h2 class="item_Name">${thisitem.item}</h2>
-            <h2 class="item_Price">$ ${thisitem.price}</h2>
+            <h2 class="item_Price_${thisitem.id}">$ ${thisitem.price}</h2>
         </div>
         <div class="Submit_Info">
         <input type="number" value=1 class="item_quantity_choosing" id="item_quantity_${thisitem.id}">
@@ -137,7 +137,7 @@ function Menu_Item_Selecting_Main_Dishes (){
         <img src="Items_IMG/${item.img}" alt="${item.img}">
         <div class="item_info">
             <h2 class="item_Name">${item.item}</h2>
-            <h2 class="item_Price">$ ${item.price}</h2>
+            <h2 class="item_Price_${item.id}">$ ${item.price}</h2>
         </div>
         <div class="Submit_Info">
         <input type="number" value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
@@ -168,7 +168,7 @@ function Menu_Item_Selecting_Sides (){
         <img src="Items_IMG/${item.img}" alt="${item.img}">
         <div class="item_info">
             <h2 class="item_Name">${item.item}</h2>
-            <h2 class="item_Price">$ ${item.price}</h2>
+            <h2 class="item_Price_${item.id}">$ ${item.price}</h2>
         </div>
         <div class="Submit_Info">
         <input type="number" value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
@@ -199,7 +199,7 @@ function Menu_Item_Selecting_Drinks (){
         <img src="Items_IMG/${item.img}" alt="${item.img}">
         <div class="item_info">
             <h2 class="item_Name">${item.item}</h2>
-            <h2 class="item_Price">$ ${item.price}</h2>
+            <h2 class="item_Price_${item.id}">$ ${item.price}</h2>
         </div>
         <div class="Submit_Info">
         <input type="number" value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
@@ -230,7 +230,7 @@ function Menu_Item_Selecting_Desserts (){
         <img src="Items_IMG/${item.img}" alt="${item.img}">
         <div class="item_info">
             <h2 class="item_Name">${item.item}</h2>
-            <h2 class="item_Price">$ ${item.price}</h2>
+            <h2 class="item_Price_${item.id}">$ ${item.price}</h2>
         </div>
         <div class="Submit_Info">
         <input type="number" value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
@@ -250,11 +250,14 @@ var Shopping_Bag = [];
 function Add_To_Cart_Function (Button_ID) {
     
     const ITEM_QUANTITY = document.getElementById("item_quantity_"+Button_ID);
-    var Quantity = Number(ITEM_QUANTITY.value)
+    const ITEM_Price = document.getElementById("item_Price_"+Button_ID);
+    var Quantity = Number(ITEM_QUANTITY.value);
+    var Price = Number(ITEM_Price.value);
     console.log(ITEM_QUANTITY);
     console.log(Button_ID);
+    console.log(Price);
     
-    Shopping_Bag.push({id: Button_ID, quantity: Quantity});
+    Shopping_Bag.push({id: Button_ID, quantity: Quantity, item_price: Price});
     console.log(Shopping_Bag);
 }
 
