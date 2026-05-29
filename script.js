@@ -96,7 +96,7 @@ function Menu_Item_Selecting_Main_Dished (){
         </div>
         <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button">Add To Cart</button>
         </div>`);
-        CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${Normal_Item_Num}">
+        CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${Item_Class_NUM}">
         <img src="Items_IMG/${item.img}" alt="${item.img}">
         <div class="item_info">
             <h2 class="item_Name">${item.item}</h2>
