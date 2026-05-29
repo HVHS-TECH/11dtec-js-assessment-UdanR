@@ -1,3 +1,7 @@
+.recommond{
+  align-items: center;
+}
+
 .Recommended_items_containor{
 display: grid;
   grid-template-areas:
