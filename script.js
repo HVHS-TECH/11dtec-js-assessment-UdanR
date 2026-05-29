@@ -46,7 +46,7 @@ function Recommended_print(item, reco_Item_Num){
                     <h2 class="item_Name">${item.item}</h2>
                     <h2 class="item_Price">$ ${item.price}</h2>
                 </div>
-                <button value=${item.id} onclick="Adding price to kart" class=" Add_To_Cart_Button">Add To Cart</button>
+                <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class=" Add_To_Cart_Button">Add To Cart</button>
             </div>`);
     RECOMMNEDED_ITEMS_OUTPUT.innerHTML += `<div class="_${reco_Item_Num}">
                 <img src="Items_IMG/${item.img}" alt="${item.img}">
