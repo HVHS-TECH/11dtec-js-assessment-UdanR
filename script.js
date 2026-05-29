@@ -59,7 +59,6 @@ function Recommended_print(item, reco_Item_Num){
             reco_Item_Num = reco_Item_Num +1;
 }
 
-<<<<<<< HEAD
 const CHOSEN_FOOD_ITEM_OUTPUT_AREA = document.getElementById("Chosen_Food_Item_Area");
 var Normal_Item_Num = 1;
 for (let i = 0; i < foodItems.length; i++, ){
@@ -75,13 +74,6 @@ for (let i = 0; i < foodItems.length; i++, ){
             Normal_Item_Num = Normal_Item_Num + 1;
 
 }
-=======
-
-var All_Food_Catagory = foodItems.filter(product => product.recommend === true);
-console.log(Recommend);
-
-Recommend.forEach(Recommended_print);
->>>>>>> parent of c356d99 (May 29, 2026, 8:31 AM)
 
 
 
