@@ -104,7 +104,11 @@ function Menu_Item_Selecting_Main_Dished (){
         </div>
         <button value=${thisitem.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button">Add To Cart</button>
         </div>`
-        if Item_Class_NUM > 1{ Item_Class_NUM =}
+        if (Item_Class_NUM > 1) { 
+            Item_Class_NUM = Item_Class_NUM + 1
+        } else {
+                
+            }
     }
 
             
