@@ -18,57 +18,57 @@ display: grid;
   margin-right: 15px;
 }
 
-.Items_containor div.itme-1 {
+.Recommended_items_containor div.itme-1 {
   grid-area: itme-1;
   text-align: center;
 }
 
-.Items_containor div.itme-2 {
+.Recommended_items_containor div.itme-2 {
   grid-area: itme-2;
   text-align: center;
 }
 
-.Items_containor div.itme-3 {
+.Recommended_items_containor div.itme-3 {
   grid-area: itme-3;
   text-align: center;
 }
 
-.Items_containor div.itme-4 {
+.Recommended_items_containor div.itme-4 {
   grid-area: itme-4;
   text-align: center;
 }
 
-.Items_containor div.itme-5 {
+.Recommended_items_containor div.itme-5 {
   grid-area: itme-5;
   text-align: center;
 }
 
-.Items_containor div.itme-6 {
+.Recommended_items_containor div.itme-6 {
   grid-area: itme-6;
   text-align: center;
 }
 
-.Items_containor div.itme-7 {
+.Recommended_items_containor div.itme-7 {
   grid-area: itme-7;
   text-align: center;
 }
 
-.Items_containor div.itme-8 {
+.Recommended_items_containor div.itme-8 {
   grid-area: itme-8;
   text-align: center;
 }
 
-.Items_containor div.itme-9 {
+.Recommended_items_containor div.itme-9 {
   grid-area: itme-9;
   text-align: center;
 }
 
-.Items_containor div.itme-10 {
+.Recommended_items_containor div.itme-10 {
   grid-area: itme-10;
   text-align: center;
 }
 
-.Items_containor img{
+.Recommended_items_containor img{
   height: auto;
   width: 100%;
   border-radius: 5px;
