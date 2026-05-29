@@ -61,7 +61,7 @@ function Recommended_print(item, reco_Item_Num){
 
 const CHOSEN_FOOD_ITEM_OUTPUT_AREA = document.getElementById("Chosen_Food_Item_Area");
 var Normal_Item_Num = 1;
-for (let i = 0; i < foodItems.length; i++, ){
+for (let i = 0; i < foodItems.length; i++ ){
     var thisitem = foodItems[i];
         CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${Normal_Item_Num}">
         <img src="Items_IMG/${thisitem.img}" alt="${thisitem.img}">
