@@ -1,6 +1,6 @@
-.Menu_Item_Catagory > div{
-    position: relative;
-
+.Menu_Item_Catagory{
+    display: grid;
+    grid-template-areas: ;
 }
 
 .Menu_Item_Catagory > div > img {
@@ -8,8 +8,4 @@
     width: auto;
     border-radius: 50%;
     object-fit: cover;
-}
-
-.Menu_Item_Catagory > a {
-    position: absolute
 }
