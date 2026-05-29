@@ -259,5 +259,8 @@ function Add_To_Cart_Function (Button_ID) {
 }
 
 // Adding the total number next to the Shopping cart icon
+for (let i = 0; i < Shopping_Bag.length; i++){
+    
+}
 const CART_TOTAL_PRICE = document.getElementById("Shopping-cart-price");
-CART_TOTAL_PRICE.innerHTML = "$ " + Total_Price;
+CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
