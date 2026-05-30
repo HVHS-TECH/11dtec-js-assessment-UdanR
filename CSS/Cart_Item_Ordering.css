@@ -1,12 +1,14 @@
 .cart_Chosen_Items{
     background-color: #1D1D1D;
-    align-items: flex-start;
 }
 
 .cart_Chosen_Items > div{
     display: flex;
+}
+
+.chosen_Item_Info{
     justify-content: space-evenly;
-    gap: 101px;
+
 }
 
 .chosen_Item_IMG{
