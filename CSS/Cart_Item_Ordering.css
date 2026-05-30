@@ -11,23 +11,19 @@
 
 }
 
-.chosen_Item_IMG{
-    justify-content: flex-start;
-}
-
 .chosen_Item_IMG > img{
   height: auto;
   width: 15%;
   border-radius: 5px;
-  margin-top: 0px;
-
+  margin: 5px;
 }
 
 .item_Name{
   color: #FFFFFF;
 }
 
-.item_Price{
+.item_Price,
+.Chosen_Item_Total{
   color: #FCBF49;
 }
 
