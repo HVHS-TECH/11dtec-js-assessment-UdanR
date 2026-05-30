@@ -30,6 +30,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 10px;
 }
 
 .Item_Quantity{
@@ -45,11 +46,12 @@
 }
 
 .chosen_Item_IMG > img{
-  height: auto;
-  width: 20%;
+  height: 176px;
+  width: 176px;
   border-radius: 5px;
   object-fit: cover;
   margin: 5px;
+  padding: 0;
 }
 
 .item_Name{
