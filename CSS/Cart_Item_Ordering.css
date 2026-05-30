@@ -30,8 +30,11 @@
   justify-content: center;
 }
 
-display:flex;
-
+.Item_Total{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .chosen_Item_IMG > img{
   height: auto;
