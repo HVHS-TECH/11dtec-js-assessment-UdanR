@@ -1,11 +1,12 @@
 .cart_Chosen_Items{
     background-color: white;
-    margin
+    border-radius: 5px;
     width: 80%;
     display: flex;
     flex-direction: column;
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 10px;
 }
 
 .cart_Chosen_Items > div{
@@ -14,7 +15,7 @@
     background: #1D1D1D;
     border-radius: 20px;
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px;
 }
 
 .chosen_Item_Info{
