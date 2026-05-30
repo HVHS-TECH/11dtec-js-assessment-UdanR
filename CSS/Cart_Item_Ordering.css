@@ -25,6 +25,14 @@
   justify-content: center;
 }
 
+.Item_Quantity{
+  display: flex;
+  justify-content: center;
+}
+
+display:flex;
+
+
 .chosen_Item_IMG > img{
   height: auto;
   width: 15%;
