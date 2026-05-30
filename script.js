@@ -286,4 +286,5 @@ for (let i = 0; i < Shopping_Bag.length; i++){
 }
 const CART_TOTAL_PRICE = document.getElementById("Shopping-cart-price");
 
-sessionStorage.setItem
+sessionStorage.setItem('buying_Items', JSON.stringify(Shopping_Bag));
+console.log(sessionStorage.getItem('buying_Items'));
