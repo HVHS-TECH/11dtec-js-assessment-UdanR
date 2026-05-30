@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="CSS/Header_Nav.css">
+    <link rel="stylesheet" href="CSS/Recommended.css">
+    <link rel="stylesheet" href="CSS/Menu_Catogary.css">
+    <link rel="stylesheet" href="CSS/Food_Items_Grid.css">
+<title>Street Bites</title>
+<style>html{
+scroll-behavior: smooth;
+}</style>
+</head>
+<body>
+    <header>
+        <h1 href="index.html" class="Logo">Street Bites</h1>
+        <div class="search-container">
+            <input type="text" class="Search-Bar" id="searchBar" placeholder="Search Food">
+            <div class="suggestions" id="suggestions"></div>
+            <img src="search.png" class="search-icon" alt="search-icon">
+        </div>
+        <div class="shopping-cart">
+            <img src="shopping-cart.png" class="shopping-cart-icon" id="shopping-cart-icon">
+            <div class="shopping-cart-price" id="Shopping-cart-price">$0.00</div>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+    </nav>
+    <main>
+        <!--The slideshow of IMGs-->
+        <div class="banner-img-containor">
+            <div class="banner-img fade">
+                <img src="Banner Img/Classic Burger.jpeg">
+            </div>
+            <div class="banner-img fade">
+                <img src="Banner Img/Massive Share Deal.jpeg">
+            </div>
+            <div class="banner-img fade">
+                <img src="Banner Img/Drinks.jpeg">
+            </div>
+        </div>
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+        <div class="recommond">
+            <h1>Recommendations</h1>
+        </div>
+        
+        <!--CSS Grid Containor the recommened items-->
+        <div class="Recommended_items_containor" id="Recommended_items_containor_output">
+            <div class="itme-1">
+                <img src="Banner Img/Classic Burger.jpeg" alt="Classic Burger">
+                <div class="item_info">
+                    <h2 class="item_Name">Classic Burger</h2>
+                    <h2 class="item_Price">$5</h2>
+                </div>
+                <input type="number" id="item_quantity_101">
+                <button value="101" onclick="Add_To_Cart_Function(this.value)" class=" Add_To_Cart_Button">Add To Cart</button>
+            </div>
+        </div>
+
+        <!--Menu-->
+        <h1 class="Full_Menu">Menu</h1>
+        
+        <!--Menu Catagory Choosing-->
+        <div class="Menu_Item_Catagory">
+            <div class="Menu_Item_Catagory_All" onclick="Menu_Item_Selecting_All()"><img class="Menu_Item_Catagory_IMG" src="Items_IMG/All Food.jpeg"><a class="Menu_Item_Catagory_Text">All</a></div>
+            <div class="Menu_Item_Catagory_Main_Dishes" onclick="Menu_Item_Selecting_Main_Dishes()"><img class="Menu_Item_Catagory_IMG" src="Items_IMG/Classic_Burger.jpeg"><a class="Menu_Item_Catagory_Text">Main Dishes</a></div>
+            <div class="Menu_Item_Catagory_Sides" onclick="Menu_Item_Selecting_Sides()"><img class="Menu_Item_Catagory_IMG" src="Items_IMG/French_Fries.jpeg"><a class="Menu_Item_Catagory_Text">Sides</a></div>
+            <div class="Menu_Item_Catagory_Drinks" onclick="Menu_Item_Selecting_Drinks()"><img class="Menu_Item_Catagory_IMG" src="Items_IMG/Iced_Coffee.jpeg"><a class="Menu_Item_Catagory_Text">Drinks</a></div>
+            <div class="Menu_Item_Catagory_Desserts" onclick="Menu_Item_Selecting_Desserts()"><img class="Menu_Item_Catagory_IMG" src="Items_IMG/Ice_Cream_Cup.jpeg"><a class="Menu_Item_Catagory_Text">Desserts</a></div>
+        </div>
+
+        <!--For the choosen Food Catagory-->
+        <div class="Items_containor" id="Chosen_Food_Item_Area"></div>
+  </main>
+<script src="script.js"></script>
+<script src="JS/Banner_IMG.js"></script>
+</body>
+
+</html>
+
+
