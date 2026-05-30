@@ -263,8 +263,11 @@ function Add_To_Cart_Function (Button_ID) {
 // Adding the total number next to the Shopping cart icon
 var Total_Price = 0;
 for (let i = 0; i < Shopping_Bag.length; i++){
-    let price_adding_item = Shopping_Bag[i];
-    var choice = foodItems.find(product => product.id === price_adding_item.id);
+    let price_adding_item_object = Shopping_Bag[i];
+    console.log(price_adding_item_object);
+    let price_adding_item_id = 
+
+    var choice = foodItems.find(product => product.id === price_adding_item_object.id);
     console.log(choice);
 
     Total_Price = Total_Price + (thisitem.price*thisitem.quantity)
