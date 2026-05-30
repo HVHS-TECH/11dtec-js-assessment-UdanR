@@ -2,8 +2,9 @@
 console.log(JSON.parse(sessionStorage.getItem('buying_Items')));
 var added_Buying_Items = (JSON.parse(sessionStorage.getItem('buying_Items')));
 console.log(added_Buying_Items);
-
+import {foodItems} from "./script.js";
+console.log(foodItems);
 for (let i = 0; i < added_Buying_Items.length; i++) {
     console.log("hello World!");
-    
+
 }

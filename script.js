@@ -286,6 +286,7 @@ for (let i = 0; i < Shopping_Bag.length; i++){
     // Converting the Shopping_Bag Var to a string and storing it in a seesionStorgae
     sessionStorage.setItem('buying_Items', JSON.stringify(Shopping_Bag));
     console.log(JSON.parse(sessionStorage.getItem('buying_Items')));
+    export {foodItems};
 
 
 }
