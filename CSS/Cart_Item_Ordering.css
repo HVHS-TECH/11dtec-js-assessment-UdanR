@@ -27,8 +27,9 @@
   color: #FCBF49;
 }
 
-.Add_To_Cart_Button{
-  background-color: #D62828;
+.Remove_From_Cart_Button{
+  background-color: transparent;
+  color: red;
   border: 0px;
   padding: 5px;
   border-radius: 5px;
