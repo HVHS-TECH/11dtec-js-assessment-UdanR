@@ -282,9 +282,9 @@ for (let i = 0; i < Shopping_Bag.length; i++){
     Total_Price = Total_Price + (choice.price*price_adding_item_object.quantity)
     CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
     console.log("Total_Price = $" + Total_Price);
+    sessionStorage.setItem('buying_Items', JSON.stringify(Shopping_Bag));
+    console.log(sessionStorage.getItem('buying_Items'));
 }
 }
 const CART_TOTAL_PRICE = document.getElementById("Shopping-cart-price");
 
-sessionStorage.setItem('buying_Items', JSON.stringify(Shopping_Bag));
-console.log(sessionStorage.getItem('buying_Items'));
