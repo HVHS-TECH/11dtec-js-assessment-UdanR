@@ -1,6 +1,6 @@
 console.log("Hello world!")
 // The Inventory
-var foodItems = [
+export var foodItems = [
   { id: 101, category: 'main-dish', recommend: false ,item: 'Classic Burger', price: 12, img: 'Classic_Burger.jpeg'},
   { id: 102, category: 'main-dish', recommend: true ,item: 'BBQ Bacon Burger',  price: 15, img: 'BBQ_Bacon_Burger.jpeg'},
   { id: 103, category: 'main-dish', recommend: true ,item: 'Crispy Chicken Burger', price: 14, img: 'Crispy_Chicken_Burger.jpeg'},
@@ -286,7 +286,6 @@ for (let i = 0; i < Shopping_Bag.length; i++){
     // Converting the Shopping_Bag Var to a string and storing it in a seesionStorgae
     sessionStorage.setItem('buying_Items', JSON.stringify(Shopping_Bag));
     console.log(JSON.parse(sessionStorage.getItem('buying_Items')));
-    export {foodItems};
 
 
 }
