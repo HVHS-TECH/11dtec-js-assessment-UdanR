@@ -1,6 +1,6 @@
 .cart_Chosen_Items{
     background-color: #1D1D1D;
-    display: flex;
+    align-items: flex-start;
 }
 
 .cart_Chosen_Items > div{
@@ -8,9 +8,13 @@
     justify-content: space-evenly;
 }
 
-.cart_Chosen_Items > div > img{
+.chosen_Item_IMG{
+    justify-content: flex-start;
+}
+
+.chosen_Item_IMG > img{
   height: auto;
-  width: 25%;
+  width: 15%;
   border-radius: 5px;
   margin-top: 0px;
 
