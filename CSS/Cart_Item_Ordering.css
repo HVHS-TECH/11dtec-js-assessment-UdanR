@@ -1,5 +1,6 @@
 .cart_Chosen_Items{
     background-color: white;
+    margin
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -38,7 +39,7 @@
 .Item_Total{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content:baseline;
 }
 
 .chosen_Item_IMG > img{
