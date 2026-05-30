@@ -259,7 +259,7 @@ function Add_To_Cart_Function (Button_ID) {
     console.log(excitingItem);
 
     if (excitingItem){
-        excitingItem.quantity += Quantity
+        excitingItem.quantity += Quantity;
 
     } else {
         Shopping_Bag.push({id: Button_ID, quantity: Quantity});
