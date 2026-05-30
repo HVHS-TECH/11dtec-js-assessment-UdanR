@@ -14,6 +14,3 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
 
 }
 
-choice_Print(){
-    
-}
