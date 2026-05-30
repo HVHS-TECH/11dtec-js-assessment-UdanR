@@ -21,7 +21,8 @@
 
 .Item_Details{
   display: flex;
-  
+  flex-direction: column;
+  justify-content: center;
 }
 
 .chosen_Item_IMG > img{
