@@ -1,11 +1,16 @@
 .cart_Chosen_Items{
-    align-items: center;
-    justify-content: center;
     background-color: #1D1D1D;
+    display: flex;
 }
+
+.cart_Chosen_Items > div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .cart_Chosen_Items > div > img{
   height: auto;
-  width: 15%;
+  width: 25%;
   border-radius: 5px;
   margin-top: 0px;
 
