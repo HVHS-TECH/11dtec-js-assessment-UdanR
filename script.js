@@ -1,6 +1,6 @@
 console.log("Hello world!")
 // The Inventory
-export var foodItems = [
+var foodItems = [
   { id: 101, category: 'main-dish', recommend: false ,item: 'Classic Burger', price: 12, img: 'Classic_Burger.jpeg'},
   { id: 102, category: 'main-dish', recommend: true ,item: 'BBQ Bacon Burger',  price: 15, img: 'BBQ_Bacon_Burger.jpeg'},
   { id: 103, category: 'main-dish', recommend: true ,item: 'Crispy Chicken Burger', price: 14, img: 'Crispy_Chicken_Burger.jpeg'},
@@ -23,6 +23,8 @@ export var foodItems = [
   { id: 120, category: 'Desserts', recommend: true ,item: 'Ice Cream Cup', price: 5, img: 'Ice_Cream_Cup.jpeg'},
   { id: 121, category: 'Desserts', recommend: false ,item: 'Cookie', price: 3, img: 'Cookie.jpeg'}
 ];
+
+module.export = foodItems;
 
 var choice = foodItems.find(product => product.id === 101);
 console.log(choice);
