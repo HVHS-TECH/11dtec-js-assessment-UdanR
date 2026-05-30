@@ -24,6 +24,8 @@ var foodItems = [
   { id: 121, category: 'Desserts', recommend: false ,item: 'Cookie', price: 3, img: 'Cookie.jpeg'}
 ];
 
+sessionStorage.setItem('Inventory', JSON.stringify(foodItems));
+
 var choice = foodItems.find(product => product.id === 101);
 console.log(choice);
 
