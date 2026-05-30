@@ -271,7 +271,7 @@ for (let i = 0; i < Shopping_Bag.length; i++){
     var choice = foodItems.find(product => product.id === price_adding_item_id);
     console.log(choice);
 
-    Total_Price = Total_Price + (thisitem.price*thisitem.quantity)
+    Total_Price = Total_Price + (choice.price*price_adding_item_object.quantity)
     CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
     console.log("Total_Price = $" + Total_Price);
 }
