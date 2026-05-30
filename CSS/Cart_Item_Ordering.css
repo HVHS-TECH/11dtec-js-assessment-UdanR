@@ -1,0 +1,28 @@
+.cart_Chosen_Items{
+    align-items: center;
+    justify-content: center;
+    background-color: #1D1D1D;
+}
+.cart_Chosen_Items > div > img{
+  height: auto;
+  width: 15%;
+  border-radius: 5px;
+  margin-top: 0px;
+
+}
+
+.item_Name{
+  color: #FFFFFF;
+}
+
+.item_Price{
+  color: #FCBF49;
+}
+
+.Add_To_Cart_Button{
+  background-color: #D62828;
+  border: 0px;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
