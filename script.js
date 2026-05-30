@@ -248,15 +248,23 @@ var Shopping_Bag = [];
 
 // Adding items to carts
 function Add_To_Cart_Function (Button_ID) {
-    
+    // Item ID
+    console.log(Button_ID); 
+    // Getting Item Quantity
     const ITEM_QUANTITY = document.getElementById("item_quantity_"+Button_ID);
     var Quantity = Number(ITEM_QUANTITY.value);
-    var choice = foodItems.find(product => product.id === Button_ID);
-    console.log(choice);
-
     console.log(ITEM_QUANTITY);
-    console.log(Button_ID);    
-    Shopping_Bag.push({id: Button_ID, quantity: Quantity});
+    // Checking if the item has be added to the cart before
+    var excitingItem = Shopping_Bag.find(product => product.id === Button_ID);
+    console.log(excitingItem);
+
+    if (excitingItem){
+        excitingItem.quantity += Quantity
+
+    } else {
+        Shopping_Bag.push({id: Button_ID, quantity: Quantity});
+    }
+
     console.log(Shopping_Bag);
 
 
