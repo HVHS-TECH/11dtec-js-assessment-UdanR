@@ -9,6 +9,11 @@ console.log(added_Buying_Items);
 console.log(foodItems);
 for (let i = 0; i < added_Buying_Items.length; i++) {
     console.log("hello World!");
-    
+    var choice = foodItems.find(product => product.id === added_Buying_Items.id);
+    choice.forEach(choice_Print);
 
+}
+
+choice_Print(){
+    
 }
