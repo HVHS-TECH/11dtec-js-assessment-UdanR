@@ -268,7 +268,7 @@ for (let i = 0; i < Shopping_Bag.length; i++){
     let price_adding_item_id = price_adding_item_object.id
     console.log(price_adding_item_id);
 
-    var choice = foodItems.find(product => product.id === price_adding_item_object.id);
+    var choice = foodItems.find(product => product.id === price_adding_item_id);
     console.log(choice);
 
     Total_Price = Total_Price + (thisitem.price*thisitem.quantity)
