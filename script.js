@@ -282,6 +282,8 @@ for (let i = 0; i < Shopping_Bag.length; i++){
     Total_Price = Total_Price + (choice.price*price_adding_item_object.quantity)
     CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
     console.log("Total_Price = $" + Total_Price);
+
+    // Converting the Shopping_Bag Var to a string and storing it in a seesionStorgae
     sessionStorage.setItem('buying_Items', JSON.stringify(Shopping_Bag));
 
 }
