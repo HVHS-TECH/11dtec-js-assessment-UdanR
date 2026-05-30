@@ -6,6 +6,7 @@
 .cart_Chosen_Items > div{
     display: flex;
     justify-content: space-evenly;
+    gap: 101px;
 }
 
 .chosen_Item_IMG{
