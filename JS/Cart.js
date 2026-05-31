@@ -14,7 +14,7 @@ const CART_ITEM_OUTPUT = document.getElementById("choosen_Cart_Output");
 for (let i = 0; i < added_Buying_Items.length; i++) {
     console.log("hello World!");
     var buying_items = added_Buying_Items[i];
-    var choice = foodItems.find(product => product.id === added_Buying_Items.id);
+    var choice = foodItems.find(product => product.id === buying_items.id);
     choice.forEach(choice_Print);
     var Item_Num = 1;
     function choice_Print(item, Item_Num){
