@@ -9,6 +9,7 @@ console.log(added_Buying_Items);
 console.log(foodItems);
 for (let i = 0; i < added_Buying_Items.length; i++) {
     console.log("hello World!");
+    var buying_items = added_Buying_Items[i];
     var choice = foodItems.find(product => product.id === added_Buying_Items.id);
     choice.forEach(choice_Print);
     var Item_Num = 1;
@@ -23,7 +24,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                         <h2 class="item_Price">$${item.price}</h2>
                     </div>
                     <div class="Item_Quantity">
-                        <input min="1" type="number" value="2" id="item_quantity_${item.id}" class="item_quantity">
+                        <input min="1" type="number" value="${buying_items.q}" id="item_quantity_${item.id}" class="item_quantity">
                     </div>
                     <div class="Item_Total">
                         <button value="${item.id}" onclick="Remove_From_Cart_Function(this.value)" class="Remove_From_Cart_Button">Remove</button>
