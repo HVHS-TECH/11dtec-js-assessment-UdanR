@@ -80,3 +80,11 @@
   text-decoration: underline;
   font-weight: 600;
 }
+
+.Total_Details{
+  background-color: transparent;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
