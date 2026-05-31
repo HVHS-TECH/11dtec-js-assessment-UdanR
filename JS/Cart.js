@@ -8,6 +8,8 @@ var added_Buying_Items = (JSON.parse(sessionStorage.getItem('buying_Items')));
 console.log(added_Buying_Items);
 console.log(foodItems);
 
+const CART_ITEM_OUTPUT = document.getElementById("choosen_Cart_Output");
+
 // Adding the items to the HTML
 for (let i = 0; i < added_Buying_Items.length; i++) {
     console.log("hello World!");
@@ -34,7 +36,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     </div>
                 </div>
                 </div>`);
-        RECOMMNEDED_ITEMS_OUTPUT.innerHTML += `<div class="item-${Item_Num}">                
+        CART_ITEM_OUTPUT.innerHTML += `<div class="item-${Item_Num}">                
                 <div class="chosen_Item_IMG">
                     <img src="Items_IMG/${item.img}" alt="${item.img}">
                 </div>
