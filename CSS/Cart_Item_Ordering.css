@@ -88,3 +88,9 @@
   flex-direction: column;
   gap: 5px;
 }
+
+#Check_Out_Button {
+  background-color: #28d631;
+  border: 3px solid transparent;
+  color: white;
+}
