@@ -90,13 +90,18 @@ function Check_Out(){
         const RECEIPT_OUTPUT = document.getElementById("Receipt_Area");
         var change = spending_money-Total_Price;
 
+        // Top of the Recipt
         RECEIPT_TOP_OUTPUT.innerHTML = `<h1 class="receipt_logo">Street Bites</h1>
             <div class="receipt_Top">
                 <h2 class="receipt_date">${d}</h2>
                 <h2 class="receipt_name">${USERNAME}</h2>
             </div>`
 
-        RECEIPT_CHOSEN_ITEMS_OUTPUT.innerHTML = `
+        // Middle of the Recipt
+
+        for (let i = 0; i < added_Buying_Items.length; i++){
+            var buying_items = added_Buying_Items[i];
+            RECEIPT_CHOSEN_ITEMS_OUTPUT.innerHTML = `
                 <div class="receipt_Chosen_Items_Info">
                     <h2 class="receipt_Chosen_Items_Name">${choice.item}</h2>
                     <h2 class="receipt_Chosen_Items_Price">${choice.price}</h2>
@@ -107,7 +112,10 @@ function Check_Out(){
                 <div class="receipt_Chosen_Items_Total_Outcome">
                     <h2 id="receipt_Chosen_Items_Total_Price">$10</h2>
                 </div>
-            </div>`
+                </div>`
+        }
+
+        // Bottom of the Recipt
         RECEIPT_BOTTOM_OUTPUT.innerHTML =`
             <div class="receipt_Bottom">
                 <div class="receipt_Total_Price">
