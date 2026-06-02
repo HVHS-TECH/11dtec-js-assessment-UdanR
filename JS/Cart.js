@@ -92,7 +92,7 @@ function Check_Out(){
         var change = spending_money-Total_Price;
 
         // Top of the Recipt
-        RECEIPT_TOP_OUTPUT.innerHTML = `<h1 class="receipt_logo">Street Bites</h1>
+        RECEIPT_TOP_OUTPUT.innerHTML = `
             <div class="receipt_Top">
                 <h2 class="receipt_date">${d}</h2>
                 <h2 class="receipt_name">${USERNAME}</h2>
