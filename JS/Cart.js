@@ -13,6 +13,7 @@ const CART_ITEM_OUTPUT = document.getElementById("choosen_Cart_Output");
 // Adding the items to the HTML
 for (let i = 0; i < added_Buying_Items.length; i++) {
     var buying_items = added_Buying_Items[i];
-    console.log(buying_items)
+    console.log(buying_items);
+    id
 }
 
