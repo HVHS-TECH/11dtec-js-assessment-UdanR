@@ -91,11 +91,11 @@ document.getElementById("demo").innerHTML = d;
             </div>
             <div class="receipt_Chosen_Items" id="receipt_Chosen_Items_Area">
                 <div class="receipt_Chosen_Items_Info">
-                    <h2 class="receipt_Chosen_Items_Name">choice.item</h2>
-                    <h2 class="receipt_Chosen_Items_Price"></h2>
+                    <h2 class="receipt_Chosen_Items_Name">${choice.item}</h2>
+                    <h2 class="receipt_Chosen_Items_Price">${choice.price}</h2>
                 </div>
                 <div class="receipt_Chosen_Items_Quantity">
-                    <h2 id="receipt_Chosen_Items_Quantity_Area">2</h2>
+                    <h2 id="receipt_Chosen_Items_Quantity_Area">${buying_items.quantity}</h2>
                 </div>
                 <div class="receipt_Chosen_Items_Total_Outcome">
                     <h2 id="receipt_Chosen_Items_Total_Price">$10</h2>
