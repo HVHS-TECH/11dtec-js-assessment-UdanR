@@ -68,11 +68,12 @@ const CHECKOUT_TOTAL_PRICE = document.getElementById("checkout_Total_Price");
 CHECKOUT_TOTAL_PRICE.innerHTML = "$" + Total_Price;
 
 const USERNAME = document.getElementById("User_Name");
-const MONEY = document.getElementById("Available_Money");
+const MONEY = document.getElementById("Available_Money.value");
 var spending_money = Number(MONEY);
-console.log(MONEY)
+
 
 function Check_Out(){
+    console.log(MONEY);
     console.log(spending_money);
     console.log(Total_Price);
     if (spending_money < Total_Price) {
