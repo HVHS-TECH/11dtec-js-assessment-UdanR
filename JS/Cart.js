@@ -70,9 +70,11 @@ CHECKOUT_TOTAL_PRICE.innerHTML = "$" + Total_Price;
 const USERNAME = document.getElementById("User_Name");
 const MONEY = document.getElementById("Available_Money");
 var spending_money = Number(MONEY);
+console.log(MONEY)
 
 function Check_Out(){
-    console.log
+    console.log(spending_money);
+    console.log(Total_Price);
     if (spending_money < Total_Price) {
         alert ("You don't have enough money");
         return;
