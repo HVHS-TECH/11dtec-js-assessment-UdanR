@@ -30,3 +30,12 @@
     justify-content: space-between;
 }
 
+.receipt_Bottom{
+    border: 1.5px solid black;
+}
+
+.receipt_Total_Price, .receipt_Chosen_Given_Amount, .receipt_Chosen_Change{
+    display: flex;
+    justify-content: space-between;
+    
+}
