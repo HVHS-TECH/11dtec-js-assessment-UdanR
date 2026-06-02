@@ -92,6 +92,8 @@ function Check_Out(){
         const RECEIPT_BOTTOM_OUTPUT = document.getElementById("receipt_Bottom_Area");
         const RECEIPT_OUTPUT = document.getElementById("Receipt_Area");
         var change = spending_money-Total_Price;
+        // Removing thr i
+        CART_ITEM_OUTPUT.innerHTML = ""
 
         // Top of the Recipt
         RECEIPT_TOP_OUTPUT.innerHTML = `
