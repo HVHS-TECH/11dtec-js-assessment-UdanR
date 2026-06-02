@@ -67,12 +67,13 @@ CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
 const CHECKOUT_TOTAL_PRICE = document.getElementById("checkout_Total_Price");
 CHECKOUT_TOTAL_PRICE.innerHTML = "$" + Total_Price;
 
-const USERNAME = document.getElementById("User_Name");
-const MONEY = document.getElementById("Available_Money");
-var spending_money = Number(MONEY.value);
+
 
 
 function Check_Out(){
+    const USERNAME = document.getElementById("User_Name");
+    const MONEY = document.getElementById("Available_Money");
+    var spending_money = Number(MONEY.value);
     console.log(MONEY);
     console.log(spending_money);
     console.log(Total_Price);
