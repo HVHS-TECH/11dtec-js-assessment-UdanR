@@ -15,6 +15,9 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
     console.log("hello World!");
     var buying_items = added_Buying_Items[i];
     var choice = foodItems.filter(product => product.id === buying_items.id);
+    console.log(choice.id);
+    console.log(choice.price);
+    console.log(choice.img);
     var Item_Num = 1;
         console.log("hi")
         console.log (`<div class="item-${Item_Num}">                
