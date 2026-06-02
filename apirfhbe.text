@@ -60,3 +60,12 @@ function choice_Print(item, reco_Item_Num){
                 </div>
                 </div>`;
             Item_Num = Item_Num +1;
+
+                console.log("hello World!");
+    var buying_items = added_Buying_Items[i];
+    var choice = foodItems.find(product => product.id === buying_items.id);
+    console.log(choice.id);
+    console.log(choice.price);
+    console.log(choice.img);
+    var Item_Num = 1;
+        console.log("hi")
