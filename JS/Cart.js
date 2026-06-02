@@ -9,7 +9,7 @@ console.log(added_Buying_Items);
 console.log(foodItems);
 
 const CART_ITEM_OUTPUT = document.getElementById("choosen_Cart_Output");
-
+var Total_Price = 0;
 // Adding the items to the HTML
 for (let i = 0; i < added_Buying_Items.length; i++) {
     var buying_items = added_Buying_Items[i];
@@ -18,6 +18,8 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
     var choice = foodItems.find(product => product.id === cart_Id);
     console.log(choice);
     var Item_Num = 1;
+    var quantity = buying_items.quantity*choice.price;
+    Total_Price = Total_Price + quantity;
             console.log (`<div class="item-${Item_Num}">                
                 <div class="chosen_Item_IMG">
                     <img src="Items_IMG/${choice.img}" alt="${choice.img}">
@@ -50,7 +52,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     </div>
                     <div class="Item_Total">
                         <button value="${choice.id}" onclick="Remove_From_Cart_Function(this.value)" class="Remove_From_Cart_Button">Remove</button>
-                        <h2 class="Chosen_Item_Total" id="chosen_Item_Total_Price">$10</h2>
+                        <h2 class="Chosen_Item_Total" id="chosen_Item_Total_Price">$${quantity}</h2>
                     </div>
                 </div>
                 </div>`;
