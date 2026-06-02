@@ -19,7 +19,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
         console.log("hi")
         console.log (`<div class="item-${Item_Num}">                
                 <div class="chosen_Item_IMG">
-                    <img src="Items_IMG/${item.img}" alt="${item.img}">
+                    <img src="Items_IMG/${choice.img}" alt="${choice.img}">
                 </div>
                 <div class="chosen_Item_Info">
                     <div class="Item_Details">
