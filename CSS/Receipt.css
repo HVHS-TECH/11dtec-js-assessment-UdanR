@@ -11,6 +11,12 @@
 .receipt_Top{
     border: 1.5px solid black;
     padding-left: 1%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.receipt_logo{
+    
 }
