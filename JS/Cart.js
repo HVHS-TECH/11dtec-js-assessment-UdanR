@@ -62,4 +62,4 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
 const CART_TOTAL_PRICE = document.getElementById("Shopping-cart-price");
 CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
 
-//
+//Check Area
