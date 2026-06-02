@@ -58,3 +58,6 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                 </div>`;
 }
 
+const CART_TOTAL_PRICE = document.getElementById("Shopping-cart-price");
+
+
