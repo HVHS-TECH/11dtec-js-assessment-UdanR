@@ -36,7 +36,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     </div>
                 </div>
                 </div>`);
-                CART_ITEM_OUTPUT.innerHTML (`<div class="item-${Item_Num}">                
+                CART_ITEM_OUTPUT.innerHTML +=`<div class="item-${Item_Num}">                
                 <div class="chosen_Item_IMG">
                     <img src="Items_IMG/${choice.img}" alt="${choice.img}">
                 </div>
@@ -53,6 +53,6 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                         <h2 class="Chosen_Item_Total" id="chosen_Item_Total_Price">$10</h2>
                     </div>
                 </div>
-                </div>`);
+                </div>`;
 }
 
