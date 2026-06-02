@@ -64,5 +64,5 @@ CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
 
 //Check Area
 // Showing the Total Price
-const CHECKOUT_TOTAL_PRICE = document.getElementById("chosen_Item_Total_Price");
+const CHECKOUT_TOTAL_PRICE = document.getElementById("checkout_Total_Price");
 CHECKOUT_TOTAL_PRICE.innerHTML = "$" + Total_Price;
