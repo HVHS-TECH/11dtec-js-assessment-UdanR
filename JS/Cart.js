@@ -36,7 +36,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     </div>
                 </div>
                 </div>`);
-                choosen_Cart_Output.inner (`<div class="item-${Item_Num}">                
+                choosen_Cart_Output.innerHTML (`<div class="item-${Item_Num}">                
                 <div class="chosen_Item_IMG">
                     <img src="Items_IMG/${choice.img}" alt="${choice.img}">
                 </div>
