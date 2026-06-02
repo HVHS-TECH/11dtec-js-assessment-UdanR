@@ -81,8 +81,40 @@ function Check_Out(){
         alert ("You don't have enough money");
         return;
     } else{
+        const d = new Date();
+document.getElementById("demo").innerHTML = d;
         const RECEIPT_OUTPUT = document.getElementById("Receipt_Area");
-        RECEIPT_OUTPUT.innerHTML = ``
+        RECEIPT_OUTPUT.innerHTML = `<h1 class="receipt_logo">Street Bites</h1>
+            <div class="receipt_Top">
+                <h2 class="receipt_date">2026</h2>
+                <h2 class="receipt_name">Mr. Potato</h2>
+            </div>
+            <div class="receipt_Chosen_Items" id="receipt_Chosen_Items_Area">
+                <div class="receipt_Chosen_Items_Info">
+                    <h2 class="receipt_Chosen_Items_Name">Burguer</h2>
+                    <h2 class="receipt_Chosen_Items_Price">$5</h2>
+                </div>
+                <div class="receipt_Chosen_Items_Quantity">
+                    <h2 id="receipt_Chosen_Items_Quantity_Area">2</h2>
+                </div>
+                <div class="receipt_Chosen_Items_Total_Outcome">
+                    <h2 id="receipt_Chosen_Items_Total_Price">$10</h2>
+                </div>
+            </div>
+            <div class="receipt_Bottom">
+                <div class="receipt_Total_Price">
+                    <h2>Total:</h2>
+                    <h2>$10</h2>
+                </div>
+                <div class="receipt_Chosen_Given_Amount">
+                    <h2>Given Amount :</h2>
+                    <h2>$20</h2>
+                </div>
+                <div class="receipt_Chosen_Change">
+                    <h2>Change :</h2>
+                    <h2>$10</h2>
+                </div>
+            </div>`
 
     }
 }
