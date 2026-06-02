@@ -66,3 +66,16 @@ CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
 // Showing the Total Price
 const CHECKOUT_TOTAL_PRICE = document.getElementById("checkout_Total_Price");
 CHECKOUT_TOTAL_PRICE.innerHTML = "$" + Total_Price;
+
+const USERNAME = document.getElementById("User_Name");
+const MONEY = document.getElementById("Available_Money");
+var spending_money = Number(MONEY);
+
+function Check_Out(){
+    console.log
+    if (spending_money < Total_Price) {
+        alert ("You don't have enough money");
+        return;
+    }
+}
+
