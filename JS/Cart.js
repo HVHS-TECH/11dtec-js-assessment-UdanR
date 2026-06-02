@@ -80,6 +80,10 @@ function Check_Out(){
     if (spending_money < Total_Price) {
         alert ("You don't have enough money");
         return;
+    } else{
+        const RECEIPT_OUTPUT = document.getElementById("Receipt_Area");
+        RECEIPT_OUTPUT.innerHTML = ``
+
     }
 }
 
