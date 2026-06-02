@@ -14,6 +14,27 @@ const CART_ITEM_OUTPUT = document.getElementById("choosen_Cart_Output");
 for (let i = 0; i < added_Buying_Items.length; i++) {
     var buying_items = added_Buying_Items[i];
     console.log(buying_items);
-    console.log (Number(buying_items.id);
+    var cart_Id = Number(buying_items.id);
+    var choice = foodItems.find(product => product.id === cart_Id);
+    console.log(choice);
+
+            console.log (`<div class="item-${Item_Num}">                
+                <div class="chosen_Item_IMG">
+                    <img src="Items_IMG/${choice.img}" alt="${choice.img}">
+                </div>
+                <div class="chosen_Item_Info">
+                    <div class="Item_Details">
+                        <h2 class="item_Name">${choice.item}</h2>
+                        <h2 class="item_Price">$${choice.price}</h2>
+                    </div>
+                    <div class="Item_Quantity">
+                        <input min="1" type="number" value="${buying_items.quantity}" id="item_quantity_${choice.id}" class="item_quantity">
+                    </div>
+                    <div class="Item_Total">
+                        <button value="${choice.id}" onclick="Remove_From_Cart_Function(this.value)" class="Remove_From_Cart_Button">Remove</button>
+                        <h2 class="Chosen_Item_Total" id="chosen_Item_Total_Price">$10</h2>
+                    </div>
+                </div>
+                </div>`);
 }
 
