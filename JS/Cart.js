@@ -17,7 +17,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
     var cart_Id = Number(buying_items.id);
     var choice = foodItems.find(product => product.id === cart_Id);
     console.log(choice);
-
+    var Item_Num = 1;
             console.log (`<div class="item-${Item_Num}">                
                 <div class="chosen_Item_IMG">
                     <img src="Items_IMG/${choice.img}" alt="${choice.img}">
