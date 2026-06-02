@@ -82,8 +82,10 @@ function Check_Out(){
         return;
     } else{
         const d = new Date();
-document.getElementById("demo").innerHTML = d;
+        const receipt_Top = document.getElementById("receipt_Top_Area");
         const RECEIPT_OUTPUT = document.getElementById("Receipt_Area");
+
+document.getElementById("demo").innerHTML = d;
         RECEIPT_OUTPUT.innerHTML = `<h1 class="receipt_logo">Street Bites</h1>
             <div class="receipt_Top">
                 <h2 class="receipt_date">${d}</h2>
