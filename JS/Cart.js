@@ -10,6 +10,7 @@ console.log(foodItems);
 
 const CART_ITEM_OUTPUT = document.getElementById("choosen_Cart_Output");
 var Total_Price = 0;
+
 // Adding the items to the HTML
 for (let i = 0; i < added_Buying_Items.length; i++) {
     var buying_items = added_Buying_Items[i];
@@ -101,6 +102,9 @@ function Check_Out(){
 
         for (let i = 0; i < added_Buying_Items.length; i++){
             var buying_items = added_Buying_Items[i];
+            var cart_Id = Number(buying_items.id);
+            var choice = foodItems.find(product => product.id === cart_Id);
+            var Item_Total = buying_items.quantity * choice.price;
             RECEIPT_CHOSEN_ITEMS_OUTPUT.innerHTML = `
                 <div class="receipt_Chosen_Items_Info">
                     <h2 class="receipt_Chosen_Items_Name">${choice.item}</h2>
@@ -110,7 +114,7 @@ function Check_Out(){
                     <h2 id="receipt_Chosen_Items_Quantity_Area">${buying_items.quantity}</h2>
                 </div>
                 <div class="receipt_Chosen_Items_Total_Outcome">
-                    <h2 id="receipt_Chosen_Items_Total_Price">$10</h2>
+                    <h2 id="receipt_Chosen_Items_Total_Price">$${Item_Total}</h2>
                 </div>
                 </div>`
         }
