@@ -77,21 +77,26 @@ function Check_Out(){
     console.log(MONEY);
     console.log(spending_money);
     console.log(Total_Price);
+    // Checking if the user have enough money
     if (spending_money < Total_Price) {
         alert ("You don't have enough money");
         return;
     } else{
+        // Getting the date
         const d = new Date();
-        const receipt_Top = document.getElementById("receipt_Top_Area");
+        const RECEIPT_TOP_OUTPUT = document.getElementById("receipt_Top_Area");
+        const RECEIPT_CHOSEN_ITEMS_OUTPUT = document.getElementById("receipt_Chosen_Items_Area");
+        const RECEIPT_BOTTOM_OUTPUT = document.getElementById("receipt_Bottom_Area");
         const RECEIPT_OUTPUT = document.getElementById("Receipt_Area");
+        var change = spending_money-Total_Price;
 
-document.getElementById("demo").innerHTML = d;
-        RECEIPT_OUTPUT.innerHTML = `<h1 class="receipt_logo">Street Bites</h1>
+        RECEIPT_TOP_OUTPUT.innerHTML = `<h1 class="receipt_logo">Street Bites</h1>
             <div class="receipt_Top">
                 <h2 class="receipt_date">${d}</h2>
                 <h2 class="receipt_name">${USERNAME}</h2>
-            </div>
-            <div class="receipt_Chosen_Items" id="receipt_Chosen_Items_Area">
+            </div>`
+
+        RECEIPT_CHOSEN_ITEMS_OUTPUT.innerHTML = `
                 <div class="receipt_Chosen_Items_Info">
                     <h2 class="receipt_Chosen_Items_Name">${choice.item}</h2>
                     <h2 class="receipt_Chosen_Items_Price">${choice.price}</h2>
@@ -102,19 +107,20 @@ document.getElementById("demo").innerHTML = d;
                 <div class="receipt_Chosen_Items_Total_Outcome">
                     <h2 id="receipt_Chosen_Items_Total_Price">$10</h2>
                 </div>
-            </div>
+            </div>`
+        RECEIPT_BOTTOM_OUTPUT.innerHTML =`
             <div class="receipt_Bottom">
                 <div class="receipt_Total_Price">
                     <h2>Total:</h2>
-                    <h2>$10</h2>
+                    <h2>$${Total_Price}</h2>
                 </div>
                 <div class="receipt_Chosen_Given_Amount">
                     <h2>Given Amount :</h2>
-                    <h2>$20</h2>
+                    <h2>$${spending_money}</h2>
                 </div>
                 <div class="receipt_Chosen_Change">
                     <h2>Change :</h2>
-                    <h2>$10</h2>
+                    <h2>$${change}</h2>
                 </div>
             </div>`
 
