@@ -27,4 +27,6 @@
 
 .receipt_Chosen_Items{
     display: flex;
+    justify-content: space-between;
 }
+
