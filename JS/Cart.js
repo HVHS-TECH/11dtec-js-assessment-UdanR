@@ -73,6 +73,8 @@ CHECKOUT_TOTAL_PRICE.innerHTML = "$" + Total_Price;
 
 function Check_Out(){
     const USERNAME = document.getElementById("User_Name");
+    var username = String(USERNAME.value);
+    console.log(username);
     const MONEY = document.getElementById("Available_Money");
     var spending_money = Number(MONEY.value);
     console.log(MONEY);
@@ -95,7 +97,7 @@ function Check_Out(){
         RECEIPT_TOP_OUTPUT.innerHTML = `
             <div class="receipt_Top">
                 <h2 class="receipt_date">${d}</h2>
-                <h2 class="receipt_name">${USERNAME}</h2>
+                <h2 class="receipt_name">${username}</h2>
             </div>`
 
         // Middle of the Recipt
@@ -108,7 +110,7 @@ function Check_Out(){
             RECEIPT_CHOSEN_ITEMS_OUTPUT.innerHTML = `
                 <div class="receipt_Chosen_Items_Info">
                     <h2 class="receipt_Chosen_Items_Name">${choice.item}</h2>
-                    <h2 class="receipt_Chosen_Items_Price">${choice.price}</h2>
+                    <h2 class="receipt_Chosen_Items_Price">$${choice.price}</h2>
                 </div>
                 <div class="receipt_Chosen_Items_Quantity">
                     <h2 id="receipt_Chosen_Items_Quantity_Area">${buying_items.quantity}</h2>
