@@ -71,7 +71,7 @@ CHECKOUT_TOTAL_PRICE.innerHTML = "$" + Total_Price;
 
 const RECEIPT_OUTPUT = document.getElementById("Receipt_Area");
 RECEIPT_OUTPUT.style.backgroundColor = "transparent";
-RECEIPT_OUTPUT.style.border = "transparet";
+RECEIPT_OUTPUT.style.borderColor = "transparet";
 function Check_Out(){
     const USERNAME = document.getElementById("User_Name");
     var username = String(USERNAME.value);
