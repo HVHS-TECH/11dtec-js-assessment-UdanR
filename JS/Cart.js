@@ -95,8 +95,12 @@ function Check_Out(){
         const RECEIPT_BOTTOM_OUTPUT = document.getElementById("receipt_Bottom_Area");
         var change = spending_money-Total_Price;
         
+        // making the background of the receipt background
         RECEIPT_OUTPUT.style.backgroundColor = "white";
 
+        CHECKOUT_TOTAL_PRICE.innerHTML = ""; 
+
+        // Making the Header Receipt
         HEADER.innerHTML = "Receipt";
         
         // Adding the logo to the receipt
