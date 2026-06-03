@@ -160,7 +160,7 @@ function Check_Out(){
 }
 
 // Pressing to clear the cart and start ordering again
-function clear(){
+function Clear() {
     added_Buying_Items = [{}];
     console.log(added_Buying_Items);
     sessionStorage.setItem('buying_Items', JSON.stringify(added_Buying_Items));
