@@ -87,11 +87,14 @@ function Check_Out(){
     } else{
         // Getting the date
         const d = new Date();
+        const HEADER = document.getElementById("header");
         const RECEIPT_TOP_OUTPUT = document.getElementById("receipt_Top_Area");
         const RECEIPT_CHOSEN_ITEMS_OUTPUT = document.getElementById("receipt_Chosen_Items_Area");
         const RECEIPT_BOTTOM_OUTPUT = document.getElementById("receipt_Bottom_Area");
         var change = spending_money-Total_Price;
         
+        HEADER.innerHTML = "Receipt"
+
         // Removing the items list
         CART_ITEM_OUTPUT.innerHTML = ""
         
