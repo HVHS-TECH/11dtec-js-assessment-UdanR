@@ -161,5 +161,6 @@ function Check_Out(){
 
 function reset(){
     added_Buying_Items = [{}];
-    
+    console.log(added_Buying_Items);
+    sessionStorage.setItem('buying_Items', JSON.stringify(Shopping_Bag));
 }
