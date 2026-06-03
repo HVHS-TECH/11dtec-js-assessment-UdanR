@@ -164,6 +164,5 @@ function reset(){
     console.log(added_Buying_Items);
     sessionStorage.setItem('buying_Items', JSON.stringify(added_Buying_Items));
     console.log(JSON.parse(sessionStorage.getItem('buying_Items')));
-    Total_Price = 0;
-    CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
+    
 }
