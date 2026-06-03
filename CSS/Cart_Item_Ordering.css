@@ -103,7 +103,7 @@
   color: #28d631;
 }
 
-.clear_Butoon{
+#clear_Butoon{
   background-color: red;
   border: 1.5px solid transparent;
   border-radius: 5px;
@@ -111,10 +111,9 @@
   font-size: 12px;
 }
 
-.clear_Butoon:hover{
+#clear_Butoon:hover{
   background-color: white;
   border: 1.5px solid red;
   border-radius: 5px;
   color: red;
-  font-size: 20px;
 }
