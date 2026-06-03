@@ -167,4 +167,5 @@ function Clear() {
     console.log(JSON.parse(sessionStorage.getItem('buying_Items')));
     CART_ITEM_OUTPUT.innerHTML = "";
     Total_Price = 0;
+    CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
 }
