@@ -68,9 +68,9 @@ CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
 const CHECKOUT_TOTAL_PRICE = document.getElementById("checkout_Total_Price");
 CHECKOUT_TOTAL_PRICE.innerHTML = "$" + Total_Price;
 
+
+const RECEIPT_OUTPUT = document.getElementById("Receipt_Area");
 RECEIPT_OUTPUT.innerHTML = "";
-
-
 function Check_Out(){
     const USERNAME = document.getElementById("User_Name");
     var username = String(USERNAME.value);
@@ -90,7 +90,6 @@ function Check_Out(){
         const RECEIPT_TOP_OUTPUT = document.getElementById("receipt_Top_Area");
         const RECEIPT_CHOSEN_ITEMS_OUTPUT = document.getElementById("receipt_Chosen_Items_Area");
         const RECEIPT_BOTTOM_OUTPUT = document.getElementById("receipt_Bottom_Area");
-        const RECEIPT_OUTPUT = document.getElementById("Receipt_Area");
         var change = spending_money-Total_Price;
         
         // Removing the items list
