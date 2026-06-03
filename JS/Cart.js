@@ -159,6 +159,7 @@ function Check_Out(){
     }
 }
 
+// After paying the ex
 function reset(){
     added_Buying_Items = [{}];
     console.log(added_Buying_Items);
