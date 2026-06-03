@@ -164,5 +164,5 @@ function reset(){
     console.log(added_Buying_Items);
     sessionStorage.setItem('buying_Items', JSON.stringify(added_Buying_Items));
     console.log(JSON.parse(sessionStorage.getItem('buying_Items')));
-    
+    window.location.href = "index.html";
 }
