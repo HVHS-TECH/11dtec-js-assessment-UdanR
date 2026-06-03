@@ -70,7 +70,6 @@ CHECKOUT_TOTAL_PRICE.innerHTML = "$" + Total_Price;
 
 
 const RECEIPT_OUTPUT = document.getElementById("Receipt_Area");
-RECEIPT_OUTPUT.innerHTML = "";
 function Check_Out(){
     const USERNAME = document.getElementById("User_Name");
     var username = String(USERNAME.value);
@@ -98,9 +97,6 @@ function Check_Out(){
         // Removing the items list
         CART_ITEM_OUTPUT.innerHTML = ""
         
-        // Adding the classes and ids
-        RECEIPT_OUTPUT.innerHTML = `<div class="Receipt" id="Receipt_Area"></div><div class="receipt_Chosen_Items" id="receipt_Chosen_Items_Area"></div><div class="receipt_Bottom" id="receipt_Bottom_Area"></div>`
-
         // Top of the Recipt
         RECEIPT_TOP_OUTPUT.innerHTML = `
             <div class="receipt_Top">
