@@ -159,3 +159,7 @@ function Check_Out(){
     }
 }
 
+function reset(){
+    added_Buying_Items = [{}];
+    
+}
