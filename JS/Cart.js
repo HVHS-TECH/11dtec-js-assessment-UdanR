@@ -121,11 +121,12 @@ function Check_Out(){
         // Middle of the Recipt
 
         for (let i = 0; i < added_Buying_Items.length; i++){
+            console.log("Item added to the receipt");
             var buying_items = added_Buying_Items[i];
             var cart_Id = Number(buying_items.id);
             var choice = foodItems.find(product => product.id === cart_Id);
             var Item_Total = buying_items.quantity * choice.price;
-            RECEIPT_CHOSEN_ITEMS_OUTPUT.innerHTML = `
+            RECEIPT_CHOSEN_ITEMS_OUTPUT.innerHTML += `
                 <div class="receipt_Chosen_Items_Info">
                     <h2 class="receipt_Chosen_Items_Name">${choice.item}</h2>
                     <h2 class="receipt_Chosen_Items_Price">$${choice.price}</h2>
