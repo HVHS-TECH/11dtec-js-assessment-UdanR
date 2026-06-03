@@ -97,8 +97,10 @@ function Check_Out(){
         
         // making the background of the receipt background
         RECEIPT_OUTPUT.style.backgroundColor = "white";
-
-        CHECKOUT_TOTAL_PRICE.innerHTML = ""; 
+        
+        // Removing the checkout area
+        const CHECKOUT_OUTPUT = document.getElementById("cart_Total_Output");
+        CHECKOUT_OUTPUT.innerHTML = ""; 
 
         // Making the Header Receipt
         HEADER.innerHTML = "Receipt";
@@ -113,7 +115,7 @@ function Check_Out(){
         RECEIPT_TOP_OUTPUT.innerHTML = `
             <div class="receipt_Top">
                 <h2 class="receipt_date">${d}</h2>
-                <h2 class="receipt_name">${username}</h2>
+                <h2 class="receipt_name">User: ${username}</h2>
             </div>`
 
         // Middle of the Recipt
