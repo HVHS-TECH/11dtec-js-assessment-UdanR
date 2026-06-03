@@ -71,6 +71,7 @@ CHECKOUT_TOTAL_PRICE.innerHTML = "$" + Total_Price;
 
 const RECEIPT_OUTPUT = document.getElementById("Receipt_Area");
 RECEIPT_OUTPUT.style.backgroundColor = "transparent";
+RECEIPT_OUTPUT.style.border = "transparet";
 function Check_Out(){
     const USERNAME = document.getElementById("User_Name");
     var username = String(USERNAME.value);
@@ -87,13 +88,17 @@ function Check_Out(){
     } else{
         // Getting the date
         const d = new Date();
+        const RECEIPT_LOGO = document.getElementById("receipt_Logo");
         const HEADER = document.getElementById("header");
         const RECEIPT_TOP_OUTPUT = document.getElementById("receipt_Top_Area");
         const RECEIPT_CHOSEN_ITEMS_OUTPUT = document.getElementById("receipt_Chosen_Items_Area");
         const RECEIPT_BOTTOM_OUTPUT = document.getElementById("receipt_Bottom_Area");
         var change = spending_money-Total_Price;
         
-        HEADER.innerHTML = "Receipt"
+        HEADER.innerHTML = "Receipt";
+        
+        // Adding the logo to the receipt
+        RECEIPT_LOGO.innerHTML = "Street Bites";
 
         // Removing the items list
         CART_ITEM_OUTPUT.innerHTML = ""
