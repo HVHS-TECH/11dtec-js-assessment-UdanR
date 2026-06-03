@@ -42,7 +42,9 @@
 }
 
 .X{
+    display: flex;
     font-size: 50px;
     color: gray;
-    align-items: center;
+    justify-content: right;
+    padding-right: 1%;
 }
