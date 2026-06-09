@@ -1,4 +1,3 @@
-console.log("Hello world!")
 // The Inventory
 var foodItems = [
   { id: 101, category: 'main-dish', recommend: false ,item: 'Classic Burger', price: 12, img: 'Classic_Burger.jpeg'},
@@ -27,29 +26,18 @@ var foodItems = [
 sessionStorage.setItem('Inventory', JSON.stringify(foodItems));
 
 var choice = foodItems.find(product => product.id === 101);
-console.log(choice);
 
 var Desserts = foodItems.filter(product => product.category === 'Desserts');
 
-console.log(Desserts);
 
 // Recommended Food area
 const RECOMMNEDED_ITEMS_OUTPUT = document.getElementById("Recommended_items_containor_output");
 var Recommend = foodItems.filter(product => product.recommend === true);
-console.log(Recommend);
 
 Recommend.forEach(Recommended_print);
 
 var reco_Item_Num = 1;
 function Recommended_print(item, reco_Item_Num){
-        console.log (`<div class="itme-${reco_Item_Num}">
-                <img src="Items_IMG/${item.img}" alt="${item.img}">
-                <div class="item_info">
-                    <h2 class="item_Name">${item.item}</h2>
-                    <h2 class="item_Price">$${item.price}</h2>
-                </div>
-                <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class=" Add_To_Cart_Button">Add To Cart</button>
-            </div>`);
     RECOMMNEDED_ITEMS_OUTPUT.innerHTML += `<div class="_${reco_Item_Num}">
                 <img src="Items_IMG/${item.img}" alt="${item.img}">
                 <div class="item_info">
@@ -67,14 +55,6 @@ function Recommended_print(item, reco_Item_Num){
 const CHOSEN_FOOD_ITEM_OUTPUT_AREA = document.getElementById("Chosen_Food_Item_Area");
 for (let i = 0; i < foodItems.length; i++ ){
     var thisitem = foodItems[i];
-        console.log (`<div class="itme-${i}">
-        <img src="Items_IMG/${thisitem.img}" alt="${thisitem.img}">
-        <div class="item_info">
-            <h2 class="item_Name">${thisitem.item}</h2>
-            <h2 class="item_Price">$ ${thisitem.price}</h2>
-        </div>
-        <button value=${thisitem.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button">Add To Cart</button>
-        </div>`);
         CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${i}">
         <img src="Items_IMG/${thisitem.img}" alt="${thisitem.img}">
         <div class="item_info">
@@ -93,17 +73,8 @@ for (let i = 0; i < foodItems.length; i++ ){
 function Menu_Item_Selecting_All (){
     CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML = "";
 
-
     for (let i = 0; i < foodItems.length; i++ ){
         var thisitem = foodItems[i];
-        console.log (`<div class="itme-${i}">
-        <img src="Items_IMG/${thisitem.img}" alt="${thisitem.img}">
-        <div class="item_info">
-            <h2 class="item_Name">${thisitem.item}</h2>
-            <h2 class="item_Price">$ ${thisitem.price}</h2>
-        </div>
-        <button value=${thisitem.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button">Add To Cart</button>
-        </div>`);
         CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${i}">
         <img src="Items_IMG/${thisitem.img}" alt="${thisitem.img}">
         <div class="item_info">
@@ -127,14 +98,6 @@ function Menu_Item_Selecting_Main_Dishes (){
     MainDish.forEach(MainDish_Print);
     var Item_Class_NUM = 0;
     function MainDish_Print(item, Item_Class_NUM){
-        console.log (`<div class="itme-${Item_Class_NUM}">
-        <img src="Items_IMG/${item.img}" alt="${item.img}">
-        <div class="item_info">
-            <h2 class="item_Name">${item.item}</h2>
-            <h2 class="item_Price">$ ${item.price}</h2>
-        </div>
-        <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button">Add To Cart</button>
-        </div>`);
         CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${Item_Class_NUM}">
         <img src="Items_IMG/${item.img}" alt="${item.img}">
         <div class="item_info">
@@ -158,14 +121,6 @@ function Menu_Item_Selecting_Sides (){
     MainDish.forEach(MainDish_Print);
     var Item_Class_NUM = 0;
     function MainDish_Print(item, Item_Class_NUM){
-        console.log (`<div class="itme-${Item_Class_NUM}">
-        <img src="Items_IMG/${item.img}" alt="${item.img}">
-        <div class="item_info">
-            <h2 class="item_Name">${item.item}</h2>
-            <h2 class="item_Price">$ ${item.price}</h2>
-        </div>
-        <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button">Add To Cart</button>
-        </div>`);
         CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${Item_Class_NUM}">
         <img src="Items_IMG/${item.img}" alt="${item.img}">
         <div class="item_info">
@@ -189,14 +144,7 @@ function Menu_Item_Selecting_Drinks (){
     MainDish.forEach(MainDish_Print);
     var Item_Class_NUM = 0;
     function MainDish_Print(item, Item_Class_NUM){
-        console.log (`<div class="itme-${Item_Class_NUM}">
-        <img src="Items_IMG/${item.img}" alt="${item.img}">
-        <div class="item_info">
-            <h2 class="item_Name">${item.item}</h2>
-            <h2 class="item_Price">$ ${item.price}</h2>
-        </div>
-        <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button">Add To Cart</button>
-        </div>`);
+
         CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${Item_Class_NUM}">
         <img src="Items_IMG/${item.img}" alt="${item.img}">
         <div class="item_info">
@@ -220,14 +168,7 @@ function Menu_Item_Selecting_Desserts (){
     MainDish.forEach(MainDish_Print);
     var Item_Class_NUM = 0;
     function MainDish_Print(item, Item_Class_NUM){
-        console.log (`<div class="itme-${Item_Class_NUM}">
-        <img src="Items_IMG/${item.img}" alt="${item.img}">
-        <div class="item_info">
-            <h2 class="item_Name">${item.item}</h2>
-            <h2 class="item_Price">$ ${item.price}</h2>
-        </div>
-        <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button">Add To Cart</button>
-        </div>`);
+
         CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${Item_Class_NUM}">
         <img src="Items_IMG/${item.img}" alt="${item.img}">
         <div class="item_info">
