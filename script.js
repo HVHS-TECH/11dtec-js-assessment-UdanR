@@ -270,21 +270,8 @@ function Add_To_Cart_Function (Button_ID) {
     console.log(Shopping_Bag);
 
 
-// Making the var for the total prices
-var Total_Price_Memory = JSON.parse(sessionStorage.getItem('Index_Saved_Total_Price'));
-console.log (Total_Price_Memory);
-var Total_Price = 0;
-
-//Making if their is a total price saved in the memory it uses that value instead of zero
-if (Total_Price_Memory = null){
-    Total_Price = 0;
-    console.log(Total_Price);
-} else {
-    Total_Price = Total_Price_Memory;
-    console.log(Total_Price);
-}
-
 // Adding the total number next to the Shopping cart icon
+var Total_Price = 0;
 for (let i = 0; i < Shopping_Bag.length; i++){
     let price_adding_item_object = Shopping_Bag[i];
     console.log(price_adding_item_object);
@@ -301,10 +288,6 @@ for (let i = 0; i < Shopping_Bag.length; i++){
     // Converting the Shopping_Bag Var to a string and storing it in a seesionStorgae
     sessionStorage.setItem('buying_Items', JSON.stringify(Shopping_Bag));
     console.log(JSON.parse(sessionStorage.getItem('buying_Items')));
-
-    // Converting the totalprice var to a string and storung it the catch
-    sessionStorage.setItem('Index_Saved_Total_Price', JSON.stringify(Total_Price));
-
 }
 }
 const CART_TOTAL_PRICE = document.getElementById("Shopping-cart-price");
