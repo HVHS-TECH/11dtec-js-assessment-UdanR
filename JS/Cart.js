@@ -60,7 +60,10 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     </div>
                 </div>
                 </div>`;
-                Scripts_Output.innerHTML 
+                Scripts_Output.innerHTML += ``;
+                function changing_Item_Quantity(){
+                    const item_quantity = document.getElementById
+                }
 }
 
 //adding the total price next to the cart
