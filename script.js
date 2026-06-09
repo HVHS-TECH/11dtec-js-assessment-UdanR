@@ -272,6 +272,7 @@ function Add_To_Cart_Function (Button_ID) {
 
 // Making the var for the total prices
 var Total_Price_Memory = JSON.parse(sessionStorage.getItem('Index_Saved_Total_Price'));
+console.log (Total_Price_Memory);
 var Total_Price = 0;
 
 //Making if their is a total price saved in the memory it uses that value instead of zero
