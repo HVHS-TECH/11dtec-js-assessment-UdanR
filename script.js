@@ -289,8 +289,9 @@ for (let i = 0; i < Shopping_Bag.length; i++){
     sessionStorage.setItem('buying_Items', JSON.stringify(Shopping_Bag));
     console.log(JSON.parse(sessionStorage.getItem('buying_Items')));
 
-
 }
 }
 const CART_TOTAL_PRICE = document.getElementById("Shopping-cart-price");
+
+
 
