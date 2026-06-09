@@ -65,15 +65,8 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     console.log(choice.id +": "+item_quantity);
                     var excitingItem = added_Buying_Items.find(product => product.id === choice.id);
                     console.log(excitingItem);
-                        if (excitingItem){
-                        excitingItem.quantity += Quantity;
-                        console.log(excitingItem);
+                    
 
-                        } else {
-                             Shopping_Bag.push({id: Button_ID, quantity: Quantity});
-                             console.log(excitingItem);
-                        }
-                        }
 }
 
 //adding the total price next to the cart
