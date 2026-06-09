@@ -25,6 +25,11 @@
     align-items: center;
 }
 
+.receipt_Chosen_Items_Aligning{
+    display: flex;
+    flex-direction: column;
+}
+
 .receipt_Chosen_Items{
     display: flex;
     justify-content: space-between;
