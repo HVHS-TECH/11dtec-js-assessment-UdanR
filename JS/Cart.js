@@ -63,8 +63,13 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                 function changing_Item_Quantity(){
                     const item_quantity = document.getElementById(`item_quantity_${choice.id}`).value;
                     console.log(choice.id +": "+item_quantity);
+                        if (excitingItem){
+                        excitingItem.quantity += Quantity;
 
-                }
+                        } else {
+                             Shopping_Bag.push({id: Button_ID, quantity: Quantity});
+                        }
+                        }
 }
 
 //adding the total price next to the cart
