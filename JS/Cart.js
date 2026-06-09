@@ -67,9 +67,11 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     console.log(excitingItem);
                         if (excitingItem){
                         excitingItem.quantity += Quantity;
+                        console.log(Shopping_Bag);
 
                         } else {
                              Shopping_Bag.push({id: Button_ID, quantity: Quantity});
+                             console.log(Shopping_Bag);
                         }
                         }
 }
