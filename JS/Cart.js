@@ -8,6 +8,9 @@ var added_Buying_Items = JSON.parse(sessionStorage.getItem('buying_Items')) || [
 console.log(added_Buying_Items);
 console.log(foodItems);
 
+//Getting the place to write the scripts
+const Scripts_Output = document.getElementById("scripts");
+
 const CART_ITEM_OUTPUT = document.getElementById("choosen_Cart_Output");
 var Total_Price = 0;
 
@@ -57,6 +60,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     </div>
                 </div>
                 </div>`;
+                Scripts_Output.innerHTML 
 }
 
 //adding the total price next to the cart
