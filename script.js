@@ -299,6 +299,9 @@ for (let i = 0; i < Shopping_Bag.length; i++){
     sessionStorage.setItem('buying_Items', JSON.stringify(Shopping_Bag));
     console.log(JSON.parse(sessionStorage.getItem('buying_Items')));
 
+    // Converting the totalprice var to a string and storung it the catch
+    sessionStorage.setItem('Index_Saved_Total_Price', JSON.stringify(Total_Price));
+
 }
 }
 const CART_TOTAL_PRICE = document.getElementById("Shopping-cart-price");
