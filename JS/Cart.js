@@ -127,6 +127,7 @@ function Check_Out(){
             var choice = foodItems.find(product => product.id === cart_Id);
             var Item_Total = buying_items.quantity * choice.price;
             RECEIPT_CHOSEN_ITEMS_OUTPUT.innerHTML += `
+                <div class="receipt_Chosen_Items">
                 <div class="receipt_Chosen_Items_Info">
                     <h2 class="receipt_Chosen_Items_Name">${choice.item}</h2>
                     <h2 class="receipt_Chosen_Items_Price">$${choice.price}</h2>
