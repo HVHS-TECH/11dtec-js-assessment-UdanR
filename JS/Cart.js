@@ -9,7 +9,7 @@ console.log(added_Buying_Items);
 console.log(foodItems);
 
 //Getting the place to write the scripts
-const Scripts_Output = document.getElementById("scripts");
+const SCRIPTS_OUTPUT = document.getElementById("scripts");
 
 const CART_ITEM_OUTPUT = document.getElementById("choosen_Cart_Output");
 var Total_Price = 0;
@@ -60,7 +60,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     </div>
                 </div>
                 </div>`;
-                Scripts_Output.innerHTML += ``;
+                SCRIPTS_OUTPUT.innerHTML += "";
                 function changing_Item_Quantity(){
                     const item_quantity = document.getElementById("item_quantity_${choice.id}.value");
                     console.log(item_quantity);
