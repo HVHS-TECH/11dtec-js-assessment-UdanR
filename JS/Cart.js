@@ -62,7 +62,9 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                 </div>`;
                 Scripts_Output.innerHTML += ``;
                 function changing_Item_Quantity(){
-                    const item_quantity = document.getElementById
+                    const item_quantity = document.getElementById("item_quantity_${choice.id}.value");
+                    console.log(item_quantity);
+
                 }
 }
 
