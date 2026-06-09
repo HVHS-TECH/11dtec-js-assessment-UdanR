@@ -69,6 +69,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                         excitingItem.quantity = Number(item_quantity);
                     }
                     excitingItem.quantity = item_quantity;
+                    console.log(excitingItem.quantity);
                     console.log(excitingItem);
                 }
 
