@@ -277,8 +277,10 @@ var Total_Price = 0;
 //Making if their is a total price saved in the memory it uses that value instead of zero
 if (Total_Price_Memory = null){
     Total_Price = 0;
+    console.log(Total_Price);
 } else {
     Total_Price = Total_Price_Memory;
+    console.log(Total_Price);
 }
 
 // Adding the total number next to the Shopping cart icon
