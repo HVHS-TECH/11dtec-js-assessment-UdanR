@@ -63,14 +63,14 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                 function changing_Item_Quantity(){
                     const item_quantity = document.getElementById(`item_quantity_${choice.id}`).value;
                     console.log(choice.id +": "+item_quantity);
-                    var excitingItem = added_Buying_Items.find(product => product.id === choice.id);
-                    console.log(excitingItem);
-                    if (excitingItem) {
-                        excitingItem.quantity = Number(item_quantity);
+                    var Item = added_Buying_Items.find(product => product.id === choice.id);
+                    console.log(Item.id);
+                    if (Item) {
+                        Item.quantity = Number(item_quantity);
                     }
-                    excitingItem.quantity = item_quantity;
-                    console.log(excitingItem.quantity);
-                    console.log(excitingItem);
+                    Item.quantity = item_quantity;
+                    console.log(Item.quantity);
+                    console.log(Item);
                 }
 
 }
