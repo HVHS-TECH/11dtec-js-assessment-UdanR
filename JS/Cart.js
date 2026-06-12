@@ -175,6 +175,9 @@ function Check_Out(){
             </div>`
 
     }
+    // Emptying the cart and turning the total price zero
+    CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
+    added_Buying_Items = [{}];
 }
 
 // Pressing to clear the cart and start ordering again
