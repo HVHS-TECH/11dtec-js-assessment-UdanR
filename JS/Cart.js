@@ -188,3 +188,4 @@ function Clear() {
     CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
     CHECKOUT_TOTAL_PRICE.innerHTML = "$" + Total_Price;
 }
+
