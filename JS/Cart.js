@@ -65,10 +65,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     console.log(choice.id +": "+item_quantity);
                     var Item = added_Buying_Items.find(product => product.id === choice.id);
                     console.log(Item.id);
-                    if (Item) {
                         Item.quantity = Number(item_quantity);
-                    }
-                    Item.quantity = item_quantity;
                     console.log(Item.quantity);
                     console.log(Item);
                 }
