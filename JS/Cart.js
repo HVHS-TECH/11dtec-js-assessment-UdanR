@@ -186,4 +186,5 @@ function Clear() {
     CART_ITEM_OUTPUT.innerHTML = "";
     Total_Price = 0;
     CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
+    CHECKOUT_TOTAL_PRICE.innerHTML = "$" + Total_Price;
 }
