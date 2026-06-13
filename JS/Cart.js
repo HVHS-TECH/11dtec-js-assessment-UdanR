@@ -68,7 +68,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     //Value is the id of the item that is chaning
 
                     // Getting the value of the input area
-                    const ITEM_QUANTITY = document.getElementById(`item_quantity_${choice.id}`).value;
+                    const ITEM_QUANTITY = document.getElementById(`item_quantity_${value}`).value;
                     console.log(choice.id +": "+ITEM_QUANTITY);
 
                     // Finding the item from the shopping bag
