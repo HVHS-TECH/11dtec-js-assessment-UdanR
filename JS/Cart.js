@@ -107,7 +107,9 @@ function changing_Item_Quantity(value){
 
     //Updating the TotalPrice
     Total_Price = (Total_Price - old_Price) + New_Item_Quantity;
-    console.log(Total_Price)
+    console.log(Total_Price);
+
+    // Printing the New Total Price
 
     // Printing the new price in to the HTML
     ITEM_UPDATING_QUANTITY.innerHTML = `$${New_Item_Quantity}`;
