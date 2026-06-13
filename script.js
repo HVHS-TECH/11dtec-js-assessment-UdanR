@@ -217,7 +217,7 @@ function Add_To_Cart_Function (Button_ID) {
     var originalColor = #D62828
     setTimeout(() => {
         ADD_TO_CART_BUTTON.style.backgroundColor = originalColor;
-    }, 3000); 
+    }, 3000); }
 
 
 // Adding the total number next to the Shopping cart icon
