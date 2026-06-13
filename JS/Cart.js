@@ -84,7 +84,7 @@ function changing_Item_Quantity(value){
 
     // Saving the new updated array
     sessionStorage.setItem('buying_Items', JSON.stringify(added_Buying_Items));
-                    
+
 
     // Finding the item from the Inventory
     var Item_Inventory = foodItems.find(product => product.id === Number(value)); // The stored id is number in the inventory
@@ -92,6 +92,11 @@ function changing_Item_Quantity(value){
 
     // Getting the place to update the price
     const ITEM_UPDATING_QUANTITY = document.getElementById("chosen_Item_Total_Price_"+value);
+
+    // Storing the orginal price (orginal price * quantity (OLD))
+    const OLD_PRICE_HTML = document.getElementById("chosen_Item_Total_Price_"+value).innerText;
+    var old_Price = Number(OLD_PRICE_HTML.replaceAll ("$",""));
+    console.log (old_Price);
 
     // Getting the original price of the item
     var Original_price = Item_Inventory.price;
