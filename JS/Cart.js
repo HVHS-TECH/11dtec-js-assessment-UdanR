@@ -71,10 +71,17 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                         Item.quantity = Number(ITEM_QUANTITY);
                     console.log(ITEM_QUANTITY);
                     console.log(Item);
+                    const ITEM_UPDATING_QUANTITY = document.getElementById("chosen_Item_Total_Price_"+choice.id).innerText;
+                    console.log(ITEM_UPDATING_QUANTITY);
+                    var Cleaned_Quantity_Updating = Number(ITEM_UPDATING_QUANTITY.replaceAll("$",""));
+                    console.log(Cleaned_Quantity_Updating)
+                    var New_Item_Quantity = 
+
+
+
                     var updating_cart_ID = choice.id;
-                    
+
                     console.log ("updating_cart: "+ updating_cart_ID);
-                    updating_cart(updating_cart_ID, ITEM_QUANTITY, );
                 }
 
                 function updating_cart(updating_cart_ID){
