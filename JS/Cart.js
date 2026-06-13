@@ -38,7 +38,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     </div>
                     <div class="Item_Total">
                         <button value="${choice.id}" onclick="Remove_From_Cart_Function(this.value)" class="Remove_From_Cart_Button">Remove</button>
-                        <h2 class="Chosen_Item_Total" id="chosen_Item_Total_Price_${choice.id}">$${quantity}</h2>
+                        <h2 class="Chosen_Item_Total" value="${quantity}"id="chosen_Item_Total_Price_${choice.id}">$${quantity}</h2>
                     </div>
                 </div>
                 </div>`);
@@ -56,7 +56,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     </div>
                     <div class="Item_Total">
                         <button value="${choice.id}" onclick="Remove_From_Cart_Function(this.value)" class="Remove_From_Cart_Button">Remove</button>
-                        <h2 class="Chosen_Item_Total" id="chosen_Item_Total_Price_${choice.id}">$${quantity}</h2>
+                        <h2 class="Chosen_Item_Total" value="${quantity}"id="chosen_Item_Total_Price_${choice.id}">$${quantity}</h2>
                     </div>
                 </div>
                 </div>`;
@@ -76,7 +76,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                 function updating_cart(updating_cart_ID){
                     console.log (updating_cart_ID);
                     var updating_ID = updating_cart_ID;
-                    const QUANTITY_UPDATING = document.getElementById("chosen_Item_Total_Price_"+updating_cart_ID).value;
+                    const QUANTITY_UPDATING = document.getElementById("chosen_Item_Total_Price_"+updating_cart_ID.value;
                     console.log (QUANTITY_UPDATING);
                 }
 
