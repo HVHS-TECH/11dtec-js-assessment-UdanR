@@ -79,7 +79,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     console.log(Item);
 
                     // Saving the new updated array
-                    sessionStorage.setItem('buying_Items', JSON.stringify(Shopping_Bag));
+                    sessionStorage.setItem('buying_Items', JSON.stringify(added_Buying_Items));
 
 
                     // Getting the place to update the price
