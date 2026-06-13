@@ -81,6 +81,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     var Cleaned_Quantity_Updating = Number(QUANTITY_UPDATING.replaceAll ("$",""));
                     console.log (Cleaned_Quantity_Updating);
                     var Item = added_Buying_Items.find(product => product.id === String(updating_cart_ID));
+                    
 
 
                 }
