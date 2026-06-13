@@ -78,6 +78,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     var updating_ID = updating_cart_ID;
                     const QUANTITY_UPDATING = document.getElementById("chosen_Item_Total_Price_"+updating_cart_ID).innerText;
                     console.log (QUANTITY_UPDATING);
+                    console.log (asd);
                 }
 
 }
