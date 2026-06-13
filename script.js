@@ -214,7 +214,7 @@ function Add_To_Cart_Function (Button_ID) {
 
     const ADD_TO_CART_BUTTON = document.getElementById("Add_To_Cart_Button_"+Button_ID);
     ADD_TO_CART_BUTTON.style.backgroundColor = "green";
-    var originalColor = 
+    var originalColor = #D62828
     setTimeout(() => {
         ADD_TO_CART_BUTTON.style.backgroundColor = originalColor;
     }, 3000); 
