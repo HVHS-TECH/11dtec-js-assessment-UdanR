@@ -56,7 +56,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     </div>
                     <div class="Item_Total">
                         <button value="${choice.id}" onclick="Remove_From_Cart_Function(this.value)" class="Remove_From_Cart_Button">Remove</button>
-                        <h2 class="Chosen_Item_Total" id="chosen_Item_Total_Price">$${quantity}</h2>
+                        <h2 class="Chosen_Item_Total" id="chosen_Item_Total_Price_${choice.id}">$${quantity}</h2>
                     </div>
                 </div>
                 </div>`;
@@ -68,6 +68,11 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                         Item.quantity = Number(ITEM_QUANTITY);
                     console.log(ITEM_QUANTITY);
                     console.log(Item);
+                }
+
+                function updating_cart(){
+                    const
+                    chosen_Item_Total_Price
                 }
 
 }
