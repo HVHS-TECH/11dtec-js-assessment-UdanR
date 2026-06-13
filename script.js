@@ -210,9 +210,8 @@ function Add_To_Cart_Function (Button_ID) {
 
     console.log(Shopping_Bag);
 
-    var add_To_Cart_Button = document.getElementsByClassName("Add_To_Cart_Button");
-    add_To_Cart_Button.className +=
-
+    const ADD_TO_CART_BUTTON = document.getElementsByClassName("Add_To_Cart_Button");
+    ADD_TO_CART_BUTTON.style.backgroundColor = "transparent";
 
 
 // Adding the total number next to the Shopping cart icon
