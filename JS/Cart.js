@@ -52,7 +52,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                         <h2 class="item_Price">$${choice.price}</h2>
                     </div>
                     <div class="Item_Quantity">
-                        <input min="1" type="number" value="${buying_items.quantity}" onclick="changing_Item_Quantity()" id="item_quantity_${choice.id}" class="item_quantity">
+                        <input min="1" type="number" value="${buying_items.quantity}" onclick="changing_Item_Quantity(${choice.id})" id="item_quantity_${choice.id}" class="item_quantity">
                     </div>
                     <div class="Item_Total">
                         <button value="${choice.id}" onclick="Remove_From_Cart_Function(this.value)" class="Remove_From_Cart_Button">Remove</button>
@@ -63,7 +63,8 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
 
                 const SCRIPTS_OUTPUT = document.getElementById("scripts")
                 console.log(changing_Item_Quantity);
-                function changing_Item_Quantity(){
+                function changing_Item_Quantity(value){
+                    console.log(value);
                     var changing_Item_Quantity_Price = choice.price;
                     
                     // Getting the value of the input area
