@@ -210,6 +210,8 @@ function Add_To_Cart_Function (Button_ID) {
 
     console.log(Shopping_Bag);
 
+    
+
 
 // Adding the total number next to the Shopping cart icon
 var Total_Price = 0;
