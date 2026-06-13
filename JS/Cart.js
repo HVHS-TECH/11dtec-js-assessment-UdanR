@@ -109,8 +109,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
 
 
                 }
-                var updating_quantity_input_box = changing_Item_Quantity();
-SCRIPTS_OUTPUT.textContent = updating_quantity_input_box;
+
                 
 
 }
