@@ -150,3 +150,16 @@ Cart
 
 
                 }
+
+                index page
+                testing card - 
+                            <div class="itme-1">
+                <img src="Banner Img/Classic Burger.jpeg" alt="Classic Burger">
+                <div class="item_info">
+                    <h2 class="item_Name">Classic Burger</h2>
+                    <h2 class="item_Price">$5</h2>
+                </div>
+                <input type="number" id="item_quantity_101">
+                <button value="101" onclick="Add_To_Cart_Function(this.value)" class=" Add_To_Cart_Button">Add To Cart</button>
+            </div>
+        </div>
