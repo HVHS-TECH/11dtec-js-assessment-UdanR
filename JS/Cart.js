@@ -85,7 +85,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     
 
                     // Finding the item from the Inventory
-                    var Item_Inventory = added_Buying_Items.find(product => product.id === Number(value)); // The stored id is number in the inventory
+                    var Item_Inventory = foodItems.find(product => product.id === Number(value)); // The stored id is number in the inventory
                     console.log(Item_Inventory);
 
                     // Getting the place to update the price
