@@ -112,6 +112,8 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
 
 }
 
+var updating_quantity_input_box = changing_Item_Quantity();
+
 //adding the total price next to the cart
 const CART_TOTAL_PRICE = document.getElementById("Shopping-cart-price");
 CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
