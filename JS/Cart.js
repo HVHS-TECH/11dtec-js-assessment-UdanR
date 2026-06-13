@@ -62,6 +62,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                 </div>`;
                 function changing_Item_Quantity(){
                     console.log(JSON.stringify(added_Buying_Items));
+                    console.log(JSON.parse(JSON.stringify(added_Buying_Items)));
                     const ITEM_QUANTITY = document.getElementById(`item_quantity_${choice.id}`).value;
                     console.log(choice.id +": "+ITEM_QUANTITY);
                     var Item = added_Buying_Items.filter(product => product.id === Number(choice.id));
