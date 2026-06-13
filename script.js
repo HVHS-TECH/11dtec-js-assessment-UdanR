@@ -177,7 +177,7 @@ function Menu_Item_Selecting_Desserts (){
         </div>
         <div class="Submit_Info">
         <input type="number" value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
-        <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button">Add To Cart</button>
+        <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button" id="Add_To_Cart_Button_${item.id}">Add To Cart</button>
         </div>
         </div>`
         Item_Class_NUM = Item_Class_NUM + 1;
@@ -210,8 +210,8 @@ function Add_To_Cart_Function (Button_ID) {
 
     console.log(Shopping_Bag);
 
-    const ADD_TO_CART_BUTTON = document.getElementsByClassName("Add_To_Cart_Button");
-    ADD_TO_CART_BUTTON.style.backgroundColor = "transparent";
+    const ADD_TO_CART_BUTTON = document.getElementById("Add_To_Cart_Button_"+Button_ID);
+    ADD_TO_CART_BUTTON.style.backgroundColor = "green";
 
 
 // Adding the total number next to the Shopping cart icon
