@@ -67,11 +67,24 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     console.log(value);
                     //Value is the id of the item that is chaning
 
+                    // Getting the value of the input area
+                    const ITEM_QUANTITY = document.getElementById(`item_quantity_${choice.id}`).value;
+                    console.log(choice.id +": "+ITEM_QUANTITY);
 
                     // Finding the item from the shopping bag
                     var Item = added_Buying_Items.find(product => product.id === String(value)); // The id is a string so that's why i am looking for a string id instead of a number id
                     console.log(Item);
                     //Updating the Quantity of the item
+                    Item.quantity = Number(ITEM_QUANTITY);
+                    console.log(ITEM_QUANTITY);
+                    console.log(Item);
+
+                    
+                    // Finding the item from the Inventory
+                    var Item_Inventory = added_Buying_Items.find(product => product.id === Number(value)); // The stored id is number in the inventory
+                    console.log(Item_Inventory);
+
+
 
 
 
@@ -93,9 +106,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
 
                     var changing_Item_Quantity_Price = choice.price;
                     
-                    // Getting the value of the input area
-                    const ITEM_QUANTITY = document.getElementById(`item_quantity_${choice.id}`).value;
-                    console.log(choice.id +": "+ITEM_QUANTITY);
+
 
                     // Finding the item from the shopping bag
                     var Item = added_Buying_Items.find(product => product.id === String(choice.id)); // The id is a string so that's why i am looking for a string id instead of a number id
