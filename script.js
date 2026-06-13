@@ -214,10 +214,10 @@ function Add_To_Cart_Function (Button_ID) {
 
     const ADD_TO_CART_BUTTON = document.getElementById("Add_To_Cart_Button_"+Button_ID);
     ADD_TO_CART_BUTTON.style.backgroundColor = "green";
-    var originalColor = #D62828
+    var originalColor = "rgb(214,40,40)";
     setTimeout(() => {
         ADD_TO_CART_BUTTON.style.backgroundColor = originalColor;
-    }, 3000); }
+    }, 3000); 
 
 
 // Adding the total number next to the Shopping cart icon
@@ -239,8 +239,7 @@ for (let i = 0; i < Shopping_Bag.length; i++){
     sessionStorage.setItem('buying_Items', JSON.stringify(Shopping_Bag));
     console.log(JSON.parse(sessionStorage.getItem('buying_Items')));
 }
-}
 const CART_TOTAL_PRICE = document.getElementById("Shopping-cart-price");
-
+}
 
 
