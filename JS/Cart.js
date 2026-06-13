@@ -63,44 +63,45 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
 
 }
 
-                console.log(changing_Item_Quantity);
-                function changing_Item_Quantity(value){
-                    console.log(value);
-                    //Value is the id of the item that is chaning
+// Making the quantity value changing input box work
+console.log(changing_Item_Quantity);
+function changing_Item_Quantity(value){
+    console.log(value);
+    //Value is the id of the item that is chaning
 
-                    // Getting the value of the input area
-                    const ITEM_QUANTITY = document.getElementById(`item_quantity_${value}`).value;
-                    console.log(choice.id +": "+ITEM_QUANTITY);
+    // Getting the value of the input area
+    const ITEM_QUANTITY = document.getElementById(`item_quantity_${value}`).value;
+    console.log(choice.id +": "+ITEM_QUANTITY);
 
-                    // Finding the item from the shopping bag
-                    var Item = added_Buying_Items.find(product => product.id === String(value)); // The id is a string so that's why i am looking for a string id instead of a number id
-                    console.log(Item);
+    // Finding the item from the shopping bag
+    var Item = added_Buying_Items.find(product => product.id === String(value)); // The id is a string so that's why i am looking for a string id instead of a number id
+    console.log(Item);
 
-                    //Updating the Quantity of the item
-                    Item.quantity = Number(ITEM_QUANTITY);
-                    console.log(ITEM_QUANTITY);
-                    console.log(Item);
+    //Updating the Quantity of the item
+    Item.quantity = Number(ITEM_QUANTITY);
+    console.log(ITEM_QUANTITY);
+    console.log(Item);
 
-                    // Saving the new updated array
-                    sessionStorage.setItem('buying_Items', JSON.stringify(added_Buying_Items));
+    // Saving the new updated array
+    sessionStorage.setItem('buying_Items', JSON.stringify(added_Buying_Items));
                     
 
-                    // Finding the item from the Inventory
-                    var Item_Inventory = foodItems.find(product => product.id === Number(value)); // The stored id is number in the inventory
-                    console.log(Item_Inventory);
+    // Finding the item from the Inventory
+    var Item_Inventory = foodItems.find(product => product.id === Number(value)); // The stored id is number in the inventory
+    console.log(Item_Inventory);
 
-                    // Getting the place to update the price
-                    const ITEM_UPDATING_QUANTITY = document.getElementById("chosen_Item_Total_Price_"+value);
+    // Getting the place to update the price
+    const ITEM_UPDATING_QUANTITY = document.getElementById("chosen_Item_Total_Price_"+value);
 
-                    // Getting the original price of the item
-                    var Original_price = Item_Inventory.price;
+    // Getting the original price of the item
+    var Original_price = Item_Inventory.price;
 
-                    // Calculating the new price
-                    var New_Item_Quantity = Original_price*Item.quantity;
-                    console.log(New_Item_Quantity);
+    // Calculating the new price
+    var New_Item_Quantity = Original_price*Item.quantity;
+    console.log(New_Item_Quantity);
 
-                    // Printing the new price in to the HTML
-                    ITEM_UPDATING_QUANTITY.innerHTML = `$${New_Item_Quantity}`;
+    // Printing the new price in to the HTML
+    ITEM_UPDATING_QUANTITY.innerHTML = `$${New_Item_Quantity}`;
 
                 }
 
