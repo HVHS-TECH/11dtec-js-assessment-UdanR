@@ -213,14 +213,14 @@ function Add_To_Cart_Function (Button_ID) {
     var add_To_Cart_Button = document.getElementsByClassName("Add_To_Cart_Button");
     add_To_Cart_Button.className +=
     add_To_Cart_Button.addEventListener("click", () => {
-  // 1. Add the class immediately
-  textElement.classList.add("highlight");
+    // 1. Add the class immediately
+    add_To_Cart_Button.classList.add("Active");
 
-  // 2. Remove it after 2000 milliseconds (2 seconds)
-  setTimeout(() => {
-    textElement.classList.remove("highlight");
-  }, 2000);
-});
+    // 2. Remove it after 2000 milliseconds (2 seconds)
+    setTimeout(() => {
+        add_To_Cart_Button.classList.remove("Active");
+    }, 2000);
+    });
 
 
 // Adding the total number next to the Shopping cart icon
