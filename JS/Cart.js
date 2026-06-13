@@ -66,16 +66,30 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     // Getting the value of the input area
                     const ITEM_QUANTITY = document.getElementById(`item_quantity_${choice.id}`).value;
                     console.log(choice.id +": "+ITEM_QUANTITY);
-                    var Item = added_Buying_Items.find(product => product.id === String(choice.id));
+
+                    // Finding the item from the shopping bag
+                    var Item = added_Buying_Items.find(product => product.id === String(choice.id)); // The id is a string so that's why i am looking for a string id instead of a number id
                     console.log(Item);
-                        Item.quantity = Number(ITEM_QUANTITY);
+                    //Updating the Quantity of the item
+                    Item.quantity = Number(ITEM_QUANTITY);
                     console.log(ITEM_QUANTITY);
                     console.log(Item);
+
+                    // Saving the new updated array
+                    sessionStorage.setItem('buying_Items', JSON.stringify(Shopping_Bag));
+
+
+                    // Getting the place to update the price
                     const ITEM_UPDATING_QUANTITY = document.getElementById("chosen_Item_Total_Price_"+choice.id);
+                    // Getting the original price of the item
                     var Original_price = choice.price;
+                    // Calculating the new price
                     var New_Item_Quantity = Original_price*Item.quantity;
                     console.log(New_Item_Quantity);
+                    // Printing the new price in to the HTML
                     ITEM_UPDATING_QUANTITY.innerHTML = `$${New_Item_Quantity}`;
+                    
+
 
 
 
