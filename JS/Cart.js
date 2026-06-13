@@ -60,6 +60,9 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     </div>
                 </div>
                 </div>`;
+
+                
+                console.log(changing_Item_Quantity);
                 function changing_Item_Quantity(){
                     var changing_Item_Quantity_Price = choice.price;
                     
@@ -88,11 +91,6 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     console.log(New_Item_Quantity);
                     // Printing the new price in to the HTML
                     ITEM_UPDATING_QUANTITY.innerHTML = `$${New_Item_Quantity}`;
-                    
-
-
-
-
 
                     var updating_cart_ID = choice.id;
 
