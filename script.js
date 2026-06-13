@@ -193,10 +193,12 @@ var Shopping_Bag = [];
 function Add_To_Cart_Function (Button_ID) {
     // Item ID
     console.log(Button_ID); 
+    
     // Getting Item Quantity
     const ITEM_QUANTITY = document.getElementById("item_quantity_"+Button_ID);
     var Quantity = Number(ITEM_QUANTITY.value);
     console.log(ITEM_QUANTITY);
+
     // Checking if the item has be added to the cart before
     var excitingItem = Shopping_Bag.find(product => product.id === Button_ID);
     console.log(excitingItem);
