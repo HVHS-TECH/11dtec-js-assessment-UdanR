@@ -65,6 +65,8 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                 console.log(changing_Item_Quantity);
                 function changing_Item_Quantity(value){
                     console.log(value);
+                    //Getting the id of the item that is chaning
+                    
                     var changing_Item_Quantity_Price = choice.price;
                     
                     // Getting the value of the input area
