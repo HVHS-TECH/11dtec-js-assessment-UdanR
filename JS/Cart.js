@@ -111,7 +111,7 @@ function changing_Item_Quantity(value){
 
     // Printing the New Total Price
     CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
-    
+
     // Printing the new price in to the HTML
     ITEM_UPDATING_QUANTITY.innerHTML = `$${New_Item_Quantity}`;
 
@@ -128,6 +128,8 @@ CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
 const CHECKOUT_TOTAL_PRICE = document.getElementById("checkout_Total_Price");
 CHECKOUT_TOTAL_PRICE.innerHTML = "$" + Total_Price;
 
+
+//--------------------- Recipt ---------------------//
 
 const RECEIPT_OUTPUT = document.getElementById("Receipt_Area");
 RECEIPT_OUTPUT.style.backgroundColor = "transparent";
