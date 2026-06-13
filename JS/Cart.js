@@ -61,7 +61,8 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                 </div>
                 </div>`;
 
-                const SCRIPTS_OUTPUT = document.getElementById("scripts")
+}
+
                 console.log(changing_Item_Quantity);
                 function changing_Item_Quantity(value){
                     console.log(value);
@@ -89,7 +90,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     console.log(Item_Inventory);
 
                     // Getting the place to update the price
-                    const ITEM_UPDATING_QUANTITY = document.getElementById("chosen_Item_Total_Price_"+choice.id);
+                    const ITEM_UPDATING_QUANTITY = document.getElementById("chosen_Item_Total_Price_"+value);
 
                     // Getting the original price of the item
                     var Original_price = Item_Inventory.price;
@@ -102,7 +103,6 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     ITEM_UPDATING_QUANTITY.innerHTML = `$${New_Item_Quantity}`;
 
                 }
-}
 
 
 
