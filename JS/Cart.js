@@ -71,11 +71,12 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                         Item.quantity = Number(ITEM_QUANTITY);
                     console.log(ITEM_QUANTITY);
                     console.log(Item);
-                    const ITEM_UPDATING_QUANTITY = document.getElementById("chosen_Item_Total_Price_"+choice.id).innerText;
-                    console.log(ITEM_UPDATING_QUANTITY);
-                    var Cleaned_Quantity_Updating = Number(ITEM_UPDATING_QUANTITY.replaceAll("$",""));
-                    console.log(Cleaned_Quantity_Updating)
-                    var New_Item_Quantity = 
+                    const ITEM_UPDATING_QUANTITY = document.getElementById("chosen_Item_Total_Price_"+choice.id);
+                    var Original_price = choice.price;
+                    var New_Item_Quantity = Original_price*Item.quantity;
+                    console.log(New_Item_Quantity);
+                    ITEM_UPDATING_QUANTITY.innerHTML = `$${New_Item_Quantity}`;
+
 
 
 
