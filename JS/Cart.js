@@ -72,6 +72,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     console.log(ITEM_QUANTITY);
                     console.log(Item);
                     var updating_cart_ID = choice.id;
+                    
                     console.log ("updating_cart: "+ updating_cart_ID);
                     updating_cart(updating_cart_ID, ITEM_QUANTITY, );
                 }
