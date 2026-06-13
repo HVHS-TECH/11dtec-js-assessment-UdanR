@@ -61,13 +61,13 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                 </div>
                 </div>`;
 
-                
-                console.log(changing_Item_Quantity);
+                const SCRIPTS_OUTPUT = document.getElementById("scripts")
+                SCRIPTS_OUTPUT.innerHTML += `
                 function changing_Item_Quantity(){
                     var changing_Item_Quantity_Price = choice.price;
                     
                     // Getting the value of the input area
-                    const ITEM_QUANTITY = document.getElementById(`item_quantity_${choice.id}`).value;
+                    const ITEM_QUANTITY = document.getElementById("item_quantity_${choice.id}").value;
                     console.log(choice.id +": "+ITEM_QUANTITY);
 
                     // Finding the item from the shopping bag
@@ -90,12 +90,12 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     var New_Item_Quantity = Original_price*Item.quantity;
                     console.log(New_Item_Quantity);
                     // Printing the new price in to the HTML
-                    ITEM_UPDATING_QUANTITY.innerHTML = `$${New_Item_Quantity}`;
+                    ITEM_UPDATING_QUANTITY.innerHTML = "$${New_Item_Quantity}";
 
                     var updating_cart_ID = choice.id;
 
                     console.log ("updating_cart: "+ updating_cart_ID);
-                }
+                }`
 
                 function updating_cart(updating_cart_ID){
                     console.log (updating_cart_ID);
