@@ -97,46 +97,10 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     // Calculating the new price
                     var New_Item_Quantity = Original_price*Item.quantity;
                     console.log(New_Item_Quantity);
-                    
+
                     // Printing the new price in to the HTML
                     ITEM_UPDATING_QUANTITY.innerHTML = `$${New_Item_Quantity}`;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    var changing_Item_Quantity_Price = choice.price;
-                    
-
-
-                    // Finding the item from the shopping bag
-                    var Item = added_Buying_Items.find(product => product.id === String(choice.id)); // The id is a string so that's why i am looking for a string id instead of a number id
-                    console.log(Item);
-                    //Updating the Quantity of the item
-                    Item.quantity = Number(ITEM_QUANTITY);
-                    console.log(ITEM_QUANTITY);
-                    console.log(Item);
-
-
-
-
-
-
-
-
-                    var updating_cart_ID = choice.id;
-
-                    console.log ("updating_cart: "+ updating_cart_ID);
                 }
 }
 
