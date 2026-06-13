@@ -66,7 +66,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                 function changing_Item_Quantity(value){
                     console.log(value);
                     //Getting the id of the item that is chaning
-                    
+
                     var changing_Item_Quantity_Price = choice.price;
                     
                     // Getting the value of the input area
@@ -99,22 +99,6 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
 
                     console.log ("updating_cart: "+ updating_cart_ID);
                 }
-
-                function updating_cart(updating_cart_ID){
-                    console.log (updating_cart_ID);
-                    var updating_ID = updating_cart_ID;
-                    const QUANTITY_UPDATING = document.getElementById("chosen_Item_Total_Price_"+updating_cart_ID).innerText;
-                    console.log (QUANTITY_UPDATING);
-                    var Cleaned_Quantity_Updating = Number(QUANTITY_UPDATING.replaceAll ("$",""));
-                    console.log (Cleaned_Quantity_Updating);
-                    var Item = added_Buying_Items.find(product => product.id === String(updating_cart_ID));
-
-
-
-                }
-
-                
-
 }
 
 
