@@ -63,7 +63,7 @@ for (let i = 0; i < foodItems.length; i++ ){
         </div>
         <div class="Submit_Info">
         <input type="number" value=1 class="item_quantity_choosing" id="item_quantity_${thisitem.id}">
-        <button value=${thisitem.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button" id="Add_To_Cart_Button_${item.id}">Add To Cart</button>
+        <button value=${thisitem.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button" id="Add_To_Cart_Button_${thisitem.id}">Add To Cart</button>
         </div>
         </div>`
             
@@ -83,7 +83,7 @@ function Menu_Item_Selecting_All (){
         </div>
         <div class="Submit_Info">
         <input type="number" value=1 class="item_quantity_choosing" id="item_quantity_${thisitem.id}">
-        <button value=${thisitem.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button" id="Add_To_Cart_Button_${item.id}">Add To Cart</button>
+        <button value=${thisitem.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button" id="Add_To_Cart_Button_${thisitem.id}">Add To Cart</button>
         </div>
         </div>`
             
@@ -214,6 +214,10 @@ function Add_To_Cart_Function (Button_ID) {
 
     const ADD_TO_CART_BUTTON = document.getElementById("Add_To_Cart_Button_"+Button_ID);
     ADD_TO_CART_BUTTON.style.backgroundColor = "green";
+    var originalColor = 
+    setTimeout(() => {
+        ADD_TO_CART_BUTTON.style.backgroundColor = originalColor;
+    }, 3000); 
 
 
 // Adding the total number next to the Shopping cart icon
