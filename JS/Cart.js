@@ -110,7 +110,8 @@ function changing_Item_Quantity(value){
     console.log(Total_Price);
 
     // Printing the New Total Price
-
+    CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
+    
     // Printing the new price in to the HTML
     ITEM_UPDATING_QUANTITY.innerHTML = `$${New_Item_Quantity}`;
 
