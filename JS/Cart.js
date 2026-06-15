@@ -296,6 +296,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     </div>
                 </div>
                 </div>`;
-                
+                Total_Price = Total_Price-quantity;
+                console.log(Total_Price);
 }
 }
