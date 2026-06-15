@@ -37,7 +37,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                         <input min="1" type="number" value="${buying_items.quantity}" id="item_quantity_${choice.id}" class="item_quantity">
                     </div>
                     <div class="Item_Total">
-                        <button value="${i}" onclick="Remove_From_Cart_Function(this.value)" class="Remove_From_Cart_Button">Remove</button>
+                        <button onclick="Remove_From_Cart_Function(${i})" class="Remove_From_Cart_Button">Remove</button>
                         <h2 class="Chosen_Item_Total" value="${quantity}"id="chosen_Item_Total_Price_${choice.id}">$${quantity}</h2>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                         <input min="1" type="number" value="${buying_items.quantity}" onclick="changing_Item_Quantity(${choice.id})" id="item_quantity_${choice.id}" class="item_quantity">
                     </div>
                     <div class="Item_Total">
-                        <button value="${choice.id}" onclick="Remove_From_Cart_Function(this.value)" class="Remove_From_Cart_Button">Remove</button>
+                        <button onclick="Remove_From_Cart_Function(${i})" class="Remove_From_Cart_Button">Remove</button>
                         <h2 class="Chosen_Item_Total" value="${quantity}"id="chosen_Item_Total_Price_${choice.id}">$${quantity}</h2>
                     </div>
                 </div>
