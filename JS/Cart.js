@@ -241,6 +241,15 @@ function Clear() {
 
 
 function Remove_From_Cart_Function (value) {
+    //Updating the total price
+    const REMOVING_ITEM_PRICE = document.getElementById("chosen_Item_Total_Price_"+value).innerText;
+    var cleaned_Removing_Item_Price = Number(REMOVING_ITEM_PRICE.replaceAll("$",""));
+    Total_Price = Total_Price-cleaned_Removing_Item_Price;
+    //Updating HTML
+    
+
+
+
     //Removing one item from the array
     added_Buying_Items.splice(value,1);
     //Saving the Array
@@ -278,8 +287,5 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     </div>
                 </div>
                 </div>`;
-                console.log(quantity);
-                Total_Price = Total_Price-quantity;
-                console.log(Total_Price);
 }
 }
