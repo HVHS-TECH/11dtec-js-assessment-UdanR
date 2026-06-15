@@ -1,0 +1,15 @@
+footer{
+    background-color: #1D1D1D;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    border-radius: 5px;
+
+}
+
+footer > h1,
+footer > h2{
+    color: white;
+}
+
+footer
