@@ -12,4 +12,6 @@ footer > h2{
     color: white;
 }
 
-footer
+footer > h2{
+    font-size: small;
+}
