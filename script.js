@@ -25,9 +25,10 @@ var foodItems = [
   { id: 123, category: 'Desserts', recommend: true ,item: 'Churros', price: 6, img: 'Churros.jpeg'},
   { id: 124, category: 'Desserts', recommend: true ,item: 'Ice Cream Cup', price: 5, img: 'Ice_Cream_Cup.jpeg'},
   { id: 125, category: 'Desserts', recommend: false ,item: 'Strawberry Short Cake', price: 12, img: 'Strawberry_Short_Cake.jpeg'},
-  { id: 126, category: 'Desserts', recommend: false ,item: 'Chocolate Mousse', price: 12, img: 'Chocolate_Mousse.jpeg'},
-  { id: 127, category: 'Desserts', recommend: false ,item: 'Fruit Salad Cup', price: 10, img: 'Fruit_Salad_Cup.jpeg'},
-  { id: 128, category: 'Desserts', recommend: false ,item: 'Cookie', price: 3, img: 'Cookie.jpeg'}
+  { id: 126, category: 'Desserts', recommend: false ,item: 'Cake Roll', price: 12, img: 'Cake_Roll.jpeg'},
+  { id: 127, category: 'Desserts', recommend: false ,item: 'Chocolate Mousse', price: 12, img: 'Chocolate_Mousse.jpeg'},
+  { id: 128, category: 'Desserts', recommend: false ,item: 'Fruit Salad Cup', price: 10, img: 'Fruit_Salad_Cup.jpeg'},
+  { id: 129, category: 'Desserts', recommend: false ,item: 'Cookie', price: 3, img: 'Cookie.jpeg'}
 ];
 
 sessionStorage.setItem('Inventory', JSON.stringify(foodItems));
