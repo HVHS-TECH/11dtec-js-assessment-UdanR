@@ -37,7 +37,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                         <input min="1" type="number" value="${buying_items.quantity}" id="item_quantity_${choice.id}" class="item_quantity">
                     </div>
                     <div class="Item_Total">
-                        <button value="${choice.id}" onclick="Remove_From_Cart_Function(this.value)" class="Remove_From_Cart_Button">Remove</button>
+                        <button value="${i}" onclick="Remove_From_Cart_Function(this.value)" class="Remove_From_Cart_Button">Remove</button>
                         <h2 class="Chosen_Item_Total" value="${quantity}"id="chosen_Item_Total_Price_${choice.id}">$${quantity}</h2>
                     </div>
                 </div>
@@ -224,12 +224,12 @@ function Check_Out(){
     }
     // Emptying the cart and turning the total price zero
     CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
-    added_Buying_Items = [{}];
+    added_Buying_Items = [];
 }
 
 // Pressing to clear the cart and start ordering again
 function Clear() {
-    added_Buying_Items = [{}];
+    added_Buying_Items = [];
     console.log(added_Buying_Items);
     sessionStorage.setItem('buying_Items', JSON.stringify(added_Buying_Items));
     console.log(JSON.parse(sessionStorage.getItem('buying_Items')));
@@ -239,3 +239,60 @@ function Clear() {
     CHECKOUT_TOTAL_PRICE.innerHTML = "$" + Total_Price;
 }
 
+
+function Remove_From_Cart_Function (value) {
+    added_Buying_Items.splice(value,1);
+    sessionStorage.setItem('buying_Items', JSON.stringify(added_Buying_Items));
+    console.log(JSON.parse(sessionStorage.getItem('buying_Items')));
+
+    CART_ITEM_OUTPUT.innerHTML = "";
+
+    // Adding the items to the HTML
+for (let i = 0; i < added_Buying_Items.length; i++) {
+    var buying_items = added_Buying_Items[i];
+    console.log(buying_items);
+    var cart_Id = Number(buying_items.id);
+    var choice = foodItems.find(product => product.id === cart_Id);
+    console.log(choice);
+    var Item_Num = 1;
+    var quantity = buying_items.quantity*choice.price;
+    Total_Price = Total_Price + quantity;
+            console.log (`<div class="item-${Item_Num}">                
+                <div class="chosen_Item_IMG">
+                    <img src="Items_IMG/${choice.img}" alt="${choice.img}">
+                </div>
+                <div class="chosen_Item_Info">
+                    <div class="Item_Details">
+                        <h2 class="item_Name">${choice.item}</h2>
+                        <h2 class="item_Price">$${choice.price}</h2>
+                    </div>
+                    <div class="Item_Quantity">
+                        <input min="1" type="number" value="${buying_items.quantity}" id="item_quantity_${choice.id}" class="item_quantity">
+                    </div>
+                    <div class="Item_Total">
+                        <button value="${i}" onclick="Remove_From_Cart_Function(this.value)" class="Remove_From_Cart_Button">Remove</button>
+                        <h2 class="Chosen_Item_Total" value="${quantity}"id="chosen_Item_Total_Price_${choice.id}">$${quantity}</h2>
+                    </div>
+                </div>
+                </div>`);
+                CART_ITEM_OUTPUT.innerHTML +=`<div class="item-${Item_Num}">                
+                <div class="chosen_Item_IMG">
+                    <img src="Items_IMG/${choice.img}" alt="${choice.img}">
+                </div>
+                <div class="chosen_Item_Info">
+                    <div class="Item_Details">
+                        <h2 class="item_Name">${choice.item}</h2>
+                        <h2 class="item_Price">$${choice.price}</h2>
+                    </div>
+                    <div class="Item_Quantity">
+                        <input min="1" type="number" value="${buying_items.quantity}" onclick="changing_Item_Quantity(${choice.id})" id="item_quantity_${choice.id}" class="item_quantity">
+                    </div>
+                    <div class="Item_Total">
+                        <button value="${choice.id}" onclick="Remove_From_Cart_Function(this.value)" class="Remove_From_Cart_Button">Remove</button>
+                        <h2 class="Chosen_Item_Total" value="${quantity}"id="chosen_Item_Total_Price_${choice.id}">$${quantity}</h2>
+                    </div>
+                </div>
+                </div>`;
+
+}
+}
