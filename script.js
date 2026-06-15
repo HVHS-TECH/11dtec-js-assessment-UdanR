@@ -6,6 +6,8 @@ var foodItems = [
   { id: 104, category: 'main-dish', recommend: true ,item: 'Loaded Fries', price: 10, img: 'Loaded_Fries.jpeg'},
   { id: 105, category: 'main-dish', recommend: false ,item: 'Hot Dog', price: 9, img: 'Hot_Dog.jpeg'},
   { id: 106, category: 'main-dish', recommend: false ,item: 'Taco Trio', price: 13, img: 'Taco_Trio.jpeg'},
+  { id: 106, category: 'main-dish', recommend: false ,item: 'Steak', price: 20, img: 'Taco_Trio.jpeg'},
+
   { id: 107, category: 'Sides', recommend: true ,item: 'French Fries', price: 5, img: 'French_Fries.jpeg'},
   { id: 108, category: 'Sides', recommend: false ,item: 'Curly Fries', price: 6, img: 'Curly_Fries.jpeg'},
   { id: 109, category: 'Sides', recommend: true ,item: 'Onion Rings', price: 6, img: 'Onion_Rings.jpeg'},
