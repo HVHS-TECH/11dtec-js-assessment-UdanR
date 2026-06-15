@@ -19,16 +19,15 @@ var foodItems = [
   { id: 117, category: 'Drinks', recommend: true ,item: 'Iced Coffee', price: 6, img: 'Iced_Coffee.jpeg'},
   { id: 118, category: 'Drinks', recommend: true ,item: 'Milkshake', price: 7, img: 'Milkshake.jpeg'},
   { id: 119, category: 'Drinks', recommend: false ,item: 'Fruit Smoothie', price: 4, img: 'Fruit_Smoothie.jpeg'},
-  { id: 120, category: 'Drinks', recommend: false ,item: 'Orange Soda Slushy', price: 4, img: 'Orange_Soda_Slushy.jpeg'},
-  { id: 121, category: 'Drinks', recommend: false ,item: 'Slushy', price: 4, img: 'Slushy.jpeg'},
-  { id: 122, category: 'Desserts', recommend: false ,item: 'Brownie', price: 5, img: 'Brownie.jpeg'},
-  { id: 123, category: 'Desserts', recommend: false ,item: 'Donut', price: 4, img: 'Donut.jpeg'},
-  { id: 124, category: 'Desserts', recommend: true ,item: 'Churros', price: 6, img: 'Churros.jpeg'},
-  { id: 125, category: 'Desserts', recommend: true ,item: 'Ice Cream Cup', price: 5, img: 'Ice_Cream_Cup.jpeg'},
-  { id: 126, category: 'Desserts', recommend: false ,item: 'Strawberry Short Cake', price: 12, img: 'Strawberry_Short_Cake.jpeg'},
-  { id: 127, category: 'Desserts', recommend: false ,item: 'Chocolate Mousse', price: 12, img: 'Chocolate_Mousse.jpeg'},
-  { id: 128, category: 'Desserts', recommend: false ,item: 'Fruit Salad Cup', price: 10, img: 'Fruit_Salad_Cup.jpeg'},
-  { id: 129, category: 'Desserts', recommend: false ,item: 'Cookie', price: 3, img: 'Cookie.jpeg'}
+  { id: 120, category: 'Drinks', recommend: false ,item: 'Slushy', price: 4, img: 'Slushy.jpeg'},
+  { id: 121, category: 'Desserts', recommend: false ,item: 'Brownie', price: 5, img: 'Brownie.jpeg'},
+  { id: 122, category: 'Desserts', recommend: false ,item: 'Donut', price: 4, img: 'Donut.jpeg'},
+  { id: 123, category: 'Desserts', recommend: true ,item: 'Churros', price: 6, img: 'Churros.jpeg'},
+  { id: 124, category: 'Desserts', recommend: true ,item: 'Ice Cream Cup', price: 5, img: 'Ice_Cream_Cup.jpeg'},
+  { id: 125, category: 'Desserts', recommend: false ,item: 'Strawberry Short Cake', price: 12, img: 'Strawberry_Short_Cake.jpeg'},
+  { id: 126, category: 'Desserts', recommend: false ,item: 'Chocolate Mousse', price: 12, img: 'Chocolate_Mousse.jpeg'},
+  { id: 127, category: 'Desserts', recommend: false ,item: 'Fruit Salad Cup', price: 10, img: 'Fruit_Salad_Cup.jpeg'},
+  { id: 128, category: 'Desserts', recommend: false ,item: 'Cookie', price: 3, img: 'Cookie.jpeg'}
 ];
 
 sessionStorage.setItem('Inventory', JSON.stringify(foodItems));
