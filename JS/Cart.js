@@ -296,5 +296,6 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                     </div>
                 </div>
                 </div>`;
+                
 }
 }
