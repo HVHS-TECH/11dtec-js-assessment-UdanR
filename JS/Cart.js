@@ -246,7 +246,8 @@ function Remove_From_Cart_Function (value) {
     var cleaned_Removing_Item_Price = Number(REMOVING_ITEM_PRICE.replaceAll("$",""));
     Total_Price = Total_Price-cleaned_Removing_Item_Price;
     //Updating HTML
-    
+    CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
+    CHECKOUT_TOTAL_PRICE.innerHTML = "$" + Total_Price;
 
 
 
