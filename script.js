@@ -17,8 +17,8 @@ var foodItems = [
   { id: 115, category: 'Drinks', recommend: false ,item: 'Cola', price: 4, img: 'Cola.jpeg'},
   { id: 116, category: 'Drinks', recommend: false ,item: 'Lemonade', price: 4, img: 'Lemonade.jpeg'},
   { id: 117, category: 'Drinks', recommend: true ,item: 'Iced Coffee', price: 6, img: 'Iced_Coffee.jpeg'},
-  { id: 118, category: 'Drinks', recommend: true ,item: 'Milkshake', price: 7, img: 'Milkshake.jpeg'},
-  { id: 119, category: 'Drinks', recommend: true ,item: 'Coffee', price: 7, img: 'Milkshake.jpeg'},
+
+  { id: 119, category: 'Drinks', recommend: true ,item: 'Hot Coffee', price: 6, img: 'Coffee.jpeg'},
   { id: 120, category: 'Drinks', recommend: false ,item: 'Fruit Smoothie', price: 4, img: 'Fruit_Smoothie.jpeg'},
   { id: 121, category: 'Drinks', recommend: false ,item: 'Slushy', price: 4, img: 'Slushy.jpeg'},
   { id: 122, category: 'Desserts', recommend: false ,item: 'Brownie', price: 5, img: 'Brownie.jpeg'},
