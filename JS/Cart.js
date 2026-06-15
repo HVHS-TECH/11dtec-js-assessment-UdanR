@@ -241,8 +241,10 @@ function Clear() {
 
 
 function Remove_From_Cart_Function (value) {
+    var buying_items = added_Buying_Items[value]; 
+
     //Updating the total price
-    const REMOVING_ITEM_PRICE = document.getElementById("chosen_Item_Total_Price_"+value).innerText;
+    const REMOVING_ITEM_PRICE = document.getElementById("chosen_Item_Total_Price_"+buying_items.id).innerText;
     var cleaned_Removing_Item_Price = Number(REMOVING_ITEM_PRICE.replaceAll("$",""));
     Total_Price = Total_Price-cleaned_Removing_Item_Price;
     //Updating HTML
