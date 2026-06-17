@@ -8,10 +8,19 @@ footer{
 }
 
 footer > h1,
-footer > h2{
+footer > h2,
+footer > a{
     color: white;
 }
 
 footer > h2{
     font-size: small;
+}
+
+footer > a{
+    text-decoration: none;
+}
+
+footer > a:hover{
+    text-decoration: underline;
 }
