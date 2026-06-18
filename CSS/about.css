@@ -3,11 +3,17 @@
     grid-template-areas: "about_Containor_IMG about_Containor_Text" ;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr;
+    
 }
 
 .container div.about_Containor_IMG {
   grid-area: about_Containor_IMG;
   text-align: center;
+}
+
+.about_Containor > div > img {
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .container div.about_Containor_Text {
