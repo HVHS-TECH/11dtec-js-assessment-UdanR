@@ -1,10 +1,23 @@
 .about_Containor{
     display: grid;
+    grid-template-areas: "about_Containor_IMG about_Containor_Text" ;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr;
 }
 
 .container div.about_Containor_IMG {
-  grid-area: header;
+  grid-area: about_Containor_IMG;
   text-align: center;
+}
+
+.container div.about_Containor_Text {
+  grid-area: about_Containor_Text;
+  text-align: center;
+}
+
+.about_Containor_Text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(255,255,255,0.5);
 }
