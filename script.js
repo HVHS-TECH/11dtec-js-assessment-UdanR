@@ -199,6 +199,11 @@ function Menu_Item_Selecting_Desserts (){
 var Shopping_Bag = [];
 
 
+// Adding the total number next to the Shopping cart icon
+var Total_Price = 0;
+sessionStorage.setItem('Total_price', JSON.stringify(Total_Price));
+console.log(JSON.parse(sessionStorage.getItem('Total_price')));
+
 // Adding items to carts
 function Add_To_Cart_Function (Button_ID) {
     // Item ID
@@ -235,7 +240,6 @@ function Add_To_Cart_Function (Button_ID) {
 
 
 // Adding the total number next to the Shopping cart icon
-var Total_Price = 0;
 const CART_TOTAL_PRICE = document.getElementById("Shopping-cart-price");
 for (let i = 0; i < Shopping_Bag.length; i++){
     let price_adding_item_object = Shopping_Bag[i];
