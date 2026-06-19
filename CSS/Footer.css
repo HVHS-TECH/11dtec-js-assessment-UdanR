@@ -4,7 +4,8 @@ footer{
     padding-bottom: 3px;
     padding-left: 10px;
     border-radius: 5px;
-
+    display: flex;
+    justify-content: space-between;
 }
 
 footer > h1,
@@ -19,6 +20,7 @@ footer > h2{
 
 footer > a{
     text-decoration: none;
+    padding-right:
 }
 
 footer > a:hover{
