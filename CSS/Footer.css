@@ -20,7 +20,8 @@ footer > h2{
 
 footer > a{
     text-decoration: none;
-    padding-right:
+    padding-right:2%;
+    align-items: center;
 }
 
 footer > a:hover{
