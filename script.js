@@ -199,8 +199,8 @@ function Menu_Item_Selecting_Desserts (){
 var Shopping_Bag = [];
 
 
-    console.log(JSON.parse(sessionStorage.getItem('Total_price')));
-
+    var Total_Price_Check = (JSON.parse(sessionStorage.getItem('Total_price')));
+    if (Total_Price_Check)
 
 // Adding items to carts
 function Add_To_Cart_Function (Button_ID) {
