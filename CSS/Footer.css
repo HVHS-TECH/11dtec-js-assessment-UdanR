@@ -6,6 +6,8 @@ footer{
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
 }
 
 footer > h1,
@@ -15,13 +17,12 @@ footer > a{
 }
 
 footer > h2{
-    font-size: small;
+    font-size: medium;
 }
 
 footer > a{
     text-decoration: none;
     padding-right:2%;
-    align-items: center;
 }
 
 footer > a:hover{
