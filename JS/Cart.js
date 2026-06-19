@@ -24,6 +24,10 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
     var Item_Num = 1;
     var quantity = buying_items.quantity*choice.price;
     Total_Price = Total_Price + quantity;
+    
+    // Converting the Shopping_Bag Var to a string and storing it in a seesionStorgae
+    sessionStorage.setItem('Total_price', JSON.stringify(Total_Price));
+    console.log(JSON.parse(sessionStorage.getItem('Total_price')));
             console.log (`<div class="item-${Item_Num}">                
                 <div class="chosen_Item_IMG">
                     <img src="Items_IMG/${choice.img}" alt="${choice.img}">
