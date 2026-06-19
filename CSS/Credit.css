@@ -1,3 +1,8 @@
-main > img{
-    size: 2px;
+.credit_Items{
+    display: flex;
+    flex-direction: column;
+}
+.credit_Items > img{
+    height: 50px;
+    width: 50px;
 }
