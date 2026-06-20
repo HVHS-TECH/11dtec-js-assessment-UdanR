@@ -205,9 +205,11 @@ const CART_TOTAL_PRICE = document.getElementById("Shopping-cart-price");
 var toal_price_check = (JSON.parse(sessionStorage.getItem('Total_price')));
 if (toal_price_check === null){
     console.log ("toal_price_check is null");
+    var total_Price_Check_Results = 0;
 } else{
     Total_Price = Number(toal_price_check);
     CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
+    var total_Price_Check_Results = Total_Price;
 }
 
 
@@ -249,7 +251,7 @@ function Add_To_Cart_Function (Button_ID) {
     Total_Price = 0;
 // Adding the total number next to the Shopping cart icon
 for (let i = 0; i < Shopping_Bag.length; i++){
-    
+
     // Getting the things in the array
     let price_adding_item_object = Shopping_Bag[i];
     console.log(price_adding_item_object);
