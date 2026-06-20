@@ -196,6 +196,12 @@ function Menu_Item_Selecting_Desserts (){
 
 
 // Cart Arrays
+    var shopping_Bag_Check = (JSON.parse(sessionStorage.getItem('buying_Items')));
+    if (shopping_Bag_Check === null) {
+        console.log ("shopping_Bag_Check is null");
+    } else {
+        console.log ("shopping_Bag_Check is not null");
+    }
 
 var Shopping_Bag = [];
 
@@ -282,5 +288,6 @@ for (let i = 0; i < Shopping_Bag.length; i++){
     console.log(JSON.parse(sessionStorage.getItem('buying_Items')));
 }
 }
+
 
 
