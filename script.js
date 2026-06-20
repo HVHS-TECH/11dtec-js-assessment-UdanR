@@ -247,8 +247,15 @@ function Add_To_Cart_Function (Button_ID) {
         ADD_TO_CART_BUTTON.innerHTML = originalText;
     }, 1000); 
 
-    // Made the Total Price 0 so it won't add the same items again
-    Total_Price = 0;
+    // Made it so that if their is a saved total number it become this if not total price is 0
+    if (total_Price_Check_Results === 0){
+        console.log("total_Price_Check_Results is 0");
+        Total_Price = 0;
+    } else {
+        console.log("total_Price_Check_Results is not 0 it is "+total_Price_Check_Results);
+        Total_Price = total_Price_Check_Results;
+    }
+    
 // Adding the total number next to the Shopping cart icon
 for (let i = 0; i < Shopping_Bag.length; i++){
 
