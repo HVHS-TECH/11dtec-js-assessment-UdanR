@@ -200,3 +200,25 @@ about page css
     border-radius: 5px;
     padding-left: 10px
 }
+
+
+
+cart test (html)
+            <div class="item-1">
+                <div class="chosen_Item_IMG">
+                    <img src="Items_IMG/BBQ_Bacon_Burger.jpeg" alt="BBQ Bacone Burguer">
+                </div>
+                <div class="chosen_Item_Info">
+                    <div class="Item_Details">
+                        <h2 class="item_Name">BBQ Bacon Burger</h2>
+                        <h2 class="item_Price">$5</h2>
+                    </div>
+                    <div class="Item_Quantity">
+                        <input type="number" value="2" id="item_quantity_101" class="item_quantity">
+                    </div>
+                    <div class="Item_Total">
+                        <button value="101" onclick="Remove_From_Cart_Function(this.value)" class="Remove_From_Cart_Button">Remove</button>
+                        <h2 class="Chosen_Item_Total" id="chosen_Item_Total_Price">$10</h2>
+                    </div>
+                </div>
+            </div>
