@@ -199,8 +199,12 @@ function Menu_Item_Selecting_Desserts (){
     var shopping_Bag_Check = (JSON.parse(sessionStorage.getItem('buying_Items')));
     if (shopping_Bag_Check === null) {
         console.log ("shopping_Bag_Check is null");
+        console.log (shopping_Bag_Check);
+        var Shopping_Bag = [];
     } else {
         console.log ("shopping_Bag_Check is not null");
+        console.log (shopping_Bag_Check);
+        
     }
 
 var Shopping_Bag = [];
