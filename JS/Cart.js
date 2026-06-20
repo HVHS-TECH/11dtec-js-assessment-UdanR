@@ -112,6 +112,11 @@ function changing_Item_Quantity(value){
     //Updating the TotalPrice
     Total_Price = (Total_Price - old_Price) + New_Item_Quantity;
     console.log(Total_Price);
+    
+        // Converting the Shopping_Bag Var to a string and storing it in a seesionStorgae
+    sessionStorage.setItem('Total_price', JSON.stringify(Total_Price));
+    console.log(JSON.parse(sessionStorage.getItem('Total_price')));
+
 
     // Printing the New Total Price
     CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
@@ -241,7 +246,7 @@ function Clear() {
     Total_Price = 0;
     CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
     CHECKOUT_TOTAL_PRICE.innerHTML = "$" + Total_Price;
-    
+
         // Converting the Shopping_Bag Var to a string and storing it in a seesionStorgae
     sessionStorage.setItem('Total_price', JSON.stringify(Total_Price));
     console.log(JSON.parse(sessionStorage.getItem('Total_price')));
