@@ -245,7 +245,7 @@ function Add_To_Cart_Function (Button_ID) {
         ADD_TO_CART_BUTTON.innerHTML = originalText;
     }, 1000); 
 
-
+    Total_Price = 0;
 // Adding the total number next to the Shopping cart icon
 for (let i = 0; i < Shopping_Bag.length; i++){
     // Getting the things in the array
