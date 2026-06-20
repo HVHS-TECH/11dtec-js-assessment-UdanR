@@ -116,3 +116,8 @@
   border-radius: 5px;
   color: red;
 }
+
+#User_Name,
+#Available_Money{
+  width: 55%;
+}
