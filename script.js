@@ -196,6 +196,7 @@ function Menu_Item_Selecting_Desserts (){
 
 
 // Cart Arrays
+
 var Shopping_Bag = [];
 
 // if their is a saved total price use it otherwise it is 0
