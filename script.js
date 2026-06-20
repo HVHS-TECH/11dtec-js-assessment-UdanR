@@ -204,10 +204,11 @@ function Menu_Item_Selecting_Desserts (){
     } else {
         console.log ("shopping_Bag_Check is not null");
         console.log (shopping_Bag_Check);
-        
+        var Shopping_Bag = shopping_Bag_Check;
+        console.log(Shopping_Bag);
     }
 
-var Shopping_Bag = [];
+
 
 // if their is a saved total price use it otherwise it is 0
 var Total_Price = 0;
