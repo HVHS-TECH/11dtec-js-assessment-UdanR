@@ -36,11 +36,10 @@
 .item_quantity{
   display: flex;
   justify-content: center;
-  width: 15%;
+  width: 60%;
   color: #FCBF49;
   font-size: 12px;
 }
-
 .Item_Total{
   display: flex;
   flex-direction: column;
