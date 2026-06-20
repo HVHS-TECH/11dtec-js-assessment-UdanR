@@ -245,20 +245,24 @@ function Add_To_Cart_Function (Button_ID) {
         ADD_TO_CART_BUTTON.innerHTML = originalText;
     }, 1000); 
 
+    // Made the Total Price 0 so it won't add the same items again
     Total_Price = 0;
 // Adding the total number next to the Shopping cart icon
 for (let i = 0; i < Shopping_Bag.length; i++){
+    
     // Getting the things in the array
     let price_adding_item_object = Shopping_Bag[i];
     console.log(price_adding_item_object);
+
     //Getting the ID
     let price_adding_item_id = Number(price_adding_item_object.id)
     console.log(price_adding_item_id);
+
     //Finding the item from the inventory using the ID
     var choice = foodItems.find(product => product.id === price_adding_item_id);
     console.log(choice);
 
-    
+    // Adding the price
     Total_Price = Total_Price + (choice.price*price_adding_item_object.quantity)
     CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
     console.log("Total_Price = $" + Total_Price);
