@@ -4,7 +4,7 @@ var foodItems = [
   { id: 102, category: 'main-dish', recommend: true ,item: 'BBQ Bacon Burger',  price: 15, img: 'BBQ_Bacon_Burger.jpeg'},
   { id: 103, category: 'main-dish', recommend: true ,item: 'Crispy Chicken Burger', price: 14, img: 'Crispy_Chicken_Burger_1.jpg'},
   { id: 104, category: 'main-dish', recommend: true ,item: 'Loaded Fries', price: 10, img: 'Loaded_Fries.jpeg'},
-  { id: 105, category: 'main-dish', recommend: false ,item: 'Hot Dog', price: 9, img: 'Hot_Dog.jpeg'},
+  { id: 105, category: 'main-dish', recommend: false ,item: 'Hot Dog', price: 9, img: 'Hot_Dog_2.jpg'},
   { id: 106, category: 'main-dish', recommend: false ,item: 'Taco Trio', price: 13, img: 'Taco_Trio.jpeg'},
   { id: 107, category: 'main-dish', recommend: false ,item: 'Kabab', price: 15, img: 'Kabab.jpeg'},
   { id: 108, category: 'Sides', recommend: true ,item: 'French Fries', price: 5, img: 'French_Fries.jpeg'},
