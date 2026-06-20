@@ -236,7 +236,11 @@ function Check_Out(){
     added_Buying_Items = [];
     sessionStorage.setItem('buying_Items', JSON.stringify(added_Buying_Items));
     console.log(JSON.parse(sessionStorage.getItem('buying_Items')));
+    Total_Price = 0;
 
+        // Converting the Shopping_Bag Var to a string and storing it in a seesionStorgae
+    sessionStorage.setItem('Total_price', JSON.stringify(Total_Price));
+    console.log(JSON.parse(sessionStorage.getItem('Total_price')));
 }
 
 // Pressing to clear the cart and start ordering again
