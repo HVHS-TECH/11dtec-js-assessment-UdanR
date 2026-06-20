@@ -241,6 +241,11 @@ function Clear() {
     Total_Price = 0;
     CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
     CHECKOUT_TOTAL_PRICE.innerHTML = "$" + Total_Price;
+    
+        // Converting the Shopping_Bag Var to a string and storing it in a seesionStorgae
+    sessionStorage.setItem('Total_price', JSON.stringify(Total_Price));
+    console.log(JSON.parse(sessionStorage.getItem('Total_price')));
+
 }
 
 
@@ -254,6 +259,9 @@ function Remove_From_Cart_Function (value) {
     //Updating HTML
     CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
     CHECKOUT_TOTAL_PRICE.innerHTML = "$" + Total_Price;
+    // Converting the Shopping_Bag Var to a string and storing it in a seesionStorgae
+    sessionStorage.setItem('Total_price', JSON.stringify(Total_Price));
+    console.log(JSON.parse(sessionStorage.getItem('Total_price')));
 
 
 
