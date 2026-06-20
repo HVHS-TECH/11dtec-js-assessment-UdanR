@@ -112,7 +112,7 @@ function changing_Item_Quantity(value){
     //Updating the TotalPrice
     Total_Price = (Total_Price - old_Price) + New_Item_Quantity;
     console.log(Total_Price);
-    
+
         // Converting the Shopping_Bag Var to a string and storing it in a seesionStorgae
     sessionStorage.setItem('Total_price', JSON.stringify(Total_Price));
     console.log(JSON.parse(sessionStorage.getItem('Total_price')));
@@ -234,6 +234,9 @@ function Check_Out(){
     // Emptying the cart and turning the total price zero
     CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
     added_Buying_Items = [];
+    sessionStorage.setItem('buying_Items', JSON.stringify(added_Buying_Items));
+    console.log(JSON.parse(sessionStorage.getItem('buying_Items')));
+
 }
 
 // Pressing to clear the cart and start ordering again
