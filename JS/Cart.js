@@ -268,9 +268,11 @@ function Remove_From_Cart_Function (value) {
     const REMOVING_ITEM_PRICE = document.getElementById("chosen_Item_Total_Price_"+buying_items.id).innerText;
     var cleaned_Removing_Item_Price = Number(REMOVING_ITEM_PRICE.replaceAll("$",""));
     Total_Price = Total_Price-cleaned_Removing_Item_Price;
+    
     //Updating HTML
     CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
     CHECKOUT_TOTAL_PRICE.innerHTML = "$" + Total_Price;
+
     // Converting the Shopping_Bag Var to a string and storing it in a seesionStorgae
     sessionStorage.setItem('Total_price', JSON.stringify(Total_Price));
     console.log(JSON.parse(sessionStorage.getItem('Total_price')));
