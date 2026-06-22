@@ -75,19 +75,19 @@ function changing_Item_Quantity(value){
     //Value is the id of the item that is chaning
 
     // Getting the value of the input area
-    var ITEM_QUANTITY = document.getElementById(`item_quantity_${value}`).value;
-    const ITEM_QUANTITY_CLAMPED = Math.min(ITEM_QUANTITY, 100);
-    document.getElementById(`item_quantity_${value}`).value = ITEM_QUANTITY_CLAMPED;
-    ITEM_QUANTITY = ITEM_QUANTITY_CLAMPED;
-    console.log(choice.id +": "+ITEM_QUANTITY);
+    var item_quantity = document.getElementById(`item_quantity_${value}`).value;
+    const item_quantity_CLAMPED = Math.min(item_quantity, 100);
+    document.getElementById(`item_quantity_${value}`).value = item_quantity_CLAMPED;
+    item_quantity = item_quantity_CLAMPED;
+    console.log(choice.id +": "+item_quantity);
 
     // Finding the item from the shopping bag
     var Item = added_Buying_Items.find(product => product.id === String(value)); // The id is a string so that's why i am looking for a string id instead of a number id
     console.log(Item);
 
     //Updating the Quantity of the item
-    Item.quantity = Number(ITEM_QUANTITY);
-    console.log(ITEM_QUANTITY);
+    Item.quantity = Number(item_quantity);
+    console.log(item_quantity);
     console.log(Item);
 
     // Saving the new updated array
