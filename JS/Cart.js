@@ -260,10 +260,12 @@ function Clear() {
 
 }
 
-if (added_Buying_Items === []){
+if (added_Buying_Items.lenght = 0){
     console.log("empty");
+    console.log(added_Buying_Items);
 }else {
-    console.log("full")
+    console.log("full");
+    console.log(added_Buying_Items);
 }
 
 function Remove_From_Cart_Function (value) {
