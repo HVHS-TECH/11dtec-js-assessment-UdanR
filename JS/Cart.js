@@ -268,7 +268,7 @@ function Remove_From_Cart_Function (value) {
     const REMOVING_ITEM_PRICE = document.getElementById("chosen_Item_Total_Price_"+buying_items.id).innerText;
     var cleaned_Removing_Item_Price = Number(REMOVING_ITEM_PRICE.replaceAll("$",""));
     Total_Price = Total_Price-cleaned_Removing_Item_Price;
-    
+
     //Updating HTML
     CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
     CHECKOUT_TOTAL_PRICE.innerHTML = "$" + Total_Price;
@@ -281,9 +281,11 @@ function Remove_From_Cart_Function (value) {
 
     //Removing one item from the array
     added_Buying_Items.splice(value,1);
+
     //Saving the Array
     sessionStorage.setItem('buying_Items', JSON.stringify(added_Buying_Items));
     console.log(JSON.parse(sessionStorage.getItem('buying_Items')));
+    
     //Empty the HTML
     CART_ITEM_OUTPUT.innerHTML = "";
 
