@@ -156,6 +156,7 @@ if (added_Buying_Items.length === 0){
     var username = String(USERNAME.value);
     if (username.length === 0){
         console.log ("empty name");
+        alert ("Enter Name")
     }else{
         console.log("name entered");
     }
