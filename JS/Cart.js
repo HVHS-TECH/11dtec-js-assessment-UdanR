@@ -285,10 +285,11 @@ function Remove_From_Cart_Function (value) {
     //Saving the Array
     sessionStorage.setItem('buying_Items', JSON.stringify(added_Buying_Items));
     console.log(JSON.parse(sessionStorage.getItem('buying_Items')));
-    
+
     //Empty the HTML
     CART_ITEM_OUTPUT.innerHTML = "";
 
+    Total_Price = 0
 
 // Adding the items to the HTML
 for (let i = 0; i < added_Buying_Items.length; i++) {
