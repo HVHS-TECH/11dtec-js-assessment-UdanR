@@ -174,7 +174,7 @@ if (added_Buying_Items.length === 0){
         const RECEIPT_CHOSEN_ITEMS_OUTPUT = document.getElementById("receipt_Chosen_Items_Area");
         const RECEIPT_BOTTOM_OUTPUT = document.getElementById("receipt_Bottom_Area");
         var change = spending_money-Total_Price;
-        
+
         // making the background of the receipt background
         RECEIPT_OUTPUT.style.backgroundColor = "white";
         
