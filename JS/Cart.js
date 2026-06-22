@@ -56,7 +56,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
                         <h2 class="item_Price">$${choice.price}</h2>
                     </div>
                     <div class="Item_Quantity">
-                        <input min="1" max="100" type="number" value="${buying_items.quantity}" onclick="changing_Item_Quantity(${choice.id})" id="item_quantity_${choice.id}" class="item_quantity">
+                        <input min="1" max="100" type="number" value="${buying_items.quantity}" oninput="changing_Item_Quantity(${choice.id})" id="item_quantity_${choice.id}" class="item_quantity">
                     </div>
                     <div class="Item_Total">
                         <button onclick="Remove_From_Cart_Function(${i})" class="Remove_From_Cart_Button">Remove</button>
