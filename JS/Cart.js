@@ -154,9 +154,12 @@ if (added_Buying_Items.length === 0){
 }
     const USERNAME = document.getElementById("User_Name");
     var username = String(USERNAME.value);
+
+    // Checking if their is a name entered
     if (username.length === 0){
         console.log ("empty name");
-        alert ("Enter Name")
+        alert ("Enter Name");
+        return;
     }else{
         console.log("name entered");
     }
