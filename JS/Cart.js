@@ -152,8 +152,10 @@ if (added_Buying_Items.length === 0){
     alert ("Add something to the cart before proceding");
     return;
 }
+    // Getting the username from HTML
     const USERNAME = document.getElementById("User_Name");
     var username = String(USERNAME.value);
+    console.log(username);
 
     // Checking if their is a name entered
     if (username.length === 0){
@@ -163,7 +165,8 @@ if (added_Buying_Items.length === 0){
     }else{
         console.log("name entered");
     }
-    console.log(username);
+
+    // Getting the amount of money they have
     const MONEY = document.getElementById("Available_Money");
     var spending_money = Number(MONEY.value);
     console.log(MONEY);
