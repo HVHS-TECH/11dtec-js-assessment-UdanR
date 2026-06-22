@@ -145,6 +145,13 @@ const RECEIPT_OUTPUT = document.getElementById("Receipt_Area");
 RECEIPT_OUTPUT.style.backgroundColor = "transparent";
 RECEIPT_OUTPUT.style.borderColor = "transparet";
 function Check_Out(){
+    //Checking weather the cart is empty
+if (added_Buying_Items.length === 0){
+    console.log("empty");
+    console.log(added_Buying_Items);
+    alert ("Add something to the cart before proceding");
+    return;
+}
     const USERNAME = document.getElementById("User_Name");
     var username = String(USERNAME.value);
     console.log(username);
@@ -153,6 +160,7 @@ function Check_Out(){
     console.log(MONEY);
     console.log(spending_money);
     console.log(Total_Price);
+
     // Checking if the user have enough money
     if (spending_money < Total_Price) {
         alert ("You don't have enough money");
@@ -258,14 +266,6 @@ function Clear() {
     sessionStorage.setItem('Total_price', JSON.stringify(Total_Price));
     console.log(JSON.parse(sessionStorage.getItem('Total_price')));
 
-}
-
-if (added_Buying_Items.length === 0){
-    console.log("empty");
-    console.log(added_Buying_Items);
-}else {
-    console.log("full");
-    console.log(added_Buying_Items);
 }
 
 function Remove_From_Cart_Function (value) {
