@@ -187,7 +187,7 @@ function Check_Out(){
         RECEIPT_TOP_OUTPUT.innerHTML = `
             <div class="receipt_Top">
                 <h2 class="receipt_date">${d}</h2>
-                <h2 class="receipt_name">User: ${username}</h2>
+                <h2 class="receipt_name">Customer: ${username}</h2>
             </div>`
 
         // Middle of the Recipt
