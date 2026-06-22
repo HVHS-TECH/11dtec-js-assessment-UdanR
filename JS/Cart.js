@@ -154,7 +154,11 @@ if (added_Buying_Items.length === 0){
 }
     const USERNAME = document.getElementById("User_Name");
     var username = String(USERNAME.value);
-    if (username.length < 3)
+    if (username.length === 0){
+        console.log ("empty name");
+    }else{
+        console.log("name entered");
+    }
     console.log(username);
     const MONEY = document.getElementById("Available_Money");
     var spending_money = Number(MONEY.value);
