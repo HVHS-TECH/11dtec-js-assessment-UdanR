@@ -22,6 +22,7 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
     var choice = foodItems.find(product => product.id === cart_Id);
     console.log(choice);
     var Item_Num = 1;
+
     var quantity = buying_items.quantity*choice.price;
     Total_Price = Total_Price + quantity;
     
@@ -74,7 +75,10 @@ function changing_Item_Quantity(value){
     //Value is the id of the item that is chaning
 
     // Getting the value of the input area
-    const ITEM_QUANTITY = document.getElementById(`item_quantity_${value}`).value;
+    var ITEM_QUANTITY = document.getElementById(`item_quantity_${value}`).value;
+    const ITEM_QUANTITY_CLAMPED = Math.min(ITEM_QUANTITY, 100);
+    document.getElementById(`item_quantity_${value}`).value = ITEM_QUANTITY_CLAMPED;
+    ITEM_QUANTITY = ITEM_QUANTITY_CLAMPED;
     console.log(choice.id +": "+ITEM_QUANTITY);
 
     // Finding the item from the shopping bag
