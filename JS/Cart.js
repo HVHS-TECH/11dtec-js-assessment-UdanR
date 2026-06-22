@@ -260,6 +260,11 @@ function Clear() {
 
 }
 
+if (added_Buying_Items === []){
+    console.log("empty");
+}else {
+    console.log("full")
+}
 
 function Remove_From_Cart_Function (value) {
     var buying_items = added_Buying_Items[value]; 
