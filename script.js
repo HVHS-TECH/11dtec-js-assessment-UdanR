@@ -295,7 +295,7 @@ adding_Quantity_In_Cart;
 }
 
 // Add the number of the item in the cart
-function adding_Quantity_In_Cart{
+function adding_Quantity_In_Cart() {
     for (let i = 0; i < Shopping_Bag.length; i++){
     let amount_In_Cart = Shopping_Bag[i];
     const AMOUNT_IN_CART_OUTPUT = document.getElementById("item_NumberInCart_"+amount_In_Cart.id);
