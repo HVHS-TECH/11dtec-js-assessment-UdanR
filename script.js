@@ -225,11 +225,15 @@ function number_Cramping(value) {
     const ITEM_QUENTITY_NUM_CRAMPING = document.getElementById("item_quantity_"+value);
     //Finding the item in the shopping bag
     var item_Quantity_Num_Check = Shopping_Bag.find(product => product.id === value);
+    console.log(item_Quantity_Num_Check);
     var item_Clamping_Num_Calc = MAXIMUM_ORDERING_NUM - item_Quantity_Num_Check.quantity;
     const ITEM_NUM_CRAMPING = Math.min(ITEM_QUENTITY_NUM_CRAMPING.value, 100);
     document.getElementById("item_quantity_"+value).value = ITEM_NUM_CRAMPING;
     item_quantity = ITEM_NUM_CRAMPING;
 }
+
+//===================================================================================================================
+
 
 // Cart Arrays
     var shopping_Bag_Check = (JSON.parse(sessionStorage.getItem('buying_Items')));
