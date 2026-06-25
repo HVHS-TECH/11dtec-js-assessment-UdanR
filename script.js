@@ -294,13 +294,12 @@ for (let i = 0; i < Shopping_Bag.length; i++){
 }
 
 // Add the number of the item in the cart
-function adding_Quantity_In_Cart() {
     for (let i = 0; i < Shopping_Bag.length; i++){
     let amount_In_Cart = Shopping_Bag[i];
+    console.log(amount_In_Cart);
     let amount_In_Card_ID = Number(amount_In_Cart.id);
     const AMOUNT_IN_CART_OUTPUT = document.getElementById("item_NumberInCart_"+amount_In_Cart.id);
-    AMOUNT_IN_CART_OUTPUT.innerHTML = Shopping_Bag.quantity;
-}
+    AMOUNT_IN_CART_OUTPUT.innerText = Shopping_Bag.quantity;
 }
 
 
