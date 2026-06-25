@@ -68,9 +68,9 @@ function Recommended_print(item, reco_Item_Num){
 }
 
 function number_Cramping(value) {
-    const item_Quantity_Num_Cramping = document.getElementById("item_quantity_"+value);
-    const item_quantity_CLAMPED = Math.min(item_quantity, 100);
-    document.getElementById(`item_quantity_${value}`).value = item_quantity_CLAMPED;
+    const ITEM_QUENTITY_NUM_CRAMPING = document.getElementById("item_quantity_"+value);
+    const ITEM_NUM_CRAMPING = Math.min(ITEM_QUENTITY_NUM_CRAMPING.value, 100);
+    document.getElementById("item_quantity_"+value).value = item_quantity_CLAMPED;
     item_quantity = item_quantity_CLAMPED;
 }
 
