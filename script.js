@@ -80,7 +80,7 @@ for (let i = 0; i < foodItems.length; i++ ){
             </div>
         </div>
         <div class="Submit_Info">
-        <input type="number" min="1" max="100" oninput="number_Cramping(${item.id})" value=1 class="item_quantity_choosing" id="item_quantity_${thisitem.id}">
+        <input type="number" min="1" max="100" oninput="number_Cramping(${thisitem.id})" value=1 class="item_quantity_choosing" id="item_quantity_${thisitem.id}">
         <button value=${thisitem.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button" id="Add_To_Cart_Button_${thisitem.id}">Add To Cart</button>
         </div>
         </div>`
