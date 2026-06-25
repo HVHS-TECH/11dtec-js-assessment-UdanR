@@ -55,8 +55,8 @@ function Recommended_print(item, reco_Item_Num){
                 <div class="item_info">
                     <h2 class="item_Name">${item.item}</h2>
                     <div class="item_Price_NumberinCart">
-                    <h2 class="item_Price" id="item_Price_${item.id}">$ ${item.price}</h2>
-                    <h2 class="item_NumberInCart" id="item_NumberInCart_${item.id}">0</h2>
+                        <h2 class="item_Price" id="item_Price_${item.id}">$ ${item.price}</h2>
+                        <h2 class="item_NumberInCart" id="item_NumberInCart_${item.id}">0</h2>
                     </div>
                 </div>
                 <div class="Submit_Info">
