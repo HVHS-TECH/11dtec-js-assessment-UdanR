@@ -314,8 +314,8 @@ for (let i = 0; i < Shopping_Bag.length; i++){
 }
 }
 
-// Add the number of the item in the cart
 
+// Adding amount of a item is in the cart
     for (let i = 0; i < Shopping_Bag.length; i++){
     let amount_In_Cart = Shopping_Bag[i];
     let amount_In_Card_ID = Number(amount_In_Cart.id);
