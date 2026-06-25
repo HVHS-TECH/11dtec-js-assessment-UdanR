@@ -60,15 +60,18 @@ function Recommended_print(item, reco_Item_Num){
                     </div>
                 </div>
                 <div class="Submit_Info">
-                <input type="number" min="1" max="100" oninput="number_Cramping()" value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
+                <input type="number" min="1" max="100" oninput="number_Cramping(${item.id})" value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
                 <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button" id="Add_To_Cart_Button_${item.id}">Add To Cart</button>
                 </div>
             </div>`
             reco_Item_Num = reco_Item_Num +1;
 }
 
-function number_Cramping() {
-    console.log("1")
+function number_Cramping(value) {
+    const item_Quantity_Num_Cramping = document.getElementById("item_quantity_"+value);
+    const item_quantity_CLAMPED = Math.min(item_quantity, 100);
+    document.getElementById(`item_quantity_${value}`).value = item_quantity_CLAMPED;
+    item_quantity = item_quantity_CLAMPED;
 }
 
 const CHOSEN_FOOD_ITEM_OUTPUT_AREA = document.getElementById("Chosen_Food_Item_Area");
