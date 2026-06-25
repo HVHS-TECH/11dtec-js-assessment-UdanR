@@ -52,7 +52,9 @@ function Recommended_print(item, reco_Item_Num){
                 <img src="Items_IMG/${item.img}" alt="${item.img}">
                 <div class="item_info">
                     <h2 class="item_Name">${item.item}</h2>
+                    <div class="item_Price_NumberinCart">
                     <h2 class="item_Price" id="item_Price_${item.id}">$ ${item.price}</h2>
+                    </div>
                 </div>
                 <div class="Submit_Info">
                 <input type="number" min="1" max="100"  value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
