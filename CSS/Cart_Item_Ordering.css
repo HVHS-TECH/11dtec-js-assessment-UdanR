@@ -38,10 +38,10 @@
   justify-content: center;
   border-radius: 5px;
   width: 50%;
-  height: 15px;
+  height: 16px;
   color: #FCBF49;
   font-size: 12px;
-  padding-left: 5px;
+  padding-left: 6px;
 }
 .Item_Total{
   display: flex;
@@ -123,6 +123,8 @@
 #User_Name,
 #Available_Money{
   width: 55%;
+  height: 16px;
   font-size: 70%;
   border-radius: 5px;
+  padding-left: 10px;
 }
