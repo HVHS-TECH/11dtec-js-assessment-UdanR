@@ -67,13 +67,6 @@ function Recommended_print(item, reco_Item_Num){
             reco_Item_Num = reco_Item_Num +1;
 }
 
-function number_Cramping(value) {
-    const ITEM_QUENTITY_NUM_CRAMPING = document.getElementById("item_quantity_"+value);
-    const ITEM_NUM_CRAMPING = Math.min(ITEM_QUENTITY_NUM_CRAMPING.value, 100);
-    document.getElementById("item_quantity_"+value).value = ITEM_NUM_CRAMPING;
-    item_quantity = ITEM_NUM_CRAMPING;
-}
-
 const CHOSEN_FOOD_ITEM_OUTPUT_AREA = document.getElementById("Chosen_Food_Item_Area");
 for (let i = 0; i < foodItems.length; i++ ){
     var thisitem = foodItems[i];
@@ -87,7 +80,7 @@ for (let i = 0; i < foodItems.length; i++ ){
             </div>
         </div>
         <div class="Submit_Info">
-        <input type="number" min="1" max="100"  value=1 class="item_quantity_choosing" id="item_quantity_${thisitem.id}">
+        <input type="number" min="1" max="100" oninput="number_Cramping(${item.id})" value=1 class="item_quantity_choosing" id="item_quantity_${thisitem.id}">
         <button value=${thisitem.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button" id="Add_To_Cart_Button_${thisitem.id}">Add To Cart</button>
         </div>
         </div>`
@@ -110,7 +103,7 @@ function Menu_Item_Selecting_All (){
             </div>
         </div>
         <div class="Submit_Info">
-        <input type="number" min="1" max="100"  value=1 class="item_quantity_choosing" id="item_quantity_${thisitem.id}">
+        <input type="number" min="1" max="100" oninput="number_Cramping(${thisitem.id})" value=1 class="item_quantity_choosing" id="item_quantity_${thisitem.id}">
         <button value=${thisitem.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button" id="Add_To_Cart_Button_${thisitem.id}">Add To Cart</button>
         </div>
         </div>`
@@ -136,7 +129,7 @@ function Menu_Item_Selecting_Main_Dishes (){
             </div>
         </div>
         <div class="Submit_Info">
-        <input type="number" min="1" max="100"  value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
+        <input type="number" min="1" max="100" oninput="number_Cramping(${item.id})" value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
         <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button" id="Add_To_Cart_Button_${item.id}">Add To Cart</button>
         </div>
         </div>`
@@ -162,7 +155,7 @@ function Menu_Item_Selecting_Sides (){
             </div>
         </div>
         <div class="Submit_Info">
-        <input type="number" min="1" max="100"  value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
+        <input type="number" min="1" max="100" oninput="number_Cramping(${item.id})" value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
         <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button" id="Add_To_Cart_Button_${item.id}">Add To Cart</button>
         </div>
         </div>`
@@ -189,7 +182,7 @@ function Menu_Item_Selecting_Drinks (){
             </div>
         </div>
         <div class="Submit_Info">
-        <input type="number" min="1" max="100"  value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
+        <input type="number" min="1" max="100" oninput="number_Cramping(${item.id})" value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
         <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button" id="Add_To_Cart_Button_${item.id}">Add To Cart</button>
         </div>
         </div>`
@@ -216,7 +209,7 @@ function Menu_Item_Selecting_Desserts (){
             </div>
         </div>
         <div class="Submit_Info">
-        <input type="number" min="1" max="100"  value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
+        <input type="number" min="1" max="100" oninput="number_Cramping(${item.id})" value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
         <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button" id="Add_To_Cart_Button_${item.id}">Add To Cart</button>
         </div>
         </div>`
@@ -224,6 +217,13 @@ function Menu_Item_Selecting_Desserts (){
     }
 }
 
+// When a number is bigger than 100 it is converted into a 100
+function number_Cramping(value) {
+    const ITEM_QUENTITY_NUM_CRAMPING = document.getElementById("item_quantity_"+value);
+    const ITEM_NUM_CRAMPING = Math.min(ITEM_QUENTITY_NUM_CRAMPING.value, 100);
+    document.getElementById("item_quantity_"+value).value = ITEM_NUM_CRAMPING;
+    item_quantity = ITEM_NUM_CRAMPING;
+}
 
 // Cart Arrays
     var shopping_Bag_Check = (JSON.parse(sessionStorage.getItem('buying_Items')));
