@@ -60,11 +60,15 @@ function Recommended_print(item, reco_Item_Num){
                     </div>
                 </div>
                 <div class="Submit_Info">
-                <input type="number" min="1" max="100"  value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
+                <input type="number" min="1" max="100" oninput="number_Cramping()" value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
                 <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button" id="Add_To_Cart_Button_${item.id}">Add To Cart</button>
                 </div>
             </div>`
             reco_Item_Num = reco_Item_Num +1;
+}
+
+function number_Cramping() {
+    console.log("1")
 }
 
 const CHOSEN_FOOD_ITEM_OUTPUT_AREA = document.getElementById("Chosen_Food_Item_Area");
@@ -306,7 +310,7 @@ for (let i = 0; i < Shopping_Bag.length; i++){
     console.log("Total_Price = $" + Total_Price);
 
     //======================================!!!!!!!!!!!!!======================================//
-    
+
     if (choice.recommend === false){
         console.log("item not recommended");
     } else {
