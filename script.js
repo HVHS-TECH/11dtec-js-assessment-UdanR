@@ -305,7 +305,7 @@ for (let i = 0; i < Shopping_Bag.length; i++){
     CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
     console.log("Total_Price = $" + Total_Price);
 
-    if (foodItems.recommend = false){
+    if (choice.recommend === false){
         console.log("item not recommended");
     } else {
         console.log("is recommended");
