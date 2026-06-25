@@ -33,6 +33,7 @@ var foodItems = [
   { id: 131, category: 'Desserts', recommend: false ,item: 'Cookie', price: 3, img: 'Cookie.jpeg'}
 ];
 
+// Saving the Inventory
 sessionStorage.setItem('Inventory', JSON.stringify(foodItems));
 
 var choice = foodItems.find(product => product.id === 101);
@@ -47,6 +48,7 @@ var Recommend = foodItems.filter(product => product.recommend === true);
 Recommend.forEach(Recommended_print);
 
 var reco_Item_Num = 1;
+// Printing the Recommended Food Item Area
 function Recommended_print(item, reco_Item_Num){
     RECOMMNEDED_ITEMS_OUTPUT.innerHTML += `<div class="_${reco_Item_Num}">
                 <img src="Items_IMG/${item.img}" alt="${item.img}">
