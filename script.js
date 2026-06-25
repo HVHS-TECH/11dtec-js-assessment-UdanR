@@ -223,11 +223,23 @@ const MAXIMUM_ORDERING_NUM = 100;
 function number_Cramping(value) {
     //Getting the inputbox
     const ITEM_QUENTITY_NUM_CRAMPING = document.getElementById("item_quantity_"+value);
+
     //Finding the item in the shopping bag
     var item_Quantity_Num_Check = Shopping_Bag.find(product => product.id === value);
     console.log(item_Quantity_Num_Check);
-    var item_Clamping_Num_Calc = MAXIMUM_ORDERING_NUM - item_Quantity_Num_Check.quantity;
-    const ITEM_NUM_CRAMPING = Math.min(ITEM_QUENTITY_NUM_CRAMPING.value, 100);
+
+    // Checking if their is such a item added to the cart
+    if (item_Quantity_Num_Check === undefined){
+        console.log("not being added to the cart yet");
+        const ITEM_NUM_CRAMPING = Math.min(ITEM_QUENTITY_NUM_CRAMPING.value, 100);
+    } else {
+        console.log("Has being added to the car");
+
+        var item_Clamping_Num_Calc = MAXIMUM_ORDERING_NUM - item_Quantity_Num_Check.quantity;
+        const ITEM_NUM_CRAMPING = Math.min(ITEM_QUENTITY_NUM_CRAMPING.value, item_Clamping_Num_Calc);
+        
+    }
+
     document.getElementById("item_quantity_"+value).value = ITEM_NUM_CRAMPING;
     item_quantity = ITEM_NUM_CRAMPING;
 }
