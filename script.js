@@ -231,20 +231,31 @@ function number_Cramping(value) {
     // Checking if their is such a item added to the cart
     if (item_Quantity_Num_Check === undefined){
         console.log("not being added to the cart yet");
+
+        // If they try to add more than 100 they will get an alert
+        if (ITEM_QUENTITY_NUM_CRAMPING.value > MAXIMUM_ORDERING_NUM){
+            alert("The maximum amount you can order for each is 100 itmes");
+        }
+
+        // If it's a new item the max is 100
         const ITEM_NUM_CRAMPING = Math.min(ITEM_QUENTITY_NUM_CRAMPING.value, 100);
         document.getElementById("item_quantity_"+value).value = ITEM_NUM_CRAMPING;
 
     } else {
         console.log("Has being added to the car");
 
+        // If they try to add more than 100 they will get an alert
+        if (ITEM_QUENTITY_NUM_CRAMPING.value > MAXIMUM_ORDERING_NUM - item_Quantity_Num_Check.quantity){
+            alert("The maximum amount you can order for each is 100 itmes")
+        }
+
+        // If it has been already added the max it made to be totaled to a 100
         var item_Clamping_Num_Calc = MAXIMUM_ORDERING_NUM - item_Quantity_Num_Check.quantity;
         const ITEM_NUM_CRAMPING = Math.min(ITEM_QUENTITY_NUM_CRAMPING.value, item_Clamping_Num_Calc);
         document.getElementById("item_quantity_"+value).value = ITEM_NUM_CRAMPING;
     }
 
 }
-
-//===================================================================================================================
 
 
 // Cart Arrays
