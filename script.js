@@ -291,12 +291,16 @@ for (let i = 0; i < Shopping_Bag.length; i++){
     sessionStorage.setItem('buying_Items', JSON.stringify(Shopping_Bag));
     console.log(JSON.parse(sessionStorage.getItem('buying_Items')));
 }
+adding_Quantity_In_Cart;
 }
 
 // Add the number of the item in the cart
-for (let i = 0; i < Shopping_Bag.length; i++){
+function adding_Quantity_In_Cart{
+    for (let i = 0; i < Shopping_Bag.length; i++){
     let amount_In_Cart = Shopping_Bag[i];
     const AMOUNT_IN_CART_OUTPUT = document.getElementById("item_NumberInCart_"+amount_In_Cart.id);
-    AMOUNT_IN_CART_OUTPUT.
+    AMOUNT_IN_CART_OUTPUT.innerHTML = Shopping_Bag.quantity;
 }
+}
+
 
