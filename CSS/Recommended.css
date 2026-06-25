@@ -84,7 +84,16 @@ display: grid;
   color: #FFFFFF;
 }
 
+.item_Price_NumberinCart{
+  display:flex;
+  justify-content: space-between;
+}
+
 .item_Price{
+  color: #FCBF49;
+}
+
+.item_NumberInCart{
   color: #FCBF49;
 }
 
