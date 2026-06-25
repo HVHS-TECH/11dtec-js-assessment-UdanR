@@ -225,7 +225,7 @@ function number_Cramping(value) {
     const ITEM_QUENTITY_NUM_CRAMPING = document.getElementById("item_quantity_"+value);
 
     //Finding the item in the shopping bag
-    var item_Quantity_Num_Check = Shopping_Bag.find(product => product.id === value);
+    var item_Quantity_Num_Check = Shopping_Bag.find(product => product.id === String(value));
     console.log(item_Quantity_Num_Check);
 
     // Checking if their is such a item added to the cart
