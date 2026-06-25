@@ -56,7 +56,7 @@ function Recommended_print(item, reco_Item_Num){
                     <h2 class="item_Name">${item.item}</h2>
                     <div class="item_Price_NumberinCart">
                     <h2 class="item_Price" id="item_Price_${item.id}">$ ${item.price}</h2>
-                    <h2 class="item_NumberInCart" id="item_NumberInCart${item.id}">1</h2>
+                    <h2 class="item_NumberInCart" id="item_NumberInCart_${item.id}">1</h2>
                     </div>
                 </div>
                 <div class="Submit_Info">
@@ -296,6 +296,7 @@ for (let i = 0; i < Shopping_Bag.length; i++){
 // Add the number of the item in the cart
 for (let i = 0; i < Shopping_Bag.length; i++){
     let amount_In_Cart = Shopping_Bag[i];
-    const AMOUNT_IN_CART_OUTPUT = document.getElementById("")
+    const AMOUNT_IN_CART_OUTPUT = document.getElementById("item_NumberInCart_"+amount_In_Cart.id);
+    AMOUNT_IN_CART_OUTPUT.
 }
 
