@@ -70,8 +70,8 @@ function Recommended_print(item, reco_Item_Num){
 function number_Cramping(value) {
     const ITEM_QUENTITY_NUM_CRAMPING = document.getElementById("item_quantity_"+value);
     const ITEM_NUM_CRAMPING = Math.min(ITEM_QUENTITY_NUM_CRAMPING.value, 100);
-    document.getElementById("item_quantity_"+value).value = item_quantity_CLAMPED;
-    item_quantity = item_quantity_CLAMPED;
+    document.getElementById("item_quantity_"+value).value = ITEM_NUM_CRAMPING;
+    item_quantity = ITEM_NUM_CRAMPING;
 }
 
 const CHOSEN_FOOD_ITEM_OUTPUT_AREA = document.getElementById("Chosen_Food_Item_Area");
