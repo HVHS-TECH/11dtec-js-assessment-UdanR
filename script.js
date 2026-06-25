@@ -293,5 +293,9 @@ for (let i = 0; i < Shopping_Bag.length; i++){
 }
 }
 
-
+// Add the number of the item in the cart
+for (let i = 0; i < Shopping_Bag.length; i++){
+    let amount_In_Cart = Shopping_Bag[i];
+    const AMOUNT_IN_CART_OUTPUT = document.getElementById("")
+}
 
