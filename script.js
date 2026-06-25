@@ -305,6 +305,9 @@ for (let i = 0; i < Shopping_Bag.length; i++){
     CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
     console.log("Total_Price = $" + Total_Price);
 
+    if (foodItems.recommend = false){
+        console.log("item not recommended");
+    }
     const AMOUNT_IN_CART_OUTPUT = document.getElementById("item_NumberInCart_"+price_adding_item_id);
     AMOUNT_IN_CART_OUTPUT.innerText = price_adding_item_object.quantity;
 
