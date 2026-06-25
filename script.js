@@ -298,6 +298,7 @@ adding_Quantity_In_Cart;
 function adding_Quantity_In_Cart() {
     for (let i = 0; i < Shopping_Bag.length; i++){
     let amount_In_Cart = Shopping_Bag[i];
+    let amount_In_Card_ID = Number(amount_In_Cart.id);
     const AMOUNT_IN_CART_OUTPUT = document.getElementById("item_NumberInCart_"+amount_In_Cart.id);
     AMOUNT_IN_CART_OUTPUT.innerHTML = Shopping_Bag.quantity;
 }
