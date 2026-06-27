@@ -144,6 +144,10 @@ CHECKOUT_TOTAL_PRICE.innerHTML = "$" + Total_Price;
 
 
 function Available_Money_Funtion() {
+    for (1=1){
+    console.log("102374610239746102384721-3");
+
+    }
     const AVAILABLE_MONEY_CHECK = document.getElementById("Available_Money").value;
     var Available_Money_Cleaned = (AVAILABLE_MONEY_CHECK.replaceAll("e",""));
     AVAILABLE_MONEY_CHECK = Available_Money_Cleaned
