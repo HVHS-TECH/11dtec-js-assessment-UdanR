@@ -142,16 +142,17 @@ CART_TOTAL_PRICE.innerHTML = "$" + Total_Price;
 const CHECKOUT_TOTAL_PRICE = document.getElementById("checkout_Total_Price");
 CHECKOUT_TOTAL_PRICE.innerHTML = "$" + Total_Price;
 
-// Removing e if entered to the "Available_Money" input box
+// Removing "e" if entered to the "Available_Money" input box
 function Available_Money_Funtion() {
     const AVAILABLE_MONEY_CHECK = document.getElementById("Available_Money").value;
     var Available_Money_Cleaned = (AVAILABLE_MONEY_CHECK.replaceAll("e",""));
     document.getElementById("Available_Money").value = Available_Money_Cleaned;
 }
 
+// Removing any special charaters and numbers only keeping letters
 function user_Name_Function() {
     const USER_NAME_CHECK = document.getElementById("User_Name").value;
-    var user_Name_Clean = USER_NAME_CHECK.replaceAll("","");
+    var user_Name_Clean = USER_NAME_CHECK.replaceAll(/[^a-zA-Z ]/g, "");
     document.getElementById("User_Name").value = user_Name_Clean;
 }
 
