@@ -190,11 +190,6 @@ if (added_Buying_Items.length === 0){
     console.log(spending_money);
     console.log(Total_Price);
 
-    if(spending_money.length === 0) {
-        console.log("zero lenght");
-    } else {
-        console.log(spending_money);
-    }
 
     // Checking if the user have enough money
     if (spending_money < Total_Price) {
