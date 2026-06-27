@@ -67,7 +67,7 @@ scroll-behavior: smooth;
                         <h2>UserName - </h2> 
                         <input type="text" placeholder="Name" id="User_Name" required>
                         <h2>How much money do you have?</h2>
-                        <input type="number" min="0" value="" placeholder="How much money do you have" id="Available_Money" required>
+                        <input type="number" min="0" value="" oninput="Available_Money_Funtion()" placeholder="How much money do you have" id="Available_Money" required>
                     </div>
                     <div class="Item_Total">
                         <button onclick="Clear()" id="clear_Butoon">Clear</button>

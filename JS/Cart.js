@@ -143,6 +143,17 @@ const CHECKOUT_TOTAL_PRICE = document.getElementById("checkout_Total_Price");
 CHECKOUT_TOTAL_PRICE.innerHTML = "$" + Total_Price;
 
 
+function Available_Money_Funtion() {
+    const AVAILABLE_MONEY_CHECK = document.getElementById("Available_Money").value;
+    var Available_Money_Cleaned = 
+    
+}
+
+
+
+
+
+
 //--------------------- Recipt ---------------------//
 
 const RECEIPT_OUTPUT = document.getElementById("Receipt_Area");
