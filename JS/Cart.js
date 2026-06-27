@@ -151,7 +151,8 @@ function Available_Money_Funtion() {
 
 function user_Name_Function() {
     const USER_NAME_CHECK = document.getElementById("User_Name").value;
-    var user_Name_Clean
+    var user_Name_Clean = USER_NAME_CHECK.replaceAll("!","");
+    document.getElementById("User_Name").value = user_Name_Clean;
 }
 
 
