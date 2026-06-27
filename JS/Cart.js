@@ -144,7 +144,7 @@ CHECKOUT_TOTAL_PRICE.innerHTML = "$" + Total_Price;
 
 
 function Available_Money_Funtion() {
-    for (1=1){
+    for (let i = 1; i=1;) {
     console.log("102374610239746102384721-3");
 
     }
