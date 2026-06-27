@@ -156,11 +156,6 @@ function user_Name_Function() {
     document.getElementById("User_Name").value = user_Name_Clean;
 }
 
-
-
-
-
-
 //--------------------- Recipt ---------------------//
 
 const RECEIPT_OUTPUT = document.getElementById("Receipt_Area");
