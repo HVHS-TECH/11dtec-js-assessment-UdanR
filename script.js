@@ -255,6 +255,9 @@ function number_Cramping(value) {
         // If it has been already added the max it made to be totaled to a 100
         var item_Clamping_Num_Calc = MAXIMUM_ORDERING_NUM - item_Quantity_Num_Check.quantity;
         const ITEM_NUM_CRAMPING = Math.min(ITEM_QUENTITY_NUM_CRAMPING.value, item_Clamping_Num_Calc);
+        // Rounding numbers
+        ITEM_NUM_CRAMPING = Math.round(ITEM_NUM_CRAMPING);
+        //Printing value
         document.getElementById("item_quantity_"+value).value = ITEM_NUM_CRAMPING;
     }
 
