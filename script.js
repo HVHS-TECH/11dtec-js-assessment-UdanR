@@ -314,6 +314,7 @@ function Add_To_Cart_Function (Button_ID) {
         return;
     }
 
+    // If the item excits in the cart it just adds the number to the quantity otherwsie make a new object
     if (excitingItem){
         excitingItem.quantity += Quantity;
 
