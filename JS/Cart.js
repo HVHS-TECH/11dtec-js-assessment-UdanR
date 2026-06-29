@@ -29,24 +29,6 @@ for (let i = 0; i < added_Buying_Items.length; i++) {
     // Converting the Shopping_Bag Var to a string and storing it in a seesionStorgae
     sessionStorage.setItem('Total_price', JSON.stringify(Total_Price));
     console.log(JSON.parse(sessionStorage.getItem('Total_price')));
-            console.log (`<div class="item-${Item_Num}">                
-                <div class="chosen_Item_IMG">
-                    <img src="Items_IMG/${choice.img}" alt="${choice.img}">
-                </div>
-                <div class="chosen_Item_Info">
-                    <div class="Item_Details">
-                        <h2 class="item_Name">${choice.item}</h2>
-                        <h2 class="item_Price">$${choice.price}</h2>
-                    </div>
-                    <div class="Item_Quantity">
-                        <input min="1" max="100" type="number" value="${buying_items.quantity}" id="item_quantity_${choice.id}" class="item_quantity">
-                    </div>
-                    <div class="Item_Total">
-                        <button onclick="Remove_From_Cart_Function(${i})" class="Remove_From_Cart_Button">Remove</button>
-                        <h2 class="Chosen_Item_Total" value="${quantity}"id="chosen_Item_Total_Price_${choice.id}">$${quantity}</h2>
-                    </div>
-                </div>
-                </div>`);
                 CART_ITEM_OUTPUT.innerHTML +=`<div class="item-${Item_Num}">                
                 <div class="chosen_Item_IMG">
                     <img src="Items_IMG/${choice.img}" alt="${choice.img}">
@@ -76,9 +58,14 @@ function changing_Item_Quantity(value){
 
     // Getting the value of the input area
     var item_quantity = document.getElementById(`item_quantity_${value}`).value;
+    // Making a maximum number of items that can add to 100
     const item_quantity_CLAMPED = Math.min(item_quantity, 100);
-    document.getElementById(`item_quantity_${value}`).value = item_quantity_CLAMPED;
-    item_quantity = item_quantity_CLAMPED;
+    // If entered a decimal it gets rounded
+    var item_quantity_rounding = Math.round(item_quantity_CLAMPED);
+    // Printing the result to the input box
+    document.getElementById(`item_quantity_${value}`).value = item_quantity_rounding;
+    // Item_Quantity is the result
+    item_quantity = item_quantity_rounding;
     console.log(choice.id +": "+item_quantity);
 
     // Finding the item from the shopping bag
