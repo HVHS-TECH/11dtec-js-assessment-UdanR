@@ -239,6 +239,9 @@ function number_Cramping(value) {
 
         // If it's a new item the max is 100
         const ITEM_NUM_CRAMPING = Math.min(ITEM_QUENTITY_NUM_CRAMPING.value, 100);
+        // Rounding numbers
+        ITEM_NUM_CRAMPING = Math.round(ITEM_NUM_CRAMPING);
+        //Printing the value
         document.getElementById("item_quantity_"+value).value = ITEM_NUM_CRAMPING;
 
     } else {
