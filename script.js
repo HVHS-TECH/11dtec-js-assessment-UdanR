@@ -297,10 +297,10 @@ function Add_To_Cart_Function (Button_ID) {
 
     // Getting Item Quantity
     const ITEM_QUANTITY = document.getElementById("item_quantity_"+Button_ID);
+
     // Rounding numbers
     var item_quantity_clean = Math.round(Number(ITEM_QUANTITY.value));
-    console.log(item_quantity_clean);
-    var Quantity = Number(ITEM_QUANTITY.value);
+    var Quantity = Number(item_quantity_clean);
     console.log(ITEM_QUANTITY);
 
     // Checking if the item has be added to the cart before
