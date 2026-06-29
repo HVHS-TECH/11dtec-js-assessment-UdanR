@@ -97,6 +97,10 @@ display: grid;
   color: #FCBF49;
 }
 
+.Submit_Info{
+  display: flex;
+  justify-content: space-evenly;
+}
 .Add_To_Cart_Button{
   background-color: #D62828;
   border: 0px;
