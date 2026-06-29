@@ -308,11 +308,14 @@ function Add_To_Cart_Function (Button_ID) {
     var excitingItem = Shopping_Bag.find(product => product.id === Button_ID);
     console.log(excitingItem);
 
-    // Restrict the user from adding more than 100 of the same item to the cart
-    if (excitingItem.quantity === MAXIMUM_ORDERING_NUM){
-        alert("The maximum amount you can order for each is 100 itmes");
+    if (excitingItem){
+        // Restrict the user from adding more than 100 of the same item to the cart
+        if (excitingItem.quantity === MAXIMUM_ORDERING_NUM){
+            alert("The maximum amount you can order for each is 100 itmes");
         return;
+        }
     }
+
 
     // If the item excits in the cart it just adds the number to the quantity otherwsie make a new object
     if (excitingItem){
