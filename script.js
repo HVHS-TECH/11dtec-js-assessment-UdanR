@@ -303,6 +303,7 @@ function Add_To_Cart_Function (Button_ID) {
     var Quantity = Number(item_quantity_clean);
     console.log(ITEM_QUANTITY);
 
+    document.getElementById("item_quantity_"+Button_ID).value = Quantity;
     // Checking if the item has be added to the cart before
     var excitingItem = Shopping_Bag.find(product => product.id === Button_ID);
     console.log(excitingItem);
