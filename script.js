@@ -239,8 +239,6 @@ function number_Cramping(value) {
 
         // If it's a new item the max is 100
         const ITEM_NUM_CRAMPING = Math.min(ITEM_QUENTITY_NUM_CRAMPING.value, 100);
-        // Rounding numbers
-        ITEM_NUM_CRAMPING = Math.round(ITEM_NUM_CRAMPING);
         //Printing the value
         document.getElementById("item_quantity_"+value).value = ITEM_NUM_CRAMPING;
 
@@ -255,8 +253,6 @@ function number_Cramping(value) {
         // If it has been already added the max it made to be totaled to a 100
         var item_Clamping_Num_Calc = MAXIMUM_ORDERING_NUM - item_Quantity_Num_Check.quantity;
         const ITEM_NUM_CRAMPING = Math.min(ITEM_QUENTITY_NUM_CRAMPING.value, item_Clamping_Num_Calc);
-        // Rounding numbers
-        ITEM_NUM_CRAMPING = Math.round(ITEM_NUM_CRAMPING);
         //Printing value
         document.getElementById("item_quantity_"+value).value = ITEM_NUM_CRAMPING;
     }
@@ -301,6 +297,9 @@ function Add_To_Cart_Function (Button_ID) {
 
     // Getting Item Quantity
     const ITEM_QUANTITY = document.getElementById("item_quantity_"+Button_ID);
+    // Rounding numbers
+    var item_quantity_clean = Math.round(Number(ITEM_QUANTITY.value));
+    console.log(item_quantity_clean);
     var Quantity = Number(ITEM_QUANTITY.value);
     console.log(ITEM_QUANTITY);
 
