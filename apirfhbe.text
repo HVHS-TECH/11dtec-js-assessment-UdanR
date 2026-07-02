@@ -222,3 +222,21 @@ cart test (html)
                     </div>
                 </div>
             </div>
+
+
+
+
+
+                //======================================Search Bar ======================================//
+    function search_Function() {
+        const searchInput = document.getElementById("searchBar").value.toLowerCase();
+        if (searchInput.length === 0) {
+
+        } else {
+            const suggestions = foodItems.filter(item => item.item.toLowerCase().includes(searchInput));
+        for (let i = 0; i < suggestions.length; i++) {
+            const suggestionItem = suggestions[i];
+
+
+    //======================================================================================//
+

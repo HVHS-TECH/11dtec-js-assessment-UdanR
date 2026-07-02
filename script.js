@@ -308,11 +308,18 @@ function Add_To_Cart_Function (Button_ID) {
     var excitingItem = Shopping_Bag.find(product => product.id === Button_ID);
     console.log(excitingItem);
 
+
     if (excitingItem){
         // Restrict the user from adding more than 100 of the same item to the cart
         if (excitingItem.quantity === MAXIMUM_ORDERING_NUM){
             alert("The maximum amount you can order for each is 100 itmes");
         return;
+        }
+        // If the number in the cart and the inputing number is bigger than 100 it gives an alert
+        let item_Under_Max = Quantity + excitingItem.quantity
+        if (item_Under_Max > MAXIMUM_ORDERING_NUM){
+            alert("The maximum amount you can order for each is 100 itmes");
+            return;
         }
     }
 
@@ -389,5 +396,9 @@ for (let i = 0; i < Shopping_Bag.length; i++){
     const AMOUNT_IN_CART_OUTPUT = document.getElementById("item_NumberInCart_"+amount_In_Cart.id);
     AMOUNT_IN_CART_OUTPUT.innerText = amount_In_Cart.quantity;
 }
+
+
+
+
 
 
