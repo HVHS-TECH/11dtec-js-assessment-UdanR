@@ -180,7 +180,8 @@ if (added_Buying_Items.length === 0){
 
     // Checking if the user have enough money
     if (spending_money < Total_Price) {
-        alert ("You don't have enough money");
+        var change = spending_money-Total_Price;
+        alert ("You don't have enough money $"+change);
         return;
     } else{
         // Getting the date
