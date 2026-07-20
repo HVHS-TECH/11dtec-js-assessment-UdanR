@@ -2,7 +2,7 @@
 console.log(JSON.parse(sessionStorage.getItem('Inventory')));
 var foodItems = JSON.parse(sessionStorage.getItem('Inventory'));
 
-// Getting the buying_Items stringed var form the sessionStorage and coverting it back into a js
+// Getting the buying_Items stringed var form the sessionStorage and coverting it back into a js and if their is no array saved the var would be set to empty rather than breaking the code
 console.log(JSON.parse(sessionStorage.getItem('buying_Items')));
 var added_Buying_Items = JSON.parse(sessionStorage.getItem('buying_Items')) || [];
 console.log(added_Buying_Items);
