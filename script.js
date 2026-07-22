@@ -114,6 +114,11 @@ function Menu_Item_Selecting_All (){
 
     for (let i = 0; i < foodItems.length; i++ ){
         var thisitem = foodItems[i];
+        if (thisitem.recommend === true){
+
+        } else {
+            
+        }
         CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${i}">
         <img src="Items_IMG/${thisitem.img}" alt="${thisitem.img}">
         <div class="item_info">
