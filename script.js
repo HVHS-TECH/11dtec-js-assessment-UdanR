@@ -165,7 +165,7 @@ function Menu_Item_Selecting_Main_Dishes (){
             <h2 class="item_Name">${item.item}</h2>
             <div class="item_Price_NumberinCart">
             <h2 class="item_Price" id="item_Price_${item.id}">$ ${item.price}</h2>
-            <h2 class="item_NumberInCart" id="item_NumberInCart_${item.id} recommended_item_NumberInCart_Item_${thisitem.id}">0</h2>
+            <h2 class="item_NumberInCart" id="item_NumberInCart_${item.id} recommended_item_NumberInCart_Item_${item.id}">0</h2>
             </div>
         </div>
         <div class="Submit_Info">
@@ -202,6 +202,22 @@ function Menu_Item_Selecting_Sides (){
     MainDish.forEach(MainDish_Print);
     var Item_Class_NUM = 0;
     function MainDish_Print(item, Item_Class_NUM){
+        if (MainDish.recommend === true) {
+        CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${Item_Class_NUM}">
+        <img src="Items_IMG/${item.img}" alt="${item.img}">
+        <div class="item_info">
+            <h2 class="item_Name">${item.item}</h2>
+            <div class="item_Price_NumberinCart">
+            <h2 class="item_Price" id="item_Price_${item.id}">$ ${item.price}</h2>
+            <h2 class="item_NumberInCart" id="item_NumberInCart_${item.id} recommended_item_NumberInCart_Item_${item.id}">0</h2>
+            </div>
+        </div>
+        <div class="Submit_Info">
+        <input type="number" min="1" max="100" oninput="number_Cramping(${item.id})" value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
+        <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button" id="Add_To_Cart_Button_${item.id} recommended_item_NumberInCart_Item_${thisitem.id}">Add To Cart</button>
+        </div>
+        </div>`
+        } else {
         CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${Item_Class_NUM}">
         <img src="Items_IMG/${item.img}" alt="${item.img}">
         <div class="item_info">
@@ -216,6 +232,8 @@ function Menu_Item_Selecting_Sides (){
         <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button" id="Add_To_Cart_Button_${item.id}">Add To Cart</button>
         </div>
         </div>`
+        }
+
         Item_Class_NUM = Item_Class_NUM + 1;
     }
 }
