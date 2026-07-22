@@ -45,10 +45,28 @@ var Desserts = foodItems.filter(product => product.category === 'Desserts');
 const RECOMMNEDED_ITEMS_OUTPUT = document.getElementById("Recommended_items_containor_output");
 var Recommend = foodItems.filter(product => product.recommend === true);
 
+// Run the code below if recommended items needed
 Recommend.forEach(Recommended_print);
 
 var reco_Item_Num = 1;
-//============== This is where the Recomended items code go =====================
+// Printing the Recommended Food Item Area
+function Recommended_print(item, reco_Item_Num){
+    RECOMMNEDED_ITEMS_OUTPUT.innerHTML += `<div class="_${reco_Item_Num}">
+                <img src="Items_IMG/${item.img}" alt="${item.img}">
+                <div class="item_info">
+                    <h2 class="item_Name">${item.item}</h2>
+                    <div class="item_Price_NumberinCart">
+                        <h2 class="item_Price" id="item_Price_${item.id}">$ ${item.price}</h2>
+                        <h2 class="item_NumberInCart" id="item_NumberInCart_${item.id}">0</h2>
+                    </div>
+                </div>
+                <div class="Submit_Info">
+                <input type="number" min="1" max="100" oninput="number_Cramping(${item.id})" value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
+                <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button" id="Add_To_Cart_Button_${item.id}">Add To Cart</button>
+                </div>
+            </div>`
+            reco_Item_Num = reco_Item_Num +1;
+}
 
 const CHOSEN_FOOD_ITEM_OUTPUT_AREA = document.getElementById("Chosen_Food_Item_Area");
 for (let i = 0; i < foodItems.length; i++ ){
