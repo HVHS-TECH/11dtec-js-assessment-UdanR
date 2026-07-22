@@ -290,7 +290,7 @@ function Menu_Item_Selecting_Desserts (){
     MainDish.forEach(MainDish_Print);
     var Item_Class_NUM = 0;
     function MainDish_Print(item, Item_Class_NUM){
-
+        if (MainDish === true){}
         CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${Item_Class_NUM}">
         <img src="Items_IMG/${item.img}" alt="${item.img}">
         <div class="item_info">
