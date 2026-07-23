@@ -101,6 +101,12 @@ function Menu_Item_Selecting_Main_Dishes (){
 
     var MainDish = foodItems.filter(product => product.category === 'main-dish');
     MainDish.forEach(MainDish_Print);
+    if (MainDish.quantity > 0){
+        console.log("quantity is bigger than zero");
+    } else {
+        console.log("Quanitity is zero");
+    }
+    var amount_In_Cart = Number(MainDish.quantity);
     var Item_Class_NUM = 0;
     function MainDish_Print(item, Item_Class_NUM){
                 CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${Item_Class_NUM}">
