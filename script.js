@@ -76,6 +76,12 @@ function Menu_Item_Selecting_All (){
 
     for (let i = 0; i < foodItems.length; i++ ){
         var thisitem = foodItems[i];
+            if (thisitem.quantity > 0){
+        console.log("quantity is bigger than zero");
+    } else {
+        console.log("Quanitity is zero");
+    }
+    var amount_In_Cart = Number(thisitem.quantity);
                 CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${i}">
         <img src="Items_IMG/${thisitem.img}" alt="${thisitem.img}">
         <div class="item_info">
@@ -101,12 +107,7 @@ function Menu_Item_Selecting_Main_Dishes (){
 
     var MainDish = foodItems.filter(product => product.category === 'main-dish');
     MainDish.forEach(MainDish_Print);
-    if (MainDish.quantity > 0){
-        console.log("quantity is bigger than zero");
-    } else {
-        console.log("Quanitity is zero");
-    }
-    var amount_In_Cart = Number(MainDish.quantity);
+
     var Item_Class_NUM = 0;
     function MainDish_Print(item, Item_Class_NUM){
                 CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${Item_Class_NUM}">
