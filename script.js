@@ -483,7 +483,7 @@ for (let i = 0; i < Shopping_Bag.length; i++){
         console.log("item not recommended");
     } else {
         console.log("is recommended");
-        const RECO_AMOUNT_IN_CART_OUTPUT = document.getElementById("item_NumberInCart_"+price_adding_item_id);
+        const RECO_AMOUNT_IN_CART_OUTPUT = document.getElementById("recommended_item_NumberInCart_Item_"+price_adding_item_id);
         RECO_AMOUNT_IN_CART_OUTPUT.innerText = price_adding_item_object.quantity;
 
     }
