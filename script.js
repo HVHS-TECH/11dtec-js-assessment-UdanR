@@ -76,12 +76,6 @@ function Menu_Item_Selecting_All (){
 
     for (let i = 0; i < foodItems.length; i++ ){
         var thisitem = foodItems[i];
-            if (thisitem.quantity > 0){
-        console.log("quantity is bigger than zero");
-    } else {
-        console.log("Quanitity is zero");
-    }
-    var amount_In_Cart = Number(thisitem.quantity);
                 CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${i}">
         <img src="Items_IMG/${thisitem.img}" alt="${thisitem.img}">
         <div class="item_info">
