@@ -53,23 +53,6 @@ var reco_Item_Num = 1;
 const CHOSEN_FOOD_ITEM_OUTPUT_AREA = document.getElementById("Chosen_Food_Item_Area");
 for (let i = 0; i < foodItems.length; i++ ){
     var thisitem = foodItems[i];
-    if (thisitem.recommend === true){
-        console.log ("recommended");
-                CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${i}">
-            <img src="Items_IMG/${thisitem.img}" alt="${thisitem.img}">
-            <div class="item_info">
-                <h2 class="item_Name">${thisitem.item}</h2>
-            <div class="item_Price_NumberinCart">
-                <h2 class="item_Price" id="item_Price_${thisitem.id}">$ ${thisitem.price}</h2>
-                <h2 class="item_NumberInCart" id="item_NumberInCart_${thisitem.id} recommended_item_NumberInCart_Item_${thisitem.id}">0</h2>
-            </div>
-        </div>
-        <div class="Submit_Info">
-            <input type="number" min="1" max="100" oninput="number_Cramping(${thisitem.id})" value=1 class="item_quantity_choosing" id="item_quantity_${thisitem.id}">
-            <button value=${thisitem.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button recommended_Add_To_Cart_Button_Item_${thisitem.id}" id="Add_To_Cart_Button_${thisitem.id}">Add To Cart</button>
-        </div>
-        </div>`
-    } else {
         console.log ("not recommended");
         CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${i}">
             <img src="Items_IMG/${thisitem.img}" alt="${thisitem.img}">
@@ -84,10 +67,7 @@ for (let i = 0; i < foodItems.length; i++ ){
             <input type="number" min="1" max="100" oninput="number_Cramping(${thisitem.id})" value=1 class="item_quantity_choosing" id="item_quantity_${thisitem.id}">
             <button value=${thisitem.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button" id="Add_To_Cart_Button_${thisitem.id}">Add To Cart</button>
         </div>
-        </div>`
-    }
-
-            
+        </div>`        
 }
 
 // When All is pressed
@@ -96,22 +76,6 @@ function Menu_Item_Selecting_All (){
 
     for (let i = 0; i < foodItems.length; i++ ){
         var thisitem = foodItems[i];
-        if (thisitem.recommend === true){
-        CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${i}">
-        <img src="Items_IMG/${thisitem.img}" alt="${thisitem.img}">
-        <div class="item_info">
-            <h2 class="item_Name">${thisitem.item}</h2>
-            <div class="item_Price_NumberinCart">
-            <h2 class="item_Price" id="item_Price_${thisitem.id}">$ ${thisitem.price}</h2>
-            <h2 class="item_NumberInCart" id="item_NumberInCart_${thisitem.id} recommended_item_NumberInCart_Item_${thisitem.id}">0</h2>
-            </div>
-        </div>
-        <div class="Submit_Info">
-        <input type="number" min="1" max="100" oninput="number_Cramping(${thisitem.id})" value=1 class="item_quantity_choosing" id="item_quantity_${thisitem.id}">
-        <button value=${thisitem.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button recommended_Add_To_Cart_Button_Item_${thisitem.id}" id="Add_To_Cart_Button_${thisitem.id}">Add To Cart</button>
-        </div>
-        </div>`
-        } else {
                 CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${i}">
         <img src="Items_IMG/${thisitem.img}" alt="${thisitem.img}">
         <div class="item_info">
@@ -126,7 +90,6 @@ function Menu_Item_Selecting_All (){
         <button value=${thisitem.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button" id="Add_To_Cart_Button_${thisitem.id}">Add To Cart</button>
         </div>
         </div>`
-        }
 
             
 }
@@ -140,22 +103,6 @@ function Menu_Item_Selecting_Main_Dishes (){
     MainDish.forEach(MainDish_Print);
     var Item_Class_NUM = 0;
     function MainDish_Print(item, Item_Class_NUM){
-        if (MainDish.recommend === true){
-        CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${Item_Class_NUM}">
-        <img src="Items_IMG/${item.img}" alt="${item.img}">
-        <div class="item_info">
-            <h2 class="item_Name">${item.item}</h2>
-            <div class="item_Price_NumberinCart">
-            <h2 class="item_Price" id="item_Price_${item.id}">$ ${item.price}</h2>
-            <h2 class="item_NumberInCart" id="item_NumberInCart_${item.id} recommended_item_NumberInCart_Item_${item.id}">0</h2>
-            </div>
-        </div>
-        <div class="Submit_Info">
-        <input type="number" min="1" max="100" oninput="number_Cramping(${item.id})" value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
-        <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button" id="Add_To_Cart_Button_${item.id} recommended_Add_To_Cart_Button_Item_${item.id}">Add To Cart</button>
-        </div>
-        </div>`
-        } else {
                 CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${Item_Class_NUM}">
         <img src="Items_IMG/${item.img}" alt="${item.img}">
         <div class="item_info">
@@ -170,7 +117,6 @@ function Menu_Item_Selecting_Main_Dishes (){
         <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button" id="Add_To_Cart_Button_${item.id}">Add To Cart</button>
         </div>
         </div>` 
-        }
 
         Item_Class_NUM = Item_Class_NUM + 1;
     }
@@ -184,22 +130,6 @@ function Menu_Item_Selecting_Sides (){
     MainDish.forEach(MainDish_Print);
     var Item_Class_NUM = 0;
     function MainDish_Print(item, Item_Class_NUM){
-        if (MainDish.recommend === true) {
-        CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${Item_Class_NUM}">
-        <img src="Items_IMG/${item.img}" alt="${item.img}">
-        <div class="item_info">
-            <h2 class="item_Name">${item.item}</h2>
-            <div class="item_Price_NumberinCart">
-            <h2 class="item_Price" id="item_Price_${item.id}">$ ${item.price}</h2>
-            <h2 class="item_NumberInCart" id="item_NumberInCart_${item.id} recommended_item_NumberInCart_Item_${item.id}">0</h2>
-            </div>
-        </div>
-        <div class="Submit_Info">
-        <input type="number" min="1" max="100" oninput="number_Cramping(${item.id})" value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
-        <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button" id="Add_To_Cart_Button_${item.id} recommended_item_NumberInCart_Item_${thisitem.id}">Add To Cart</button>
-        </div>
-        </div>`
-        } else {
         CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${Item_Class_NUM}">
         <img src="Items_IMG/${item.img}" alt="${item.img}">
         <div class="item_info">
@@ -214,7 +144,6 @@ function Menu_Item_Selecting_Sides (){
         <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button" id="Add_To_Cart_Button_${item.id}">Add To Cart</button>
         </div>
         </div>`
-        }
 
         Item_Class_NUM = Item_Class_NUM + 1;
     }
@@ -228,22 +157,6 @@ function Menu_Item_Selecting_Drinks (){
     MainDish.forEach(MainDish_Print);
     var Item_Class_NUM = 0;
     function MainDish_Print(item, Item_Class_NUM){
-        if (MainDish.recommend === true) {
-        CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${Item_Class_NUM}">
-        <img src="Items_IMG/${item.img}" alt="${item.img}">
-        <div class="item_info">
-            <h2 class="item_Name">${item.item}</h2>
-            <div class="item_Price_NumberinCart">
-            <h2 class="item_Price" id="item_Price_${item.id}">$ ${item.price}</h2>
-            <h2 class="item_NumberInCart" id="item_NumberInCart_${item.id} recommended_item_NumberInCart_Item_${item.id}">0</h2>
-            </div>
-        </div>
-        <div class="Submit_Info">
-        <input type="number" min="1" max="100" oninput="number_Cramping(${item.id})" value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
-        <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button" id="Add_To_Cart_Button_${item.id} recommended_item_NumberInCart_Item_${item.id}">Add To Cart</button>
-        </div>
-        </div>`
-        } else {
         CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${Item_Class_NUM}">
         <img src="Items_IMG/${item.img}" alt="${item.img}">
         <div class="item_info">
@@ -258,7 +171,6 @@ function Menu_Item_Selecting_Drinks (){
         <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button" id="Add_To_Cart_Button_${item.id}">Add To Cart</button>
         </div>
         </div>`
-        }
 
         Item_Class_NUM = Item_Class_NUM + 1;
     }
@@ -272,22 +184,6 @@ function Menu_Item_Selecting_Desserts (){
     MainDish.forEach(MainDish_Print);
     var Item_Class_NUM = 0;
     function MainDish_Print(item, Item_Class_NUM){
-        if (MainDish === true) {
-        CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${Item_Class_NUM}">
-        <img src="Items_IMG/${item.img}" alt="${item.img}">
-        <div class="item_info">
-            <h2 class="item_Name">${item.item}</h2>
-            <div class="item_Price_NumberinCart">
-            <h2 class="item_Price" id="item_Price_${item.id}">$ ${item.price}</h2>
-            <h2 class="item_NumberInCart" id="item_NumberInCart_${item.id} recommended_item_NumberInCart_Item_${item.id}">0</h2>
-            </div>
-        </div>
-        <div class="Submit_Info">
-        <input type="number" min="1" max="100" oninput="number_Cramping(${item.id})" value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
-        <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button" id="Add_To_Cart_Button_${item.id}">Add To Cart</button>
-        </div>
-        </div>`
-        } else {
         CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML += `<div class="_${Item_Class_NUM}">
         <img src="Items_IMG/${item.img}" alt="${item.img}">
         <div class="item_info">
@@ -302,7 +198,6 @@ function Menu_Item_Selecting_Desserts (){
         <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button" id="Add_To_Cart_Button_${item.id} recommended_item_NumberInCart_Item_${item.id}">Add To Cart</button>
         </div>
         </div>`
-        }
 
         Item_Class_NUM = Item_Class_NUM + 1;
     }
