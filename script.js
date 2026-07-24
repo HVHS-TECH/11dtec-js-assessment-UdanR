@@ -55,7 +55,7 @@ var Recommend = foodItems.filter(product => product.recommend === true);
 
 //------------------------------------------------------------------------------------------------------------//
 
-// Pritnes 
+// Pritnes the items to HTML at the start
 var reco_Item_Num = 1;
 const CHOSEN_FOOD_ITEM_OUTPUT_AREA = document.getElementById("Chosen_Food_Item_Area");
 for (let i = 0; i < foodItems.length; i++ ){
@@ -76,6 +76,9 @@ for (let i = 0; i < foodItems.length; i++ ){
         </div>
         </div>`        
 }
+
+//------------------------------------------------------------------------------------------------------------//
+
 
 // When All is pressed
 function Menu_Item_Selecting_All (){
@@ -101,6 +104,8 @@ function Menu_Item_Selecting_All (){
             
 }
 }
+
+//------------------------------------------------------------------------------------------------------------//
 
 // When Main Dishes is pressed
 function Menu_Item_Selecting_Main_Dishes (){
@@ -130,6 +135,8 @@ function Menu_Item_Selecting_Main_Dishes (){
     }
 }
 
+//------------------------------------------------------------------------------------------------------------//
+
 // When Sides is pressed
 function Menu_Item_Selecting_Sides (){
     CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML = "";
@@ -156,6 +163,8 @@ function Menu_Item_Selecting_Sides (){
         Item_Class_NUM = Item_Class_NUM + 1;
     }
 }
+
+//------------------------------------------------------------------------------------------------------------//
 
 // When Drinks is pressed
 function Menu_Item_Selecting_Drinks (){
@@ -184,6 +193,8 @@ function Menu_Item_Selecting_Drinks (){
     }
 }
 
+//------------------------------------------------------------------------------------------------------------//
+
 // When Desserts is pressed
 function Menu_Item_Selecting_Desserts (){
     CHOSEN_FOOD_ITEM_OUTPUT_AREA.innerHTML = "";
@@ -210,6 +221,8 @@ function Menu_Item_Selecting_Desserts (){
         Item_Class_NUM = Item_Class_NUM + 1;
     }
 }
+
+//------------------------------------------------------------------------------------------------------------//
 
 const MAXIMUM_ORDERING_NUM = 100;
 // When a number is bigger than 100 it is converted into a 100
@@ -252,6 +265,7 @@ function number_Cramping(value) {
 
 }
 
+//------------------------------------------------------------------------------------------------------------//
 
 // Cart Arrays
     var shopping_Bag_Check = (JSON.parse(sessionStorage.getItem('buying_Items')));
