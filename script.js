@@ -196,7 +196,7 @@ function Menu_Item_Selecting_Desserts (){
         </div>
         <div class="Submit_Info">
         <input type="number" min="1" max="100" oninput="number_Cramping(${item.id})" value=1 class="item_quantity_choosing" id="item_quantity_${item.id}">
-        <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button" id="Add_To_Cart_Button_${item.id} recommended_item_NumberInCart_Item_${item.id}">Add To Cart</button>
+        <button value=${item.id} onclick="Add_To_Cart_Function(this.value)" class="Add_To_Cart_Button" id="Add_To_Cart_Button_${item.id}">Add To Cart</button>
         </div>
         </div>`
 
