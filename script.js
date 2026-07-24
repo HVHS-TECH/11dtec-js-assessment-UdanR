@@ -205,7 +205,6 @@ function Menu_Item_Selecting_Desserts (){
 }
 
 const MAXIMUM_ORDERING_NUM = 100;
-//======================================================WORKING IN PROGRESS===========================================
 // When a number is bigger than 100 it is converted into a 100
 function number_Cramping(value) {
     //Getting the inputbox
