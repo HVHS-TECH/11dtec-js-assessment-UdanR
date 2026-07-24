@@ -32,7 +32,7 @@ var foodItems = [
   { id: 130, category: 'Desserts', recommend: false ,item: 'Fruit Salad Cup', price: 10, img: 'Fruit_Salad_Cup.jpeg'},
   { id: 131, category: 'Desserts', recommend: false ,item: 'Cookie', price: 3, img: 'Cookie.jpeg'}
 ];
-
+//------------------------------------------------------------------------------------------------------------//
 // Saving the Inventory
 sessionStorage.setItem('Inventory', JSON.stringify(foodItems));
 
@@ -357,7 +357,7 @@ for (let i = 0; i < Shopping_Bag.length; i++){
 
     const AMOUNT_IN_CART_OUTPUT = document.getElementById("item_NumberInCart_"+price_adding_item_id);
     if (AMOUNT_IN_CART_OUTPUT) {
-    AMOUNT_IN_CART_OUTPUT.innerText = price_adding_item_object.quantity;
+        AMOUNT_IN_CART_OUTPUT.innerText = price_adding_item_object.quantity;
     }
 
     // Converting the Shopping_Bag Var to a string and storing it in a seesionStorgae
