@@ -32,7 +32,9 @@ var foodItems = [
   { id: 130, category: 'Desserts', recommend: false ,item: 'Fruit Salad Cup', price: 10, img: 'Fruit_Salad_Cup.jpeg'},
   { id: 131, category: 'Desserts', recommend: false ,item: 'Cookie', price: 3, img: 'Cookie.jpeg'}
 ];
+
 //------------------------------------------------------------------------------------------------------------//
+
 // Saving the Inventory
 sessionStorage.setItem('Inventory', JSON.stringify(foodItems));
 
@@ -40,16 +42,21 @@ var choice = foodItems.find(product => product.id === 101);
 
 var Desserts = foodItems.filter(product => product.category === 'Desserts');
 
+//------------------------------------------------------------------------------------------------------------//
 
 // Recommended Food area
 const RECOMMNEDED_ITEMS_OUTPUT = document.getElementById("Recommended_items_containor_output");
 var Recommend = foodItems.filter(product => product.recommend === true);
 
+//------------------------------------------------------------------------------------------------------------//
+
 // Run the code below if recommended items needed
 //Recommend.forEach(Recommended_print);
 
-var reco_Item_Num = 1;
+//------------------------------------------------------------------------------------------------------------//
 
+//----------------
+var reco_Item_Num = 1;
 const CHOSEN_FOOD_ITEM_OUTPUT_AREA = document.getElementById("Chosen_Food_Item_Area");
 for (let i = 0; i < foodItems.length; i++ ){
     var thisitem = foodItems[i];
