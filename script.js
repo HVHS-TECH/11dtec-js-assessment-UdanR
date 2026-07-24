@@ -55,7 +55,8 @@ var Recommend = foodItems.filter(product => product.recommend === true);
 
 //------------------------------------------------------------------------------------------------------------//
 
-//----------------
+//------------------------------------------------------------------------------------------------------------//
+
 var reco_Item_Num = 1;
 const CHOSEN_FOOD_ITEM_OUTPUT_AREA = document.getElementById("Chosen_Food_Item_Area");
 for (let i = 0; i < foodItems.length; i++ ){
